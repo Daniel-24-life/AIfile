@@ -12,6 +12,13 @@ Use `shelves/` when you want to inspect the reusable parts behind those works: c
 
 Use `catalog/` when you want the index, tags, metadata, and librarian notes.
 
+## Published Entrances
+
+| Work | Path | What It Shows |
+| --- | --- | --- |
+| Quant Agent System Showcase | `showcases/quant-agent-system/` | A sanitized AI agent system view covering research, execution, governance, audit, and promotion flow. |
+| AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading outcomes distilled into a personal AI usage handbook, concept cards, and reusable workflow thinking. |
+
 ## Shelves
 
 | Path | Use |
@@ -22,7 +29,7 @@ Use `catalog/` when you want the index, tags, metadata, and librarian notes.
 | `shelves/code/` | Code, scripts, prototypes, and engineering results. |
 | `shelves/skills/` | Codex skills, prompts, agent workflows, reusable procedures. |
 | `shelves/articles/` | Essays, article drafts, public writing, polished notes. |
-| `shelves/understanding/` | Concept maps, frameworks, reading notes, and personal knowledge structures. |
+| `shelves/understanding/` | Concept maps, reading outcomes, usage handbooks, and personal knowledge structures. |
 
 ## Portfolio Rule
 
@@ -75,4 +82,4 @@ Each meaningful item should include:
 
 ## Current Status
 
-The repository is initialized as a portfolio library. Content is added deliberately, one curated batch at a time.
+The repository is now organized as a growing public portfolio library. Current public materials include a sanitized AI agent system showcase and an AI workflow learning system built from reading, practice, and reusable handbooks.
