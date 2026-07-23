@@ -75,4 +75,4 @@ Each meaningful item should include:
 
 ## Current Status
 
-The repository is initialized as a portfolio library shell. Content will be added deliberately, one curated batch at a time.
+The repository is initialized as a portfolio library. Content is added deliberately, one curated batch at a time.
