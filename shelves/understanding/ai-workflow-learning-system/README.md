@@ -2,7 +2,7 @@
 
 中文名：从 AI 文章到 AI 能力
 
-This is my distilled framework for turning AI articles, product cases, engineering essays, and tool practice into reusable personal capability.
+This is my working framework for turning AI articles, product cases, engineering essays, and tool practice into reusable personal capability.
 
 它关注一个更实际的问题：
 
@@ -40,11 +40,11 @@ flowchart LR
     G --> H["Next Task"]
 ```
 
-## The Six Ideas I Keep
+## The Six Ideas I Kept
 
 | Idea | What It Means For Me |
 | --- | --- |
-| Harness over prompt | Build a better working environment for AI. |
+| Harness over prompt | Build the working environment around AI. |
 | Human role moves upward | My job shifts from line-by-line control to goals, boundaries, checkpoints, and acceptance. |
 | State must live outside chat | Long tasks need files, reports, specs, and handoffs, not memory hope. |
 | Loop before automation | Only automate repeated, verifiable, affordable tasks with enough tool access. |
@@ -82,7 +82,7 @@ This prevents one giant prompt from mixing facts, rules, workflow, and preferenc
 Read -> Extract -> Apply -> Verify -> Reflect -> Codify -> Reuse
 ```
 
-The key is lowering the friction from reading to reuse.
+The useful part is reducing the distance between reading and reuse.
 
 ## Practical Rule
 

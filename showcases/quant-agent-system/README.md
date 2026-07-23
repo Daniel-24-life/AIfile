@@ -1,10 +1,10 @@
 # AI Agent Research Governance System
 
-This project is a sanitized public showcase of a private AI agent research system.
+This is the public, sanitized version of a private AI agent research system.
 
 The core work is not a single script or model. It is a governed agent system that separates research, execution simulation, orchestration, and governance into explicit operating layers.
 
-## What This Demonstrates
+## What It Shows
 
 - Designing AI agents with hard operating boundaries.
 - Separating research output from execution authority.
@@ -53,7 +53,7 @@ orchestrator
 
 ## Why This Matters
 
-Many AI agent demos show autonomy. This system emphasizes constrained autonomy.
+Many AI agent demos focus on autonomy. I cared more about constrained autonomy.
 
 The important engineering question is not "can the agent act?" but:
 
@@ -77,4 +77,4 @@ and fail closed when evidence is insufficient?
 
 Status: `approved_for_public_v1`
 
-This is a public-facing adaptation, not the original private repository.
+This is a public adaptation, not the original private repository.

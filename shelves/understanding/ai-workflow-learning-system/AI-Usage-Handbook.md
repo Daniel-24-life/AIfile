@@ -1,10 +1,10 @@
 # AI Usage Handbook
 
-Subtitle: Turning AI reading into reusable working capability
+Subtitle: Turning AI reading into working capability
 
 ### 1. Why I Wrote This Handbook
 
-This handbook records how I now use AI after reading and processing materials about AI engineering, agents, harness design, loop engineering, and AI-native coding.
+This handbook records how I now use AI after reading materials about AI engineering, agents, harness design, loop engineering, and AI-native coding.
 
 The practical question behind it is:
 
@@ -12,7 +12,7 @@ The practical question behind it is:
 After reading these AI materials, what will I do differently in my next real task?
 ```
 
-My current answer: I need to place AI inside a clearer working system. That system includes goals, boundaries, context, tools, state, acceptance, and reflection. The AI output is only one part of the chain. The quality depends on the whole workflow.
+My current answer: I need to place AI inside a clearer working system. That system includes goals, boundaries, context, tools, state, acceptance, and reflection. The output is one part of the chain. The quality depends on the whole workflow.
 
 ### 2. Core Formula
 
@@ -173,7 +173,7 @@ When I read, I ask:
 Should this lesson become K, S, or T?
 ```
 
-This helps reading flow into future work.
+This gives each reading note somewhere to go after I finish it.
 
 ### 10. What Changed After This Reading Cycle
 

@@ -1,8 +1,8 @@
 # AIfile
 
-AIfile is a public portfolio library for code, skills, articles, project results, notes, and working ideas.
+AIfile is my public shelf for code, skills, articles, project notes, and working ideas.
 
-It is managed as a curated library, not as a raw file dump. Each public item should be selected, summarized, classified, and connected to a clear reason for why it matters.
+I use it like a small library. Public items are selected, summarized, classified, and tied to a reason they belong here.
 
 ## How To Read This Repository
 
@@ -14,10 +14,10 @@ Use `catalog/` when you want the index, tags, metadata, and librarian notes.
 
 ## Published Entrances
 
-| Work | Path | What It Shows |
+| Work | Path | What To Read It For |
 | --- | --- | --- |
-| Quant Agent System Showcase | `showcases/quant-agent-system/` | A sanitized AI agent system view covering research, execution, governance, audit, and promotion flow. |
-| AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading outcomes distilled into a personal AI usage handbook, concept cards, and reusable workflow thinking. |
+| Quant Agent System Showcase | `showcases/quant-agent-system/` | A sanitized view of an AI agent system: research, execution simulation, governance, audit, and promotion control. |
+| AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading notes turned into a personal AI usage handbook, concept cards, and reusable workflow rules. |
 
 ## Shelves
 
@@ -66,7 +66,7 @@ shelves/skills/<related-workflow>/
 shelves/understanding/<related-framework>.md
 ```
 
-The showcase is the front door. The shelves hold the reusable materials.
+The showcase is the front door. The shelves hold the materials behind it.
 
 ## Item Metadata
 
@@ -82,4 +82,4 @@ Each meaningful item should include:
 
 ## Current Status
 
-The repository is now organized as a growing public portfolio library. Current public materials include a sanitized AI agent system showcase and an AI workflow learning system built from reading, practice, and reusable handbooks.
+The repository is now a working public portfolio library. Current materials include a sanitized AI agent system showcase and an AI workflow learning system built from reading notes, practice, and handbooks.

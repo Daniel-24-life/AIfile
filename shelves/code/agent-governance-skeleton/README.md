@@ -2,7 +2,7 @@
 
 This is a sanitized code skeleton for a governed AI agent system.
 
-It demonstrates:
+It includes:
 
 - plane-based task routing
 - fail-closed policy checks

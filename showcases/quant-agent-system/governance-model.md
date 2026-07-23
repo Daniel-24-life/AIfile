@@ -38,7 +38,7 @@ The system must not silently:
 
 ## Public Takeaway
 
-The governance layer demonstrates AI engineering maturity:
+The governance layer is the part I want readers to notice:
 
 ```text
 The agent is useful because it is constrained,

@@ -1,6 +1,6 @@
 # Redaction Policy
 
-This public package is intentionally sanitized.
+This public package is sanitized on purpose.
 
 ## Excluded
 
@@ -45,7 +45,7 @@ The following public-safe materials are included:
 
 ## Review Requirement
 
-This package should be manually reviewed before publication.
+Review checklist used before publication:
 
 Recommended checks:
 
