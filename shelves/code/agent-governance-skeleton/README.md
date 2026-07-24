@@ -10,7 +10,7 @@ It includes:
 - dry-run execution lifecycle
 - boundary tests
 
-It intentionally excludes:
+Outside this public skeleton:
 
 - private strategy logic
 - data access code
@@ -23,4 +23,3 @@ It intentionally excludes:
 ```powershell
 python -m pytest shelves\code\agent-governance-skeleton\tests
 ```
-

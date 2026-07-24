@@ -41,7 +41,7 @@ The archive tracks:
 - revision status
 - review notes
 
-The public package does not include original prompts. It only describes why prompt tracking mattered: without a record, a selected asset can become hard to explain, revise, or compare.
+Original prompts stay outside this folder. The note here is about why prompt tracking mattered: without a record, a selected asset can become hard to explain, revise, or compare.
 
 ## Stage 4: Visual Asset Review
 

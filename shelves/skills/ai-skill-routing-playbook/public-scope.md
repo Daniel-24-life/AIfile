@@ -4,7 +4,7 @@ This package explains a decision framework for using AI skills and workflow help
 
 ## Included Scope
 
-The public version focuses on:
+The public version covers:
 
 - choosing a primary skill by task shape
 - separating drafting, review, verification, formatting, and publishing
@@ -12,22 +12,18 @@ The public version focuses on:
 - using evidence before accepting a result
 - turning repeated workflows into reusable rules
 
-## Claim Boundary
-
-This package says:
+## Claim
 
 ```text
 I know how to route AI-assisted work, control tool boundaries, and verify outcomes.
 ```
 
-It does not say:
+## Boundary
 
 ```text
 This is the complete working environment behind those decisions.
 ```
 
-## Reader Takeaway
+## Public Version
 
-The intended signal is operating judgment.
-
-A reader should understand how I think about tool selection and workflow governance. The package stays at the level of principles, roles, and checks.
+This package presents the method layer: principles, roles, checks, and routing boundaries.

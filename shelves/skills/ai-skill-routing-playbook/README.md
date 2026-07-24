@@ -8,9 +8,9 @@ The practical question is:
 When AI tools keep multiplying, how do I choose the right entry point, keep boundaries clear, and leave reusable lessons after the task?
 ```
 
-## What This Shows
+## Contents
 
-This package shows three parts of my AI operating method:
+This package covers three parts of my AI operating method:
 
 - task-first skill selection
 - boundary control between generation, review, verification, and formatting
@@ -47,7 +47,7 @@ Before using a skill, I ask:
 3. What should this skill not do?
 4. What evidence proves the task is done?
 
-These four questions prevent tool sprawl. They also make it easier to explain why a task used one route instead of another.
+These four questions keep routing from spreading too loosely. They also make route choices easier to explain.
 
 ## Skill Boundary Map
 
@@ -73,7 +73,7 @@ That is the difference between collecting AI tools and operating an AI workflow.
 | `routing-principles.md` | The routing rules I use before selecting a skill. |
 | `writing-skill-boundaries.md` | How I separate drafting, editing, review, and style cleanup. |
 | `governance-notes.md` | How I treat reusable workflows and tool conflicts. |
-| `public-scope.md` | What this public package does and does not claim. |
+| `public-scope.md` | Public scope and boundary. |
 | `cards/` | Short reusable concept cards. |
 
 ## Status

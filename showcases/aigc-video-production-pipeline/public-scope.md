@@ -2,11 +2,11 @@
 
 This package presents an AIGC video project as a production workflow case.
 
-It is meant for readers who want to understand how the work was organized. Original creative files stay outside this public package.
+It documents how the work was organized. Original creative files stay outside this public package.
 
 ## Included Scope
 
-The public version focuses on:
+The public version covers:
 
 - workflow structure
 - artifact categories
@@ -15,22 +15,18 @@ The public version focuses on:
 - project packaging logic
 - lessons for future AIGC production work
 
-## Claim Boundary
-
-This package says:
+## Claim
 
 ```text
 I can manage an AIGC video project as a structured production pipeline.
 ```
 
-It stops before:
+## Boundary
 
 ```text
 the full creative source package or a reproducible production recipe
 ```
 
-## Reader Takeaway
+## Public Version
 
-The intended signal is production judgment.
-
-A reader should understand that the project involved structured planning, artifact control, QA review, and final package management. The package stays at the level of system shape and public-safe examples.
+This package presents the system shape: planning, artifact control, QA review, and final package management. It uses public examples and avoids the source material behind the project.

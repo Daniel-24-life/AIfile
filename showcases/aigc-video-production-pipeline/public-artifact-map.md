@@ -2,11 +2,11 @@
 
 This map explains artifact categories without publishing the private source files.
 
-The purpose is to show what kinds of materials existed around the video, not to publish the materials themselves.
+This map lists the kinds of materials around the video. The source materials themselves stay outside the public package.
 
 ## Artifact Categories
 
-| Category | Public Description |
+| Category | Description |
 | --- | --- |
 | Creative brief | A structured description of the story goal, audience, tone, and constraints. |
 | Shot plan | A table that breaks the story into reviewable production units. |
@@ -16,7 +16,7 @@ The purpose is to show what kinds of materials existed around the video, not to 
 | Review workbooks | Spreadsheet packages used to inspect production units, assets, prompts, and missing fields. |
 | QA previews | Rendered previews used to catch visual or formatting problems before delivery. |
 
-## Public Sample Policy
+## Sample Policy
 
 Public examples should use:
 
@@ -47,4 +47,4 @@ Review Check: composition, continuity, visible defects
 Status: selected for package review
 ```
 
-This kind of example shows the production method without exposing the private creative material.
+This kind of example shows the production method while keeping the private creative material out of the repository.

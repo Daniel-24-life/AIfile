@@ -4,19 +4,19 @@ AIfile is my public shelf for code, skills, articles, project notes, and working
 
 I use it like a small library. Public items are selected, summarized, classified, and tied to a reason they belong here.
 
-## How To Read This Repository
+## Repository Layout
 
-Start with `showcases/` when you want to understand finished work.
+`showcases/` holds finished or presentable work.
 
-Use `shelves/` when you want to inspect the reusable parts behind those works: code, skills, articles, and thinking frameworks.
+`shelves/` holds reusable material behind those works: code, skills, articles, and thinking frameworks.
 
-Use `catalog/` when you want the index, tags, metadata, and librarian notes.
+`catalog/` holds indexes, tags, metadata, and librarian notes.
 
 ## Published Entrances
 
-| Work | Path | What To Read It For |
+| Work | Path | Focus |
 | --- | --- | --- |
-| Quant Agent System Showcase | `showcases/quant-agent-system/` | A sanitized view of an AI agent system: research, execution simulation, governance, audit, and promotion control. |
+| Quant Agent System Showcase | `showcases/quant-agent-system/` | Public notes on an AI agent system: research, execution simulation, governance, audit, and promotion control. |
 | AIGC Video Production Pipeline | `showcases/aigc-video-production-pipeline/` | A public workflow case for managing an AI-generated video project from creative brief to review package. |
 | AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading notes turned into a personal AI usage handbook, concept cards, and reusable workflow rules. |
 | AI Skill Routing Playbook | `shelves/skills/ai-skill-routing-playbook/` | A public decision framework for routing AI-assisted work across writing, review, verification, document handling, and publishing. |
@@ -43,13 +43,13 @@ Every major work should have one clear public entrance:
 showcases/<work-name>/README.md
 ```
 
-That entrance should explain:
+That entrance should cover:
 
 - what the work is
 - who it is for
 - what problem it addresses
 - what parts are public
-- what parts are intentionally withheld or sanitized
+- what stays outside the public version
 - where the supporting code, article, skill, or framework lives
 
 ## Recommended Work Layout
@@ -84,4 +84,4 @@ Each meaningful item should include:
 
 ## Current Status
 
-The repository is now a working public portfolio library. Current materials include a sanitized AI agent system showcase, an AIGC video production workflow case, an AI workflow learning system, and a skill-routing playbook for AI-assisted work.
+The repository is now a working public portfolio library. Current materials include an AI agent system showcase, an AIGC video production workflow case, an AI workflow learning system, and a skill-routing playbook for AI-assisted work.

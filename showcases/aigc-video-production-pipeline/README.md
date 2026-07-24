@@ -1,14 +1,14 @@
 # AIGC Video Production Pipeline
 
-This showcase summarizes a private AIGC video production project as a public-safe workflow case.
+This showcase summarizes a private AIGC video production project as a public workflow case.
 
 The project produced a short AI-generated video and a managed production package around it: shot planning, prompt tracking, visual asset review, document packaging, and submission readiness checks.
 
 In this context, "production package" means the material needed to explain, inspect, and hand off the work. It is separate from the video file itself.
 
-## What This Shows
+## Contents
 
-This public package focuses on:
+This package covers:
 
 - translating a creative brief into a production workflow
 - tracking visual generation work across shots and assets
@@ -16,7 +16,7 @@ This public package focuses on:
 - packaging review materials into documents and spreadsheets
 - using quality checks before final delivery
 
-It stays at the level of workflow design, project organization, and quality control.
+The scope stays at workflow design, project organization, and quality control.
 
 ## Public Model
 
@@ -46,13 +46,13 @@ That included:
 - creating QA previews for visual inspection
 - separating draft materials from release-ready materials
 
-The public version does not present the full creative source material or the complete operating process.
+The full creative source material and complete operating process stay outside this folder.
 
 ## Why This Matters
 
 AIGC video work can become chaotic quickly because small changes in a scene, character, prompt, or document can break consistency elsewhere. The main challenge is keeping story, shots, prompts, visual references, review notes, and submission materials aligned.
 
-This project shows that I can manage AI creative work as a production system, not as a one-off generation attempt.
+This project records how I managed AI creative work as a production system.
 
 ## Public Files
 
@@ -60,8 +60,8 @@ This project shows that I can manage AI creative work as a production system, no
 | --- | --- |
 | `workflow.md` | High-level production workflow. |
 | `quality-checks.md` | Goals and checks used before delivery. |
-| `public-artifact-map.md` | Public-safe artifact categories. |
-| `public-scope.md` | What this public package claims and where it stops. |
+| `public-artifact-map.md` | Artifact categories used in the public version. |
+| `public-scope.md` | Public scope and boundary. |
 | `cards/` | Short concept cards distilled from the project. |
 
 ## Status

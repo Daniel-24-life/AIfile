@@ -1,6 +1,6 @@
 # Redaction Policy
 
-This public package is sanitized on purpose.
+This folder is a public version of private work.
 
 ## Excluded
 
@@ -34,7 +34,7 @@ The following concepts are generalized:
 
 ## Included
 
-The following public-safe materials are included:
+The public package includes:
 
 - architecture narrative
 - governance principles
@@ -55,4 +55,3 @@ Recommended checks:
 - no real results
 - no private dataset names
 - no misleading production claims
-

@@ -2,7 +2,7 @@
 
 The private system was organized around explicit operating planes.
 
-This public version preserves the architecture while removing domain-specific strategy logic.
+This note keeps the architecture visible while leaving domain-specific strategy logic out.
 
 ## Plane Model
 
@@ -83,4 +83,3 @@ The system treats autonomy as a bounded workflow:
 ```text
 intent -> policy check -> run -> artifact -> audit -> classification -> next action
 ```
-

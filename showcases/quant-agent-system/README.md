@@ -4,11 +4,11 @@ This is the public, sanitized version of a private AI agent research system.
 
 The core work is not a single script or model. It is a governed agent system that separates research, execution simulation, orchestration, and governance into explicit operating layers.
 
-## What It Shows
+## Contents
 
 - Designing AI agents with hard operating boundaries.
 - Separating research output from execution authority.
-- Building fail-closed task routing instead of unrestricted automation.
+- Building fail-closed task routing with bounded automation.
 - Using machine-readable policies to validate system behavior.
 - Capturing evidence with manifests, checkpoints, and audit reports.
 - Treating dry-run execution, public data, and real execution evidence as different classes.
@@ -25,7 +25,7 @@ This showcase is written for:
 
 ## Public Scope
 
-This public package focuses on the engineering framework:
+This folder focuses on the engineering framework:
 
 - architecture
 - governance model
@@ -33,7 +33,7 @@ This public package focuses on the engineering framework:
 - dry-run execution pattern
 - sanitized code skeleton
 
-It intentionally does not disclose strategy logic, data, results, or private operating details.
+Strategy logic, data, results, and private operating details stay outside this public package.
 
 ## System Shape
 
@@ -70,7 +70,7 @@ and fail closed when evidence is insufficient?
 | `architecture.md` | System layers and responsibilities. |
 | `governance-model.md` | Fail-closed governance and promotion boundaries. |
 | `evidence-lifecycle.md` | How artifacts become evidence. |
-| `redaction-policy.md` | What was withheld from the public version. |
+| `redaction-policy.md` | What stays out of the public folder. |
 | `public-code-map.md` | Where the sanitized code examples live. |
 
 ## Current Status

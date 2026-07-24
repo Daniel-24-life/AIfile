@@ -116,7 +116,7 @@ Information becomes capability only after it changes how I work.
 
 This folder contains my own framework and reusable concepts.
 
-It intentionally excludes:
+Outside this public folder:
 
 - original article text
 - converted Markdown sources

@@ -2,7 +2,7 @@
 
 The governance model is built around fail-closed decisions.
 
-If evidence is missing, ambiguous, or below the required class, the system blocks readiness claims instead of upgrading them.
+If evidence is missing, ambiguous, or below the required class, the system blocks readiness claims.
 
 ## Core Concepts
 
@@ -36,12 +36,11 @@ The system must not silently:
 - delete failed evidence
 - rewrite history to make results look cleaner
 
-## Public Takeaway
+## Governance Point
 
-The governance layer is the part I want readers to notice:
+The governance layer carries the main engineering point:
 
 ```text
-The agent is useful because it is constrained,
-not because it is allowed to do everything.
+The agent is useful because it is constrained
+and because every action has evidence boundaries.
 ```
-

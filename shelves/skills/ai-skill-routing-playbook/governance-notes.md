@@ -8,7 +8,7 @@ The goal is not to make tool selection complex. The goal is to stop hidden role 
 
 | Failure Mode | What Goes Wrong |
 | --- | --- |
-| Tool-first routing | The tool is chosen because it sounds powerful, not because the task fits. |
+| Tool-first routing | The tool is chosen for appeal; the task fit is unclear. |
 | Role mixing | One skill drafts, reviews, formats, and publishes without checkpoints. |
 | Hidden escalation | A local edit turns into upload, deletion, browser action, or broad refactor. |
 | Weak evidence | The task is accepted because the AI says it is done. |
@@ -40,6 +40,6 @@ Until then, a checklist is usually enough.
 
 ## Public Boundary
 
-This public version stays at the method layer.
+This note stays at the method layer.
 
-It explains how I think about routing, boundaries, evidence, and reuse. It does not try to document the full working environment behind those decisions.
+It explains how I think about routing, boundaries, evidence, and reuse. The full working environment behind those decisions stays outside the repository.
