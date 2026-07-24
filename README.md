@@ -17,6 +17,7 @@ Use `catalog/` when you want the index, tags, metadata, and librarian notes.
 | Work | Path | What To Read It For |
 | --- | --- | --- |
 | Quant Agent System Showcase | `showcases/quant-agent-system/` | A sanitized view of an AI agent system: research, execution simulation, governance, audit, and promotion control. |
+| AIGC Video Production Pipeline | `showcases/aigc-video-production-pipeline/` | A public workflow case for managing an AI-generated video project from creative brief to review package. |
 | AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading notes turned into a personal AI usage handbook, concept cards, and reusable workflow rules. |
 | AI Skill Routing Playbook | `shelves/skills/ai-skill-routing-playbook/` | A public decision framework for routing AI-assisted work across writing, review, verification, document handling, and publishing. |
 
@@ -83,4 +84,4 @@ Each meaningful item should include:
 
 ## Current Status
 
-The repository is now a working public portfolio library. Current materials include a sanitized AI agent system showcase, an AI workflow learning system, and a skill-routing playbook for AI-assisted work.
+The repository is now a working public portfolio library. Current materials include a sanitized AI agent system showcase, an AIGC video production workflow case, an AI workflow learning system, and a skill-routing playbook for AI-assisted work.
