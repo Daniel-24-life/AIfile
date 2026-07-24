@@ -18,6 +18,7 @@ Use `catalog/` when you want the index, tags, metadata, and librarian notes.
 | --- | --- | --- |
 | Quant Agent System Showcase | `showcases/quant-agent-system/` | A sanitized view of an AI agent system: research, execution simulation, governance, audit, and promotion control. |
 | AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading notes turned into a personal AI usage handbook, concept cards, and reusable workflow rules. |
+| AI Skill Routing Playbook | `shelves/skills/ai-skill-routing-playbook/` | A public decision framework for routing AI-assisted work across writing, review, verification, document handling, and publishing. |
 
 ## Shelves
 
@@ -82,4 +83,4 @@ Each meaningful item should include:
 
 ## Current Status
 
-The repository is now a working public portfolio library. Current materials include a sanitized AI agent system showcase and an AI workflow learning system built from reading notes, practice, and handbooks.
+The repository is now a working public portfolio library. Current materials include a sanitized AI agent system showcase, an AI workflow learning system, and a skill-routing playbook for AI-assisted work.
