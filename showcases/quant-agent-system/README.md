@@ -1,5 +1,7 @@
 # AI Agent Research Governance System
 
+![BTC quantitative research system overview](assets/system-overview.png)
+
 This is the public, sanitized version of a private AI agent research system.
 
 The core work is not a single script or model. It is a governed agent system that separates research, execution simulation, orchestration, and governance into explicit operating layers.
