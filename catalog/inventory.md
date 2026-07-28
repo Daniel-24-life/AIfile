@@ -9,6 +9,8 @@
 | AIGC Video Production Pipeline | showcase | `showcases/aigc-video-production-pipeline/` | published | approved_for_public_v1 | Public workflow case for managing an AI-generated video project as a production package. |
 | Creator Discovery Pipeline | showcase | `showcases/creator-discovery-pipeline/` | published | approved_for_public_v1 | Public workflow case for governed creator discovery and lead review. |
 | Creator Discovery Skeleton | code | `shelves/code/creator-discovery-skeleton/` | published | approved_for_public_v1 | Fake-data code skeleton for review gates and deduplication logic. |
+| Mailbox Governance Agent | showcase | `showcases/mailbox-agent-system/` | published | approved_for_public_v1 | Public workflow case for controlled mailbox intake, drafting, approval, and audit records. |
+| Mailbox Governance Skeleton | code | `shelves/code/mailbox-governance-skeleton/` | published | approved_for_public_v1 | Fake-data code skeleton for mailbox action review and duplicate blocking. |
 | AI Workflow Learning System | understanding | `shelves/understanding/ai-workflow-learning-system/` | published | approved_for_public_v1 | Distilled framework for turning AI reading into reusable working capability. |
 | AI 使用手册 | handbook | `shelves/understanding/ai-workflow-learning-system/AI使用手册.md` | published | approved_for_public_v1 | Chinese personal AI usage handbook. |
 | AI Usage Handbook | handbook | `shelves/understanding/ai-workflow-learning-system/AI-Usage-Handbook.md` | published | approved_for_public_v1 | English version of the personal AI usage handbook. |

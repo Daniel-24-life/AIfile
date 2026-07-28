@@ -15,3 +15,4 @@ Each project should include a short README explaining:
 | --- | --- | --- |
 | Agent Governance Skeleton | `agent-governance-skeleton/` | Public skeleton for governed agent routing and evidence checks. |
 | Creator Discovery Skeleton | `creator-discovery-skeleton/` | Public skeleton for creator review gates with fake data only. |
+| Mailbox Governance Skeleton | `mailbox-governance-skeleton/` | Public skeleton for mailbox action review and duplicate blocking. |

@@ -19,6 +19,7 @@ I use it like a small library. Public items are selected, summarized, classified
 | Quant Agent System Showcase | `showcases/quant-agent-system/` | Public notes on an AI agent system: research, execution simulation, governance, audit, and promotion control. |
 | AIGC Video Production Pipeline | `showcases/aigc-video-production-pipeline/` | A public workflow case for managing an AI-generated video project from creative brief to review package. |
 | Creator Discovery Pipeline | `showcases/creator-discovery-pipeline/` | Public workflow case for turning creator discovery into a governed lead review pipeline. |
+| Mailbox Governance Agent | `showcases/mailbox-agent-system/` | Public workflow case for message classification, draft control, approval gates, duplicate blocking, and audit records. |
 | AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading notes turned into a personal AI usage handbook, concept cards, and reusable workflow rules. |
 | AI Skill Routing Playbook | `shelves/skills/ai-skill-routing-playbook/` | A public decision framework for routing AI-assisted work across writing, review, verification, document handling, and publishing. |
 
@@ -85,4 +86,4 @@ Each meaningful item should include:
 
 ## Current Status
 
-The repository is now a working public portfolio library. Current materials include AI agent governance, AIGC production workflow, creator discovery governance, AI workflow learning, and skill routing for AI-assisted work.
+The repository is now a working public portfolio library. Current materials include AI agent governance, AIGC production workflow, creator discovery governance, mailbox governance, AI workflow learning, and skill routing for AI-assisted work.

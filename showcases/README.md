@@ -11,3 +11,4 @@ Only move items here when they are clear enough for another person to understand
 | Quant Agent System Showcase | `quant-agent-system/` | Public view of an AI agent system with governance, evidence, and execution boundaries. |
 | AIGC Video Production Pipeline | `aigc-video-production-pipeline/` | Public workflow case for managing an AI-generated video project as a production package. |
 | Creator Discovery Pipeline | `creator-discovery-pipeline/` | Public workflow case for creator lead discovery, review gates, and handoff control. |
+| Mailbox Governance Agent | `mailbox-agent-system/` | Public workflow case for mailbox intake, draft control, approval gates, and audit records. |
