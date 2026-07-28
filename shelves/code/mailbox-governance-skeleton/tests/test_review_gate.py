@@ -6,11 +6,11 @@ from mailbox_review.review_gate import MailAction, review_action
 
 
 class ReviewGateTests(unittest.TestCase):
-    def test_local_draft_is_ready(self) -> None:
+    def test_local_draft_is_allowed(self) -> None:
         decision = review_action(
             MailAction("act_demo_1", "draft_reply", "not_required")
         )
-        self.assertEqual("ready", decision.state)
+        self.assertEqual("allowed", decision.state)
 
     def test_pending_send_needs_review(self) -> None:
         decision = review_action(
@@ -19,7 +19,7 @@ class ReviewGateTests(unittest.TestCase):
         self.assertEqual("needs_review", decision.state)
         self.assertIn("external_action_requires_approval", decision.reason_codes)
 
-    def test_approved_send_is_ready(self) -> None:
+    def test_approved_send_is_allowed(self) -> None:
         decision = review_action(
             MailAction(
                 "act_demo_3",
@@ -28,7 +28,7 @@ class ReviewGateTests(unittest.TestCase):
                 approval_ref="approval_demo_1",
             )
         )
-        self.assertEqual("ready", decision.state)
+        self.assertEqual("allowed", decision.state)
 
     def test_approved_send_without_reference_needs_review(self) -> None:
         decision = review_action(
@@ -68,6 +68,13 @@ class ReviewGateTests(unittest.TestCase):
         )
         self.assertEqual("blocked", decision.state)
         self.assertIn("unknown_action_type", decision.reason_codes)
+
+    def test_local_action_with_pending_approval_is_blocked(self) -> None:
+        decision = review_action(
+            MailAction("act_demo_8", "classify", "pending")
+        )
+        self.assertEqual("blocked", decision.state)
+        self.assertIn("inconsistent_approval_state", decision.reason_codes)
 
 
 if __name__ == "__main__":

@@ -5,14 +5,16 @@ This folder contains a small policy example extracted from a larger private mail
 It reviews proposed actions and returns one of three decisions:
 
 ```text
-ready
+allowed
 needs_review
 blocked
 ```
 
+`allowed` means the metadata passed this policy gate. It does not mean the action ran or a message was delivered.
+
 The skeleton has no mailbox connection, transport, provider configuration, message parser, scheduler, template engine, contact list, or delivery logic.
 
-Inputs are normalized action metadata. The example does not inspect message bodies or validate a private approval system.
+Inputs are normalized action metadata. The example checks an explicit raw-content flag and the presence of an approval reference. It does not inspect message bodies or validate approval authenticity.
 
 ## Run tests
 

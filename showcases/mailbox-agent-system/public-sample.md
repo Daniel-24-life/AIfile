@@ -7,14 +7,14 @@ All records below are synthetic.
 | Message ref | Direction | Category | Draft state | Next action |
 | --- | --- | --- | --- | --- |
 | `msg_demo_101` | inbound | scheduling | drafted | needs review |
-| `msg_demo_102` | inbound | informational | not needed | recorded |
+| `msg_demo_102` | inbound | informational | not needed | none |
 | `msg_demo_103` | inbound | financial | held | needs review |
 
 ## Action review table
 
 | Action ID | Action type | Approval state | Approval ref | Duplicate | Decision |
 | --- | --- | --- | --- | --- | --- |
-| `act_demo_201` | `draft_reply` | `not_required` | none | false | `ready` |
+| `act_demo_201` | `draft_reply` | `not_required` | none | false | `allowed` |
 | `act_demo_202` | `send_reply` | `pending` | none | false | `needs_review` |
 | `act_demo_203` | `move_message` | `approved` | `approval_demo_2` | true | `blocked` |
 

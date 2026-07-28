@@ -45,16 +45,23 @@ def review_action(action: MailAction) -> ReviewDecision:
     if action.approval_state == "rejected":
         return ReviewDecision("blocked", ("action_rejected",))
 
-    if action.action_type in EXTERNAL_ACTIONS:
-        if action.approval_state != "approved":
+    if action.action_type in LOCAL_ACTIONS:
+        if action.approval_state != "not_required":
             return ReviewDecision(
-                "needs_review",
-                ("external_action_requires_approval",),
+                "blocked",
+                ("inconsistent_approval_state",),
             )
-        if not action.approval_ref.strip():
-            return ReviewDecision(
-                "needs_review",
-                ("missing_approval_reference",),
-            )
+        return ReviewDecision("allowed", ())
 
-    return ReviewDecision("ready", ())
+    if action.approval_state != "approved":
+        return ReviewDecision(
+            "needs_review",
+            ("external_action_requires_approval",),
+        )
+    if not action.approval_ref.strip():
+        return ReviewDecision(
+            "needs_review",
+            ("missing_approval_reference",),
+        )
+
+    return ReviewDecision("allowed", ())

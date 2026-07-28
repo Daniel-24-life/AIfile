@@ -13,7 +13,7 @@ flowchart LR
     C --> D["Draft Queue"]
     D --> E["Action Policy"]
     E --> F["Approval Gate"]
-    F --> G["Local Action Record"]
+    F --> G["Policy Decision Record"]
 ```
 
 ## My work
@@ -28,6 +28,8 @@ I organized the workflow around a few operating rules:
 - audit records avoid message bodies and contact details
 
 The private system also explored account health, scheduling, and transport behavior. Those details are outside this public package.
+
+This showcase outlines the broader workflow. The public code covers only the action-review gate.
 
 ## Public package
 
