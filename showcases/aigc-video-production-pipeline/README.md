@@ -1,22 +1,16 @@
 # AIGC Video Production Pipeline
 
-This showcase summarizes a private AIGC video production project as a public workflow case.
-
-The project produced a short AI-generated video and a managed production package around it: shot planning, prompt tracking, visual asset review, document packaging, and submission readiness checks.
+I used this project to turn a short AI-generated video into a managed production job. Alongside the video, I kept shot plans, prompt records, asset reviews, delivery documents, and final checks.
 
 In this context, "production package" means the material needed to explain, inspect, and hand off the work. It is separate from the video file itself.
 
-## Contents
-
-This package covers:
+## Work Included
 
 - translating a creative brief into a production workflow
 - tracking visual generation work across shots and assets
 - turning prompts and review notes into structured artifacts
 - packaging review materials into documents and spreadsheets
 - using quality checks before final delivery
-
-The scope stays at workflow design, project organization, and quality control.
 
 ## Public Model
 
@@ -32,13 +26,11 @@ flowchart LR
 
 ## My Role
 
-My work centered on production systemization. I organized the work around the question:
+I designed the production structure and kept the moving parts aligned around one question:
 
 ```text
 How do we keep story, visual assets, prompts, documents, and final checks aligned while the project keeps changing?
 ```
-
-That included:
 
 - structuring the project into repeatable stages
 - maintaining prompt and shot documentation
@@ -48,24 +40,21 @@ That included:
 
 The full creative source material and complete operating process stay outside this folder.
 
-## Why This Matters
+## Production Problem
 
-AIGC video work can become chaotic quickly because small changes in a scene, character, prompt, or document can break consistency elsewhere. The main challenge is keeping story, shots, prompts, visual references, review notes, and submission materials aligned.
-
-This project records how I managed AI creative work as a production system.
+A change to one scene can affect the prompt record, selected asset, review notes, preview, and delivery document. I tracked those dependencies in one production package.
 
 ## Public Files
 
 | File | Purpose |
 | --- | --- |
-| `workflow.md` | High-level production workflow. |
-| `quality-checks.md` | Goals and checks used before delivery. |
-| `public-artifact-map.md` | Artifact categories used in the public version. |
-| `public-scope.md` | Public scope and boundary. |
-| `cards/` | Short concept cards distilled from the project. |
+| [Workflow](workflow.md) | High-level production workflow. |
+| [Quality Checks](quality-checks.md) | Goals and checks used before delivery. |
+| [Synthetic Shot Review](shot-review-sample.md) | A fake three-unit review and package decision. |
+| [Artifact Map](public-artifact-map.md) | Artifact categories used in the public version. |
+| [Scope](public-scope.md) | Public scope and boundary. |
+| [Concept Cards](cards/) | Short concepts distilled from the project. |
 
 ## Status
 
-Status: `local_review_v1`
-
-This is a public draft for review before upload.
+Status: `approved_for_public_v1`

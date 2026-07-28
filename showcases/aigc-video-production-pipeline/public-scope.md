@@ -1,32 +1,18 @@
-# Public Scope
+# Scope
 
-This package presents an AIGC video project as a production workflow case.
+This file describes the production workflow behind an AIGC video project.
 
-It documents how the work was organized. Original creative files stay outside this public package.
-
-## Included Scope
-
-The public version covers:
+## Included
 
 - workflow structure
 - artifact categories
 - review gates
 - quality review flow
 - project packaging logic
-- lessons for future AIGC production work
-
-## Claim
-
-```text
-I can manage an AIGC video project as a structured production pipeline.
-```
+- a synthetic shot review package
 
 ## Boundary
 
-```text
-the full creative source package or a reproducible production recipe
-```
+Original prompts, source assets, full shot tables, submission materials, private automation, and a reproducible production recipe stay outside this package.
 
-## Public Version
-
-This package presents the system shape: planning, artifact control, QA review, and final package management. It uses public examples and avoids the source material behind the project.
+The reconstructed examples cover planning, artifact control, QA review, and final package management.

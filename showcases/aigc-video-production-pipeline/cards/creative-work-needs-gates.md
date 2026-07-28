@@ -1,14 +1,8 @@
 # Concept Card: Creative Work Needs Gates
 
-## Insight
+A strong-looking image or clip may still fail the story, continuity, delivery format, or handoff requirement. I use checkpoints before an asset moves downstream.
 
-AI creative work needs checkpoints because early outputs can look finished.
-
-## Meaning
-
-A strong-looking image or clip may still fail the story, continuity, delivery format, or handoff requirement.
-
-## Rule
+## Working Rule
 
 Use gates before moving downstream:
 
@@ -17,7 +11,3 @@ Use gates before moving downstream:
 - asset gate
 - package gate
 - release gate
-
-## Reuse
-
-Use this card when managing any AI creative pipeline with multiple assets, revisions, and final delivery constraints.

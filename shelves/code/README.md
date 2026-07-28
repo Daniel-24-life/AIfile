@@ -1,18 +1,16 @@
 # Code Shelf
 
-For code, scripts, prototypes, demos, and engineering artifacts.
+Sanitized code examples for policy checks, review states, and synthetic workflows.
 
-Each project should include a short README explaining:
-
-- what it does
-- how to run it
-- what files matter
-- whether it is experimental or presentable
-
-## Published Or Reviewable
-
-| Code Package | Path | Purpose |
+| Code package | Focus | Tests |
 | --- | --- | --- |
-| Agent Governance Skeleton | `agent-governance-skeleton/` | Public skeleton for governed agent routing and evidence checks. |
-| Creator Discovery Skeleton | `creator-discovery-skeleton/` | Public skeleton for creator review gates with fake data only. |
-| Mailbox Governance Skeleton | `mailbox-governance-skeleton/` | Public skeleton for mailbox action review and duplicate blocking. |
+| [Agent Governance Skeleton](agent-governance-skeleton/) | Plane routing, evidence classes, and dry-run boundaries. | pytest |
+| [Creator Discovery Skeleton](creator-discovery-skeleton/) | Field validation, review gates, and duplicate exclusion. | pytest |
+| [Daily Brief Skeleton](daily-brief-skeleton/) | Source classes, citation coverage, and weak-signal review. | pytest |
+| [Mailbox Governance Skeleton](mailbox-governance-skeleton/) | Action policy, approval states, and recorded-ID checks. | unittest |
+
+Run all packages from the repository root:
+
+```powershell
+python scripts/verify_public_packages.py
+```

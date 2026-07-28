@@ -16,12 +16,10 @@ This package covers three parts of my AI operating method:
 - boundary control between generation, review, verification, and formatting
 - lightweight governance for reusable workflows
 
-It is a decision framework for public review.
-
 ## Core Rule
 
 ```text
-Choose by task type, not by tool excitement.
+Name the task before choosing the skill.
 ```
 
 A skill should be selected because the task has a specific shape. A writing task, a review task, a file conversion task, and a publishing task need different entry points. Mixing them too early makes the AI system harder to inspect.
@@ -45,7 +43,7 @@ Before using a skill, I ask:
 1. What is the main deliverable?
 2. Is the task about creation, review, verification, conversion, or publishing?
 3. What should this skill not do?
-4. What evidence proves the task is done?
+4. What will I check before calling the task done?
 
 These four questions keep routing from spreading too loosely. They also make route choices easier to explain.
 
@@ -57,27 +55,26 @@ These four questions keep routing from spreading too loosely. They also make rou
 | Review | What risk or quality issue must be checked? | Do not let review tools silently rewrite the work. |
 | Research | What question needs evidence? | Separate search, synthesis, and final writing. |
 | Document Work | What file needs to be created or inspected? | Keep formatting work separate from content judgment. |
-| Publishing | What is allowed to be released publicly? | Confirm scope, audience, and destination before upload. |
+| Publishing | What is allowed to be released publicly? | Confirm scope, audience, and destination before release. |
 | Maintenance | What needs to stay consistent over time? | Do not turn a one-time cleanup into a broad refactor. |
 
-## Why It Matters
+## Working Position
 
-The skill itself is not the capability. The capability is knowing when to use it, where it stops, and how to verify the result.
-
-That is the difference between collecting AI tools and operating an AI workflow.
+Collecting tools is easy. The useful skill is choosing the right one, setting its stop line, and checking the result.
 
 ## Public Files
 
 | File | Purpose |
 | --- | --- |
-| `routing-principles.md` | The routing rules I use before selecting a skill. |
-| `writing-skill-boundaries.md` | How I separate drafting, editing, review, and style cleanup. |
-| `governance-notes.md` | How I treat reusable workflows and tool conflicts. |
-| `public-scope.md` | Public scope and boundary. |
-| `cards/` | Short reusable concept cards. |
+| [Routing Principles](routing-principles.md) | The routing rules I use before selecting a skill. |
+| [Writing Boundaries](writing-skill-boundaries.md) | How I separate drafting, editing, review, and style cleanup. |
+| [Governance Notes](governance-notes.md) | How I treat reusable workflows and tool conflicts. |
+| [Worked Routing Example](worked-routing-example.md) | A sanitized repository publishing route. |
+| [Scope](public-scope.md) | Public scope and boundary. |
+| [Concept Cards](cards/) | Short reusable concept cards. |
 
 ## Status
 
-Status: `local_review_v1`
+Status: `approved_for_public_v1`
 
-This is a public draft for review before upload.
+This is the public method layer of a larger private working environment.

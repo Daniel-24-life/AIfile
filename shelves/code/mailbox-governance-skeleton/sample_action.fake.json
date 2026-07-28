@@ -3,6 +3,5 @@
   "action_type": "send_reply",
   "approval_state": "pending",
   "approval_ref": "",
-  "duplicate": false,
   "contains_raw_content": false
 }

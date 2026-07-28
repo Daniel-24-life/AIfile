@@ -1,0 +1,50 @@
+{
+  "sample": true,
+  "records": [
+    {
+      "item_id": "brief_demo_101",
+      "source_classes": [
+        "official",
+        "media"
+      ],
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "decision": {
+        "state": "ready",
+        "reasons": [
+          "review gates passed"
+        ]
+      }
+    },
+    {
+      "item_id": "brief_demo_102",
+      "source_classes": [
+        "social_signal"
+      ],
+      "source_ids": [
+        "S3"
+      ],
+      "decision": {
+        "state": "needs_review",
+        "reasons": [
+          "weak source class needs review"
+        ]
+      }
+    },
+    {
+      "item_id": "brief_demo_103",
+      "source_classes": [
+        "official"
+      ],
+      "source_ids": [],
+      "decision": {
+        "state": "blocked",
+        "reasons": [
+          "missing source_ids"
+        ]
+      }
+    }
+  ]
+}

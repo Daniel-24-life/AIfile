@@ -1,20 +1,14 @@
 # Creator Discovery Pipeline
 
-This showcase summarizes a private creator and KOL discovery project as a public workflow case.
+I built this workflow to turn scattered public creator signals into a reviewable handoff table. It covers discovery, profile normalization, deduplication, eligibility checks, contact status, and human review.
 
-The work turned scattered public signals into a controlled review package: lead discovery, profile normalization, deduplication, eligibility checks, contact availability, human review, and final handoff tables.
-
-## Contents
-
-This folder covers:
+## Work Included
 
 - converting a broad growth task into a data pipeline
 - separating discovery, enrichment, scoring, review, and handoff
 - using exclusion lists before collecting new candidates
 - keeping uncertain fields visible while guesses stay out of the table
-- protecting private names, accounts, contact data, platform details, and full operating recipes
-
-The scope stays at system design, quality control, and public examples.
+- excluding private names, accounts, contact data, platform details, and full operating recipes
 
 ## System Model
 
@@ -31,10 +25,6 @@ flowchart LR
 
 ## My Role
 
-My work centered on turning creator discovery into a controlled operating loop.
-
-That included:
-
 - defining the intake brief and output fields
 - designing deduplication and exclusion rules
 - separating raw candidates from reviewed candidates
@@ -42,26 +32,23 @@ That included:
 - packaging results into workbook-style handoff artifacts
 - keeping sensitive inputs and original outputs out of the public version
 
-## Why This Matters
+## Operational Problem
 
 Creator discovery can look simple from the outside: search, copy names, make a sheet.
 
-The harder part is governance. A useful lead pipeline needs repeatable definitions, controlled exclusions, traceable decisions, and human checkpoints before anything becomes a business-facing list.
-
-This project records that operating structure.
+A usable lead table needs fixed definitions, exclusion rules, traceable decisions, and a human check before handoff.
 
 ## Public Files
 
 | File | Purpose |
 | --- | --- |
-| `architecture.md` | Pipeline layers and responsibilities. |
-| `evidence-and-review.md` | Review gates, evidence classes, and acceptance states. |
-| `redaction-policy.md` | What stays out of the public folder. |
-| `public-sample.md` | Fake rows and public field examples. |
-| `../../shelves/code/creator-discovery-skeleton/` | Small governance skeleton with fake data only. |
+| [Architecture](architecture.md) | Pipeline layers and responsibilities. |
+| [Evidence and Review](evidence-and-review.md) | Review gates, evidence classes, and acceptance states. |
+| [Synthetic Review Record](review-sample.fake.json) | Approved, review-needed, and blocked fake records. |
+| [Sample Table](public-sample.md) | Fake rows and public field examples. |
+| [Code Skeleton](../../shelves/code/creator-discovery-skeleton/) | Small governance skeleton with fake data only. |
+| [Redaction Policy](redaction-policy.md) | What stays out of the public folder. |
 
 ## Status
 
 Status: `approved_for_public_v1`
-
-This is a public adaptation, not the original private workspace.

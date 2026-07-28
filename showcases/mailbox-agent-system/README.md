@@ -1,6 +1,6 @@
 # Mailbox Governance Agent
 
-This public case is based on a private mailbox workflow that handles incoming messages, draft preparation, action review, duplicate protection, and local audit records.
+I built the private workflow to handle incoming messages, prepare drafts, review proposed actions, block repeated action IDs, and keep local decision records.
 
 The original work connected mailbox operations with an agent policy layer. Reading and classification were separated from actions that change mailbox state or contact another person.
 
@@ -16,7 +16,7 @@ flowchart LR
     F --> G["Policy Decision Record"]
 ```
 
-## My work
+## My Work
 
 I organized the workflow around a few operating rules:
 
@@ -27,22 +27,19 @@ I organized the workflow around a few operating rules:
 - duplicate actions are blocked before execution
 - audit records avoid message bodies and contact details
 
-The private system also explored account health, scheduling, and transport behavior. Those details are outside this public package.
-
-This showcase outlines the broader workflow. The public code covers only the action-review gate.
+The package stops at the action-review gate. Account health, scheduling, transport behavior, message content, and provider access stay private.
 
 ## Public package
 
 | File | Contents |
 | --- | --- |
-| `architecture.md` | Public system layers and control points. |
-| `evidence-and-review.md` | Review gates and action states. |
-| `redaction-policy.md` | Materials excluded from the public version. |
-| `public-sample.md` | Synthetic message and action records. |
-| `../../shelves/code/mailbox-governance-skeleton/` | A small action-review skeleton with fake data. |
+| [Architecture](architecture.md) | Public system layers and control points. |
+| [Evidence and Review](evidence-and-review.md) | Review gates and action states. |
+| [Synthetic Decision Record](decision-sample.fake.json) | Allowed, review-needed, and duplicate-blocked fake actions. |
+| [Sample Tables](public-sample.md) | Synthetic message and action records. |
+| [Code Skeleton](../../shelves/code/mailbox-governance-skeleton/) | A small action-review skeleton with fake data. |
+| [Redaction Policy](redaction-policy.md) | Materials excluded from the public version. |
 
 ## Status
 
 Status: `approved_for_public_v1`
-
-This is a public adaptation, not the original private workspace.

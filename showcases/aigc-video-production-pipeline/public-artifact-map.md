@@ -16,7 +16,7 @@ This map lists the kinds of materials around the video. The source materials the
 | Review workbooks | Spreadsheet packages used to inspect production units, assets, prompts, and missing fields. |
 | QA previews | Rendered previews used to catch visual or formatting problems before delivery. |
 
-## Sample Policy
+## Synthetic Examples
 
 Public examples should use:
 

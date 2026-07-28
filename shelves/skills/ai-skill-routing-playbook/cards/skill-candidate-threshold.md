@@ -1,14 +1,8 @@
 # Concept Card: Skill Candidate Threshold
 
-## Insight
+I keep a repeated workflow as a checklist until its inputs, outputs, failure modes, and checks are predictable. Turning a vague task into a skill too early only freezes the confusion.
 
-A repeated workflow should become a skill only after its shape is stable.
-
-## Meaning
-
-Turning a vague task into a skill too early freezes confusion. A checklist is better until the inputs, outputs, and checks are predictable.
-
-## Rule
+## Promotion Check
 
 Consider a skill when:
 
@@ -18,7 +12,3 @@ Consider a skill when:
 - the failure modes are known
 - verification is clear
 - the process can be explained briefly
-
-## Reuse
-
-Use this card when deciding whether to create a prompt template, checklist, automation, or Codex skill.

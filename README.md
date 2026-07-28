@@ -1,89 +1,58 @@
 # AIfile
 
-AIfile is my public shelf for code, skills, articles, project notes, and working ideas.
+AIfile is where I keep the parts of my AI work that can be shown in public.
 
-I use it like a small library. Public items are selected, summarized, classified, and tied to a reason they belong here.
+I do not upload the original workspaces. Each project is rebuilt around four things I can disclose safely: the system shape, the rules I used, a synthetic evidence record, and a small piece of code when the code can stand on its own.
+
+## Project Map
+
+| Project | Operating loop | Evidence artifact | Supporting material |
+| --- | --- | --- | --- |
+| [Quant Agent System](showcases/quant-agent-system/) | Research task -> governed evidence decision. | [Synthetic governance record](showcases/quant-agent-system/evidence-sample.fake.json) | [Agent governance skeleton](shelves/code/agent-governance-skeleton/) |
+| [AIGC Video Production Pipeline](showcases/aigc-video-production-pipeline/) | Creative brief -> review-ready production package. | [Synthetic shot review](showcases/aigc-video-production-pipeline/shot-review-sample.md) | [Workflow and QA](showcases/aigc-video-production-pipeline/workflow.md) |
+| [Creator Discovery Pipeline](showcases/creator-discovery-pipeline/) | Public signals -> reviewed handoff table. | [Synthetic review record](showcases/creator-discovery-pipeline/review-sample.fake.json) | [Creator review skeleton](shelves/code/creator-discovery-skeleton/) |
+| [Daily Brief Agent](showcases/daily-brief-agent/) | Source pool -> citation-reviewed brief. | [Synthetic brief review](showcases/daily-brief-agent/brief-review-sample.fake.json) | [Daily brief skeleton](shelves/code/daily-brief-skeleton/) |
+| [Mailbox Governance Agent](showcases/mailbox-agent-system/) | Proposed mailbox action -> policy decision record. | [Synthetic decision record](showcases/mailbox-agent-system/decision-sample.fake.json) | [Mailbox governance skeleton](shelves/code/mailbox-governance-skeleton/) |
+| [AI Skill Routing Playbook](shelves/skills/ai-skill-routing-playbook/) | Task intent -> bounded and verified route. | [Worked routing example](shelves/skills/ai-skill-routing-playbook/worked-routing-example.md) | Method playbook |
+| [AI Workflow Learning System](shelves/understanding/ai-workflow-learning-system/) | Reading insight -> tested workflow rule. | [Application record](shelves/understanding/ai-workflow-learning-system/application-record.md) | [Chinese handbook](shelves/understanding/ai-workflow-learning-system/AI使用手册.md) / [English handbook](shelves/understanding/ai-workflow-learning-system/AI-Usage-Handbook.md) |
+
+## Operating Pattern
+
+```text
+problem definition
+  -> system model
+  -> bounded execution
+  -> evidence artifact
+  -> human review
+  -> release decision
+  -> reusable rule
+```
+
+The public code concentrates on boundaries and review gates. It is intentionally smaller than the private systems and uses synthetic inputs.
+
+## Verification
+
+Install the test dependency and run every public code package from the repository root:
+
+```powershell
+python -m pip install -r requirements-dev.txt
+python scripts/verify_public_packages.py
+```
+
+The verification entry runs each package in its own working directory and validates every `*.fake.json` artifact. GitHub Actions runs the same command on pushes and pull requests.
 
 ## Repository Layout
 
-`showcases/` holds finished or presentable work.
-
-`shelves/` holds reusable material behind those works: code, skills, articles, and thinking frameworks.
-
-`catalog/` holds indexes, tags, metadata, and librarian notes.
-
-## Published Entrances
-
-| Work | Path | Focus |
-| --- | --- | --- |
-| Quant Agent System Showcase | `showcases/quant-agent-system/` | Public notes on an AI agent system: research, execution simulation, governance, audit, and promotion control. |
-| AIGC Video Production Pipeline | `showcases/aigc-video-production-pipeline/` | A public workflow case for managing an AI-generated video project from creative brief to review package. |
-| Creator Discovery Pipeline | `showcases/creator-discovery-pipeline/` | Public workflow case for turning creator discovery into a governed lead review pipeline. |
-| Mailbox Governance Agent | `showcases/mailbox-agent-system/` | Public workflow case for message classification, draft control, approval gates, duplicate blocking, and audit records. |
-| AI Workflow Learning System | `shelves/understanding/ai-workflow-learning-system/` | Reading notes turned into a personal AI usage handbook, concept cards, and reusable workflow rules. |
-| AI Skill Routing Playbook | `shelves/skills/ai-skill-routing-playbook/` | A public decision framework for routing AI-assisted work across writing, review, verification, document handling, and publishing. |
-
-## Shelves
-
-| Path | Use |
+| Path | Contents |
 | --- | --- |
-| `showcases/` | Main entry points for finished or presentable works. |
-| `catalog/` | Indexes, tags, metadata, and librarian notes. |
-| `inbox/` | Temporary landing area for unsorted items. |
-| `shelves/code/` | Code, scripts, prototypes, and engineering results. |
-| `shelves/skills/` | Codex skills, prompts, agent workflows, reusable procedures. |
-| `shelves/articles/` | Essays, article drafts, public writing, polished notes. |
-| `shelves/understanding/` | Concept maps, reading outcomes, usage handbooks, and personal knowledge structures. |
+| [showcases/](showcases/) | Project narratives, architecture, boundaries, and evidence samples. |
+| [shelves/code/](shelves/code/) | Sanitized code skeletons and tests. |
+| [shelves/skills/](shelves/skills/) | AI routing and workflow playbooks. |
+| [shelves/understanding/](shelves/understanding/) | Handbooks, application records, and concept cards. |
+| [catalog/](catalog/) | Portfolio inventory and classification. |
 
-## Portfolio Rule
+## Publication Boundary
 
-Do not upload everything by default. Select, summarize, classify, then publish.
+Public packages may include system structure, generalized rules, synthetic records, tests, and reconstructed examples.
 
-Every major work should have one clear public entrance:
-
-```text
-showcases/<work-name>/README.md
-```
-
-That entrance should cover:
-
-- what the work is
-- who it is for
-- what problem it addresses
-- what parts are public
-- what stays outside the public version
-- where the supporting code, article, skill, or framework lives
-
-## Recommended Work Layout
-
-Use this pattern for substantial works:
-
-```text
-showcases/<work-name>/
-  README.md
-  architecture.md
-  public-notes.md
-
-shelves/code/<work-name-or-component>/
-shelves/articles/<related-writeup>.md
-shelves/skills/<related-workflow>/
-shelves/understanding/<related-framework>.md
-```
-
-The showcase is the front door. The shelves hold the materials behind it.
-
-## Item Metadata
-
-Each meaningful item should include:
-
-- title
-- type
-- source or origin
-- status
-- short abstract
-- tags
-- next action
-
-## Current Status
-
-The repository is now a working public portfolio library. Current materials include AI agent governance, AIGC production workflow, creator discovery governance, mailbox governance, AI workflow learning, and skill routing for AI-assisted work.
+They exclude credentials, accounts, real contacts, private source lists, strategy formulas, production prompts, raw logs, real transaction or campaign data, complete automation chains, and private business relationships.

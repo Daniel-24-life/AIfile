@@ -4,15 +4,15 @@ Subtitle: Turning AI reading into working capability
 
 ### 1. Why I Wrote This Handbook
 
-This handbook records how I now use AI after reading materials about AI engineering, agents, harness design, loop engineering, and AI-native coding.
+I wrote this after a period of reading about AI engineering, agents, harness design, loop engineering, and AI-native coding. I wanted the reading to change how I handled the next task, not end as another folder of notes.
 
-The practical question behind it is:
+The question I kept coming back to was:
 
 ```text
 After reading these AI materials, what will I do differently in my next real task?
 ```
 
-My current answer: I need to place AI inside a clearer working system. That system includes goals, boundaries, context, tools, state, acceptance, and reflection. The output is one part of the chain. The quality depends on the whole workflow.
+The reading changed how I start work. Before asking for an output, I now define the goal, boundaries, context, tools, state, and acceptance check. I also decide what should be kept after the task.
 
 ### 2. Core Formula
 
@@ -197,11 +197,11 @@ This gives each reading note somewhere to go after I finish it.
 | Reflection skill | Failures become reusable rules. |
 | System thinking | Repeated tasks gradually gain templates, checklists, state files, and Skill candidates. |
 
-### 12. Next Step
+### 12. Current Application
 
-This handbook should be tested in real tasks.
+This handbook now guides bounded repository work, code review, document production, and public publishing.
 
-I will use it on:
+Current applications include:
 
 1. Material digestion: turn a long article into framework, insight, and action.
 2. Work output: turn a topic into an article, plan, or portfolio note.
@@ -212,4 +212,3 @@ After each task, I ask:
 ```text
 Did this produce a reusable rule, template, checklist, or Skill candidate?
 ```
-

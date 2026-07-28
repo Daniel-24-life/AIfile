@@ -22,6 +22,8 @@ Inputs are normalized action metadata. The example checks an explicit raw-conten
 python -m unittest discover -s tests -v
 ```
 
+From the repository root, run `python scripts/verify_public_packages.py` to verify every package.
+
 ## Files
 
 | File | Contents |

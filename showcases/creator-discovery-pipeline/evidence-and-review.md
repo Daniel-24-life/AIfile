@@ -1,4 +1,4 @@
-# Evidence And Review
+# Evidence and Review
 
 The project used review gates to separate raw collection from usable handoff material.
 
@@ -29,7 +29,7 @@ The project used review gates to separate raw collection from usable handoff mat
 approved
 review_needed
 excluded
-source_only
+blocked
 ```
 
 ## Quality Rules
@@ -41,7 +41,7 @@ source_only
 - Final handoff tables separate approved records from review-needed records.
 - Risk notes explain missing fields, conflicts, or uncertainty.
 
-## Public Sample Policy
+## Synthetic Records
 
 Public samples use fake names, fake links, fake contact fields, fake segment labels, and simplified status values.
 

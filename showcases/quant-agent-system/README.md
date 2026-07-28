@@ -1,29 +1,21 @@
-# AI Agent Research Governance System
+# BTC Quant Agent System
 
 ![BTC quantitative research system overview](assets/system-overview.png)
 
-This is the public, sanitized version of a private AI agent research system.
+The overview is a presentation graphic. The workspace counts describe one private snapshot; they are not trading results.
 
-The core work is not a single script or model. It is a governed agent system that separates research, execution simulation, orchestration, and governance into explicit operating layers.
+I built the private system for BTC quantitative research. This folder keeps the engineering structure and removes strategy logic, data, results, and execution access.
 
-## Contents
+The system separates research, execution simulation, orchestration, and governance. No single agent receives authority over the whole chain.
 
-- Designing AI agents with hard operating boundaries.
-- Separating research output from execution authority.
-- Building fail-closed task routing with bounded automation.
-- Using machine-readable policies to validate system behavior.
-- Capturing evidence with manifests, checkpoints, and audit reports.
-- Treating dry-run execution, public data, and real execution evidence as different classes.
-- Building a research system that can improve its process without silently promoting itself.
+## Work Included
 
-## Audience
-
-This showcase is written for:
-
-- technical interviewers
-- investors
-- potential collaborators
-- AI engineering peers
+- plane-based task routing
+- separate research and execution authority
+- machine-readable policy checks
+- evidence classes for public data, dry runs, and audited work
+- manifests, checkpoints, and decision records
+- human approval for protected changes
 
 ## Public Scope
 
@@ -53,15 +45,13 @@ orchestrator
   -> routes one authorized task at a time under plane policy
 ```
 
-## Why This Matters
+## Engineering Question
 
-Many AI agent demos focus on autonomy. I cared more about constrained autonomy.
-
-The important engineering question is not "can the agent act?" but:
+The system has to answer three questions before an action moves forward:
 
 ```text
 Can the agent know what it is allowed to do,
-prove what it did,
+record what it did,
 and fail closed when evidence is insufficient?
 ```
 
@@ -69,14 +59,13 @@ and fail closed when evidence is insufficient?
 
 | File | Purpose |
 | --- | --- |
-| `architecture.md` | System layers and responsibilities. |
-| `governance-model.md` | Fail-closed governance and promotion boundaries. |
-| `evidence-lifecycle.md` | How artifacts become evidence. |
-| `redaction-policy.md` | What stays out of the public folder. |
-| `public-code-map.md` | Where the sanitized code examples live. |
+| [Architecture](architecture.md) | System layers and responsibilities. |
+| [Governance Model](governance-model.md) | Fail-closed governance and promotion boundaries. |
+| [Evidence Lifecycle](evidence-lifecycle.md) | How artifacts become evidence. |
+| [Synthetic Evidence Record](evidence-sample.fake.json) | A fake route and claim-classification result. |
+| [Public Code Map](public-code-map.md) | Where the sanitized code examples live. |
+| [Redaction Policy](redaction-policy.md) | What stays out of the public folder. |
 
 ## Current Status
 
 Status: `approved_for_public_v1`
-
-This is a public adaptation, not the original private repository.

@@ -12,7 +12,7 @@ All records below are synthetic.
 
 ## Action review table
 
-| Action ID | Action type | Approval state | Approval ref | Duplicate | Decision |
+| Action ID | Action type | Approval state | Approval ref | Previously recorded | Decision |
 | --- | --- | --- | --- | --- | --- |
 | `act_demo_201` | `draft_reply` | `not_required` | none | false | `allowed` |
 | `act_demo_202` | `send_reply` | `pending` | none | false | `needs_review` |

@@ -1,5 +1,6 @@
 from creator_review.review_gate import (
     APPROVED,
+    BLOCKED,
     EXCLUDED,
     REVIEW_NEEDED,
     CreatorRecord,
@@ -35,8 +36,8 @@ def test_missing_evidence_needs_review():
 
     assert decision.state == REVIEW_NEEDED
     assert "profile fit needs review" in decision.reasons
-    assert "activity evidence missing" in decision.reasons
-    assert "contact path unknown" in decision.reasons
+    assert "activity needs review" in decision.reasons
+    assert "contact path needs review" in decision.reasons
 
 
 def test_clean_record_is_approved():
@@ -52,3 +53,22 @@ def test_clean_record_is_approved():
 
     assert decision.state == APPROVED
     assert decision.reasons == ("review gates passed",)
+
+
+def test_unknown_fields_are_blocked():
+    record = CreatorRecord(
+        creator_id="",
+        source_type="unknown_source",
+        profile_fit_status="unknown_fit",
+        activity_status="stale",
+        contact_status="private_channel",
+    )
+
+    decision = review_creator(record, existing_ids=set())
+
+    assert decision.state == BLOCKED
+    assert "missing creator_id" in decision.reasons
+    assert "unknown source_type" in decision.reasons
+    assert "unknown profile_fit_status" in decision.reasons
+    assert "unknown activity_status" in decision.reasons
+    assert "unknown contact_status" in decision.reasons

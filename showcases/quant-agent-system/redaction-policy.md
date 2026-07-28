@@ -1,6 +1,6 @@
 # Redaction Policy
 
-This folder is a public version of private work.
+Strategy research, market data, execution access, and internal run history remain in the private workspace.
 
 ## Excluded
 
@@ -42,16 +42,3 @@ The public package includes:
 - dry-run execution pattern
 - illustrative policy checks
 - representative tests
-
-## Review Requirement
-
-Review checklist used before publication:
-
-Recommended checks:
-
-- no credentials
-- no private path leakage
-- no strategy logic
-- no real results
-- no private dataset names
-- no misleading production claims

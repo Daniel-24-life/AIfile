@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Collection
 from dataclasses import dataclass
 
 
@@ -15,7 +16,6 @@ class MailAction:
     action_type: str
     approval_state: str
     approval_ref: str = ""
-    duplicate: bool = False
     contains_raw_content: bool = False
 
 
@@ -25,7 +25,10 @@ class ReviewDecision:
     reason_codes: tuple[str, ...]
 
 
-def review_action(action: MailAction) -> ReviewDecision:
+def review_action(
+    action: MailAction,
+    recorded_action_ids: Collection[str] = (),
+) -> ReviewDecision:
     reasons: list[str] = []
 
     if not action.action_id.strip():
@@ -36,7 +39,7 @@ def review_action(action: MailAction) -> ReviewDecision:
         reasons.append("unknown_approval_state")
     if action.contains_raw_content:
         reasons.append("raw_content_not_allowed")
-    if action.duplicate:
+    if action.action_id in recorded_action_ids:
         reasons.append("duplicate_action")
 
     if reasons:

@@ -45,4 +45,4 @@ The decision record is a separate artifact. Its presence does not indicate that 
 
 The public gate checks an explicit raw-content flag. Content detection and normalization happen upstream and are outside this package. It checks that an approval reference is present; approval authenticity belongs to the private approval system.
 
-The private validation suite covered message classification, attachment handling, approval states, retry limits, duplicate blocking, and a synthetic end-to-end run. The public skeleton narrows that work to the action boundary.
+The public tests cover approval states, explicit raw-content flags, recorded action IDs, unknown actions, and inconsistent local approval states. The skeleton remains limited to the action boundary.

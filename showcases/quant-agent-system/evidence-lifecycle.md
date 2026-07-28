@@ -33,11 +33,10 @@ flowchart TD
 
 AI agents often produce many files. Without an evidence lifecycle, outputs become clutter.
 
-This system makes artifacts answerable:
+Each artifact keeps enough context to answer:
 
 - What produced this?
 - Under what policy?
-- What does it prove?
-- What does it not prove?
+- Which claims can this artifact support?
+- Which claims remain blocked?
 - What is the next allowed action?
-

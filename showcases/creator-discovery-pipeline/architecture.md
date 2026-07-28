@@ -1,6 +1,6 @@
 # Architecture
 
-The public architecture keeps the pipeline shape visible while leaving real accounts, data sources, search terms, thresholds, and scripts out.
+The diagram stops at reviewed handoff tables. Real accounts, source lists, search terms, thresholds, and collection scripts are omitted.
 
 ## Layers
 

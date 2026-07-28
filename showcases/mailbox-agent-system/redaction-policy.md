@@ -1,6 +1,6 @@
 # Redaction policy
 
-This folder is a public adaptation of private mailbox automation work.
+Real messages, accounts, transport settings, and operating records remain private.
 
 ## Included
 
@@ -28,17 +28,3 @@ This folder is a public adaptation of private mailbox automation work.
 ## Public substitutions
 
 Real mailbox events become synthetic message references. Private policy rules become general approval states. Operational records become small fake examples with no address, body text, provider name, or delivery claim.
-
-## Pre-upload check
-
-The public package must contain:
-
-- no mailbox address
-- no real message content
-- no provider endpoint
-- no credential reference tied to a real account
-- no contact or campaign list
-- no browser profile
-- no live transport code
-- no operating thresholds
-- no complete send or receive recipe

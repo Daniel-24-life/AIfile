@@ -1,17 +1,17 @@
 # Inventory
 
-| Item | Type | Location | Status | Public Readiness | Notes |
-| --- | --- | --- | --- | --- | --- |
-| AI Agent Research Governance System | showcase | `showcases/quant-agent-system/` | published | approved_for_public_v1 | Main public entrance for the work. |
-| Agent Governance Skeleton | code | `shelves/code/agent-governance-skeleton/` | published | approved_for_public_v1 | Sanitized illustrative code, not original production code. |
-| Redaction Policy | doc | `showcases/quant-agent-system/redaction-policy.md` | published | approved_for_public_v1 | Explains what was withheld and why. |
-| Architecture Notes | doc | `showcases/quant-agent-system/architecture.md` | published | approved_for_public_v1 | Public architecture narrative. |
-| AIGC Video Production Pipeline | showcase | `showcases/aigc-video-production-pipeline/` | published | approved_for_public_v1 | Public workflow case for managing an AI-generated video project as a production package. |
-| Creator Discovery Pipeline | showcase | `showcases/creator-discovery-pipeline/` | published | approved_for_public_v1 | Public workflow case for governed creator discovery and lead review. |
-| Creator Discovery Skeleton | code | `shelves/code/creator-discovery-skeleton/` | published | approved_for_public_v1 | Fake-data code skeleton for review gates and deduplication logic. |
-| Mailbox Governance Agent | showcase | `showcases/mailbox-agent-system/` | published | approved_for_public_v1 | Public workflow case for controlled mailbox intake, drafting, approval, and audit records. |
-| Mailbox Governance Skeleton | code | `shelves/code/mailbox-governance-skeleton/` | published | approved_for_public_v1 | Fake-data code skeleton for mailbox action review and duplicate blocking. |
-| AI Workflow Learning System | understanding | `shelves/understanding/ai-workflow-learning-system/` | published | approved_for_public_v1 | Distilled framework for turning AI reading into reusable working capability. |
-| AI 使用手册 | handbook | `shelves/understanding/ai-workflow-learning-system/AI使用手册.md` | published | approved_for_public_v1 | Chinese personal AI usage handbook. |
-| AI Usage Handbook | handbook | `shelves/understanding/ai-workflow-learning-system/AI-Usage-Handbook.md` | published | approved_for_public_v1 | English version of the personal AI usage handbook. |
-| AI Skill Routing Playbook | skill | `shelves/skills/ai-skill-routing-playbook/` | published | approved_for_public_v1 | Public decision framework for routing AI-assisted work and controlling tool boundaries. |
+| Item | Type | Location | Lifecycle | Public readiness |
+| --- | --- | --- | --- | --- |
+| Quant Agent System | showcase | [open](../showcases/quant-agent-system/) | published | `approved_for_public_v1` |
+| Agent Governance Skeleton | code skeleton | [open](../shelves/code/agent-governance-skeleton/) | published | `approved_for_public_v1` |
+| AIGC Video Production Pipeline | showcase | [open](../showcases/aigc-video-production-pipeline/) | published | `approved_for_public_v1` |
+| Creator Discovery Pipeline | showcase | [open](../showcases/creator-discovery-pipeline/) | published | `approved_for_public_v1` |
+| Creator Discovery Skeleton | code skeleton | [open](../shelves/code/creator-discovery-skeleton/) | published | `approved_for_public_v1` |
+| Daily Brief Agent | showcase | [open](../showcases/daily-brief-agent/) | published | `approved_for_public_v1` |
+| Daily Brief Skeleton | code skeleton | [open](../shelves/code/daily-brief-skeleton/) | published | `approved_for_public_v1` |
+| Mailbox Governance Agent | showcase | [open](../showcases/mailbox-agent-system/) | published | `approved_for_public_v1` |
+| Mailbox Governance Skeleton | code skeleton | [open](../shelves/code/mailbox-governance-skeleton/) | published | `approved_for_public_v1` |
+| AI Workflow Learning System | understanding | [open](../shelves/understanding/ai-workflow-learning-system/) | published | `approved_for_public_v1` |
+| AI 使用手册 | handbook | [open](../shelves/understanding/ai-workflow-learning-system/AI使用手册.md) | published | `approved_for_public_v1` |
+| AI Usage Handbook | handbook | [open](../shelves/understanding/ai-workflow-learning-system/AI-Usage-Handbook.md) | published | `approved_for_public_v1` |
+| AI Skill Routing Playbook | playbook | [open](../shelves/skills/ai-skill-routing-playbook/) | published | `approved_for_public_v1` |

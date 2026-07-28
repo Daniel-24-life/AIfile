@@ -1,6 +1,6 @@
 # Architecture
 
-The public architecture covers message handling and action control. Mailbox connections, provider settings, account policies, and delivery operations remain private.
+The diagram covers message handling and action control. Mailbox connections, provider settings, account policies, and delivery operations remain private.
 
 ## Layers
 

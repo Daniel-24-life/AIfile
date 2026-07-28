@@ -1,0 +1,53 @@
+{
+  "sample": true,
+  "records": [
+    {
+      "action": {
+        "action_id": "act_demo_301",
+        "action_type": "draft_reply",
+        "approval_state": "not_required",
+        "approval_ref": "",
+        "contains_raw_content": false
+      },
+      "recorded_action_ids": [],
+      "decision": {
+        "state": "allowed",
+        "reason_codes": []
+      }
+    },
+    {
+      "action": {
+        "action_id": "act_demo_302",
+        "action_type": "send_reply",
+        "approval_state": "pending",
+        "approval_ref": "",
+        "contains_raw_content": false
+      },
+      "recorded_action_ids": [],
+      "decision": {
+        "state": "needs_review",
+        "reason_codes": [
+          "external_action_requires_approval"
+        ]
+      }
+    },
+    {
+      "action": {
+        "action_id": "act_demo_303",
+        "action_type": "move_message",
+        "approval_state": "approved",
+        "approval_ref": "approval_demo_3",
+        "contains_raw_content": false
+      },
+      "recorded_action_ids": [
+        "act_demo_303"
+      ],
+      "decision": {
+        "state": "blocked",
+        "reason_codes": [
+          "duplicate_action"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "sample": true,
+  "task": {
+    "task_id": "T-DEMO-001",
+    "plane": "execution",
+    "action_type": "dry_run",
+    "priority": "T1",
+    "description": "submit real order after dry-run"
+  },
+  "route_decision": {
+    "decision": "refuse",
+    "reasons": [
+      "forbidden boundary matched: real order"
+    ]
+  },
+  "evidence": {
+    "evidence_class": "dry_run",
+    "claims": [
+      "schema_design",
+      "real_fill"
+    ]
+  },
+  "evidence_decision": {
+    "allowed": false,
+    "allowed_claims": [
+      "schema_design"
+    ],
+    "blocked_claims": [
+      "real_fill"
+    ],
+    "reasons": [
+      "public evidence cannot prove real execution"
+    ]
+  },
+  "execution_authority": false
+}

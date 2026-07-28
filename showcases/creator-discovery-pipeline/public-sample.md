@@ -1,6 +1,6 @@
 # Public Sample
 
-The sample below is fake. It shows field shape and review logic only.
+All names and fields below are synthetic. The table keeps only the review schema.
 
 | creator_id | source_type | profile_fit_status | activity_status | contact_status | review_state | risk_note |
 | --- | --- | --- | --- | --- | --- | --- |

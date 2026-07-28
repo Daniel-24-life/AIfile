@@ -8,6 +8,8 @@ Decision = Literal["allow", "approval_required", "refuse"]
 Plane = Literal["research", "execution", "governance"]
 
 
+KNOWN_PLANES = {"research", "execution", "governance"}
+KNOWN_PRIORITIES = {"T1", "T2", "T3"}
 FORBIDDEN_PATTERNS = {
     "real order",
     "api key",
@@ -18,7 +20,11 @@ FORBIDDEN_PATTERNS = {
     "override governance",
 }
 
-EXECUTION_ALLOWED_TYPES = {"schema", "dry_run", "log", "audit"}
+PLANE_ALLOWED_TYPES = {
+    "research": {"question", "candidate", "validation", "artifact", "audit"},
+    "execution": {"schema", "dry_run", "log", "audit"},
+    "governance": {"policy", "evidence", "promotion", "audit"},
+}
 
 
 @dataclass(frozen=True)
@@ -41,6 +47,20 @@ class RouteDecision:
 
 def route_task(task: Task) -> RouteDecision:
     """Route one task under fail-closed plane policy."""
+    if not task.task_id.strip():
+        return RouteDecision("refuse", task.task_id, task.plane, ("missing task_id",))
+    if task.plane not in KNOWN_PLANES:
+        return RouteDecision("refuse", task.task_id, task.plane, ("unknown plane",))
+    if task.priority not in KNOWN_PRIORITIES:
+        return RouteDecision("refuse", task.task_id, task.plane, ("unknown priority",))
+    if task.action_type not in PLANE_ALLOWED_TYPES[task.plane]:
+        return RouteDecision(
+            "refuse",
+            task.task_id,
+            task.plane,
+            ("action_type is not allowed for plane",),
+        )
+
     text = f"{task.task_id} {task.action_type} {task.description}".lower()
 
     for pattern in FORBIDDEN_PATTERNS:
@@ -51,14 +71,6 @@ def route_task(task: Task) -> RouteDecision:
                 plane=task.plane,
                 reasons=(f"forbidden boundary matched: {pattern}",),
             )
-
-    if task.plane == "execution" and task.action_type not in EXECUTION_ALLOWED_TYPES:
-        return RouteDecision(
-            decision="refuse",
-            task_id=task.task_id,
-            plane=task.plane,
-            reasons=("execution plane is limited to schema, dry_run, log, and audit work",),
-        )
 
     if task.priority in {"T2", "T3"} or not task.auto_allowed:
         return RouteDecision(
@@ -96,4 +108,3 @@ def select_first_allowed(tasks: list[Task]) -> RouteDecision:
         plane=None,
         reasons=("no safe task candidate found",),
     )
-

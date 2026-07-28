@@ -1,6 +1,6 @@
 # Redaction Policy
 
-This folder is a public version of private creator discovery work.
+Real creator records, contact fields, collection logic, and client context remain private.
 
 ## Included
 
@@ -32,23 +32,10 @@ The following materials stay private:
 
 ## Generalization
 
-The public version generalizes:
+Replacements used in this repository:
 
 - platform-specific collection into candidate discovery
 - real profile fields into fake schema fields
 - private review rules into public review gates
 - workbook outputs into sample artifact categories
 - business-facing decisions into review states
-
-## Pre-Upload Check
-
-Before upload, this package should contain:
-
-- no real handles
-- no real contact fields
-- no real profile URLs
-- no account sessions
-- no workbook exports
-- no original prompts
-- no full scraping workflow
-- no operational recipe that can reproduce the private project

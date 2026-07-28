@@ -1,14 +1,11 @@
 # Showcases
 
-For finished or presentable work.
+Each showcase has a project narrative, system map, public boundary, and synthetic evidence.
 
-Only move items here when they are clear enough for another person to understand without extra explanation.
-
-## Published
-
-| Showcase | Path | Purpose |
+| Showcase | Focus | Evidence |
 | --- | --- | --- |
-| Quant Agent System Showcase | `quant-agent-system/` | Public view of an AI agent system with governance, evidence, and execution boundaries. |
-| AIGC Video Production Pipeline | `aigc-video-production-pipeline/` | Public workflow case for managing an AI-generated video project as a production package. |
-| Creator Discovery Pipeline | `creator-discovery-pipeline/` | Public workflow case for creator lead discovery, review gates, and handoff control. |
-| Mailbox Governance Agent | `mailbox-agent-system/` | Public workflow case for mailbox intake, draft control, approval gates, and audit records. |
+| [Quant Agent System](quant-agent-system/) | Research, dry-run execution, governance, and audit boundaries. | [Governance record](quant-agent-system/evidence-sample.fake.json) |
+| [AIGC Video Production Pipeline](aigc-video-production-pipeline/) | Shot planning, asset review, QA, and delivery packaging. | [Shot review](aigc-video-production-pipeline/shot-review-sample.md) |
+| [Creator Discovery Pipeline](creator-discovery-pipeline/) | Candidate normalization, deduplication, review, and handoff. | [Review record](creator-discovery-pipeline/review-sample.fake.json) |
+| [Daily Brief Agent](daily-brief-agent/) | Source classes, citation coverage, and brief review. | [Brief review](daily-brief-agent/brief-review-sample.fake.json) |
+| [Mailbox Governance Agent](mailbox-agent-system/) | Draft control, approval gates, duplicate blocking, and decision records. | [Decision record](mailbox-agent-system/decision-sample.fake.json) |

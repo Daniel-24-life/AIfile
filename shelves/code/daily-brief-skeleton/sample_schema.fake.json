@@ -1,0 +1,9 @@
+{
+  "item_id": "fake_item_001",
+  "section": "Technology Infrastructure",
+  "claim": "A fake infrastructure update may affect deployment planning.",
+  "source_ids": ["S1", "S2"],
+  "source_classes": ["official", "media"],
+  "review_state": "ready",
+  "risk_note": "none"
+}

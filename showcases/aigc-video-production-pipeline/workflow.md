@@ -1,6 +1,6 @@
 # Workflow
 
-This workflow describes the public shape of the project. It is intentionally abstract, but it still reflects the actual work pattern: creative planning, asset tracking, review, and package preparation.
+The workflow keeps the production stages and removes the original creative material. It follows the same order I used for planning, asset tracking, review, and package preparation.
 
 ## Stage 1: Creative Brief
 
@@ -82,4 +82,4 @@ Final readiness is checked across:
 - missing information
 - release boundary
 
-The key idea is simple: creative output still needs production control.
+Creative output still needs production control.

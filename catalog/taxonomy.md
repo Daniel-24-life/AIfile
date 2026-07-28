@@ -1,31 +1,34 @@
 # Taxonomy
 
-## Types
+## Content Types
 
-- code
-- skill
-- article
-- note
-- project
-- framework
 - showcase
+- code skeleton
+- playbook
+- handbook
+- understanding
+- concept card
+- article
 
-## Status
+## Lifecycle
 
-- inbox
-- active
 - draft
-- polished
+- review ready
+- published
 - archived
 
-## Suggested Tags
+## Public Readiness
 
-- ai
-- agent
-- codex
-- writing
-- product
-- engineering
+- `review_ready_v1`: sanitized package prepared for owner review
+- `approved_for_public_v1`: owner-approved public package
+
+## Subject Tags
+
+- AI agents
+- automation
+- governance
+- evidence
 - research
-- business
-
+- production
+- information workflow
+- publishing

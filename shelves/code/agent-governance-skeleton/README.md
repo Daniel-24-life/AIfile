@@ -21,5 +21,7 @@ Outside this public skeleton:
 ## Run Tests
 
 ```powershell
-python -m pytest shelves\code\agent-governance-skeleton\tests
+python -m pytest tests -q
 ```
+
+From the repository root, run `python scripts/verify_public_packages.py` to verify every package.

@@ -38,15 +38,13 @@ class ReviewGateTests(unittest.TestCase):
         self.assertIn("missing_approval_reference", decision.reason_codes)
 
     def test_duplicate_action_is_blocked(self) -> None:
-        decision = review_action(
-            MailAction(
-                "act_demo_5",
-                "move_message",
-                "approved",
-                approval_ref="approval_demo_2",
-                duplicate=True,
-            )
+        action = MailAction(
+            "act_demo_5",
+            "move_message",
+            "approved",
+            approval_ref="approval_demo_2",
         )
+        decision = review_action(action, recorded_action_ids={"act_demo_5"})
         self.assertEqual("blocked", decision.state)
         self.assertIn("duplicate_action", decision.reason_codes)
 

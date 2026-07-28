@@ -1,0 +1,59 @@
+{
+  "sample": true,
+  "records": [
+    {
+      "creator_id": "fake_creator_101",
+      "input": {
+        "source_type": "seed_network",
+        "profile_fit_status": "likely_fit",
+        "activity_status": "recent_activity",
+        "contact_status": "public_email_visible",
+        "risk_note": "none"
+      },
+      "decision": {
+        "state": "approved",
+        "reasons": [
+          "review gates passed"
+        ]
+      }
+    },
+    {
+      "creator_id": "fake_creator_102",
+      "input": {
+        "source_type": "search_result",
+        "profile_fit_status": "possible_fit",
+        "activity_status": "activity_unclear",
+        "contact_status": "contact_unknown",
+        "risk_note": "thin public evidence"
+      },
+      "decision": {
+        "state": "review_needed",
+        "reasons": [
+          "profile fit needs review",
+          "activity needs review",
+          "contact path needs review",
+          "risk note present"
+        ]
+      }
+    },
+    {
+      "creator_id": "",
+      "input": {
+        "source_type": "unknown_source",
+        "profile_fit_status": "likely_fit",
+        "activity_status": "stale",
+        "contact_status": "private_channel",
+        "risk_note": ""
+      },
+      "decision": {
+        "state": "blocked",
+        "reasons": [
+          "missing creator_id",
+          "unknown source_type",
+          "unknown activity_status",
+          "unknown contact_status"
+        ]
+      }
+    }
+  ]
+}
