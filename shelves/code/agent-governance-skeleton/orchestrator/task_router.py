@@ -72,6 +72,14 @@ def route_task(task: Task) -> RouteDecision:
                 reasons=(f"forbidden boundary matched: {pattern}",),
             )
 
+    if task.plane == "governance" and task.action_type == "promotion":
+        return RouteDecision(
+            decision="approval_required",
+            task_id=task.task_id,
+            plane=task.plane,
+            reasons=("promotion evaluation requires explicit review",),
+        )
+
     if task.priority in {"T2", "T3"} or not task.auto_allowed:
         return RouteDecision(
             decision="approval_required",

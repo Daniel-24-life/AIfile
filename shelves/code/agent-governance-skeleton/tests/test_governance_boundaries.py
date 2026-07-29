@@ -32,6 +32,20 @@ def test_router_requires_approval_for_sensitive_priority():
     assert decision.decision == "approval_required"
 
 
+def test_router_requires_approval_for_promotion_at_any_priority():
+    task = Task(
+        task_id="T-PROMOTE",
+        plane="governance",
+        action_type="promotion",
+        priority="T1",
+        description="evaluate a candidate promotion package",
+    )
+
+    decision = route_task(task)
+
+    assert decision.decision == "approval_required"
+
+
 def test_router_refuses_unknown_plane():
     task = Task("T-X", "unknown", "audit", "T1", "unknown plane")
 

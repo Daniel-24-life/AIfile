@@ -4,7 +4,7 @@ The governance model is built around fail-closed decisions.
 
 If evidence is missing, ambiguous, or below the required class, the system blocks readiness claims.
 
-## Core Concepts
+## Core concepts
 
 | Concept | Meaning |
 | --- | --- |
@@ -14,7 +14,7 @@ If evidence is missing, ambiguous, or below the required class, the system block
 | Research-only status | Work can continue as research without implying deployability. |
 | Human approval | Protected changes require explicit review. |
 
-## Fail-Closed Rule
+## Fail-closed rule
 
 ```text
 missing evidence -> blocked
@@ -24,7 +24,7 @@ public data evidence -> not account execution evidence
 research output -> not production readiness
 ```
 
-## Forbidden Silent Upgrades
+## Forbidden silent upgrades
 
 The system must not silently:
 
@@ -36,9 +36,29 @@ The system must not silently:
 - delete failed evidence
 - rewrite history to make results look cleaner
 
-## Governance Point
+## Public promotion gate
 
-The governance layer carries the main engineering point:
+The public evaluator uses this status order:
+
+```text
+research_only
+  -> candidate
+  -> paper_shadow
+  -> paper_trade
+  -> small_live
+  -> scaled_live
+```
+
+The evaluator checks stage order, required evidence classes, required checks,
+human approval, and the current promotion ceiling.
+
+The public ceiling is fixed at `research_only`. A synthetic candidate package
+can contain every required research artifact and still be blocked from
+promotion. The gate returns the blocker rather than changing status.
+
+## Constraint
+
+The governance layer keeps every action inside an evidence boundary:
 
 ```text
 The agent is useful because it is constrained

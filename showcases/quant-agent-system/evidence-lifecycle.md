@@ -19,7 +19,7 @@ flowchart TD
     H --> J["Blocked Claims"]
 ```
 
-## Evidence Classes
+## Evidence classes
 
 | Evidence Class | Can Support | Cannot Support |
 | --- | --- | --- |
@@ -29,14 +29,12 @@ flowchart TD
 | governance audit | boundary check, claim control | automatic promotion |
 | human-approved package | reviewed next-stage readiness | silent live authority |
 
-## Why This Exists
+## Artifact context
 
-AI agents often produce many files. Without an evidence lifecycle, outputs become clutter.
+Unclassified outputs are only files. Each retained artifact records:
 
-Each artifact keeps enough context to answer:
-
-- What produced this?
-- Under what policy?
-- Which claims can this artifact support?
-- Which claims remain blocked?
-- What is the next allowed action?
+- what produced it
+- which policy governed the run
+- which claims it supports
+- which claims remain blocked
+- the next allowed action

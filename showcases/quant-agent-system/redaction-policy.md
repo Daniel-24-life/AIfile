@@ -2,7 +2,7 @@
 
 Strategy research, market data, execution access, and internal run history remain in the private workspace.
 
-## Excluded
+## Excluded material
 
 The following private materials are excluded:
 
@@ -20,7 +20,7 @@ The following private materials are excluded:
 - internal task backlog
 - private business methodology
 
-## Generalized
+## Generalized material
 
 The following concepts are generalized:
 
@@ -32,7 +32,7 @@ The following concepts are generalized:
 - run identifiers
 - private artifact paths
 
-## Included
+## Public material
 
 The public package includes:
 

@@ -2,9 +2,10 @@
 
 The private system was organized around explicit operating planes.
 
-This note keeps the architecture visible while leaving domain-specific strategy logic out.
+The public version keeps those plane boundaries and omits domain-specific
+strategy logic.
 
-## Plane Model
+## Plane model
 
 ```mermaid
 flowchart LR
@@ -16,7 +17,7 @@ flowchart LR
     R --> G
 ```
 
-## Research Plane
+## Research plane
 
 Purpose:
 
@@ -31,7 +32,7 @@ Boundary:
 - research output is not a production claim
 - candidate artifacts require governance review before downstream use
 
-## Execution Plane
+## Execution plane
 
 Purpose:
 
@@ -46,7 +47,7 @@ Boundary:
 - no live or paper enablement
 - no leverage escalation
 
-## Governance Plane
+## Governance plane
 
 Purpose:
 
@@ -76,7 +77,7 @@ Boundary:
 - no execution authority by routing alone
 - no hidden multi-task drift
 
-## Design Principle
+## Design principle
 
 The system treats autonomy as a bounded workflow:
 
