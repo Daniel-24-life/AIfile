@@ -21,7 +21,7 @@ connection.
 | Evidence output | Machine-readable JSON decision record |
 | Execution authority | None |
 | Real orders or fills | None |
-| Local package draft | `review_ready_v2` |
+| Repository release | `v2.0` |
 
 ## One governed run
 
@@ -98,7 +98,7 @@ release: blocked
 execution_authority: false
 ```
 
-## Files to review
+## Evidence files
 
 | File | Contents |
 | --- | --- |
@@ -110,13 +110,6 @@ execution_authority: false
 | [Synthetic Overclaim Record](evidence-sample.fake.json) | Example of a dry-run artifact attempting an unsupported real-fill claim. |
 | [Public Code Map](public-code-map.md) | Links from the case study to the sanitized implementation. |
 | [Redaction Policy](redaction-policy.md) | Materials excluded or generalized for publication. |
-
-## Private system snapshot
-
-![BTC quantitative research system overview](assets/system-overview.png)
-
-The poster captures one private workspace snapshot. Its counts describe files
-and data, not trading performance or readiness.
 
 ## Public boundary
 
@@ -130,7 +123,3 @@ It excludes:
 - credentials, accounts, or exchange access
 - private prompts, task queues, and system dialogue
 - paper or live enablement
-
-Local review status: `review_ready_v2`.
-
-The published v1 package remains unchanged until owner approval and upload.

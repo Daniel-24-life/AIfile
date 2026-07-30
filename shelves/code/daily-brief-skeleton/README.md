@@ -20,7 +20,7 @@ Outside this public skeleton:
 - generated HTML/PDF outputs
 - private watchlists
 
-## Run Tests
+## Run tests
 
 ```powershell
 python -m pytest tests -q

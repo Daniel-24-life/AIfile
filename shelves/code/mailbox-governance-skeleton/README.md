@@ -31,5 +31,3 @@ From the repository root, run `python scripts/verify_public_packages.py` to veri
 | `mailbox_review/review_gate.py` | Action boundary and duplicate checks. |
 | `tests/test_review_gate.py` | Public behavior tests. |
 | `sample_action.fake.json` | Synthetic action input. |
-
-Status: `approved_for_public_v1`

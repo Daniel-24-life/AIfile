@@ -8,7 +8,7 @@ The practical question is:
 When AI tools keep multiplying, how do I choose the right entry point, keep boundaries clear, and leave reusable lessons after the task?
 ```
 
-## Contents
+## Included material
 
 This package covers three parts of my AI operating method:
 
@@ -16,7 +16,7 @@ This package covers three parts of my AI operating method:
 - boundary control between generation, review, verification, and formatting
 - lightweight governance for reusable workflows
 
-## Core Rule
+## Core rule
 
 ```text
 Name the task before choosing the skill.
@@ -24,7 +24,7 @@ Name the task before choosing the skill.
 
 A skill should be selected because the task has a specific shape. A writing task, a review task, a file conversion task, and a publishing task need different entry points. Mixing them too early makes the AI system harder to inspect.
 
-## Public Model
+## Routing loop
 
 ```mermaid
 flowchart LR
@@ -36,7 +36,7 @@ flowchart LR
     F --> G["Next Similar Task"]
 ```
 
-## The Four Questions
+## Four routing questions
 
 Before using a skill, I ask:
 
@@ -47,7 +47,7 @@ Before using a skill, I ask:
 
 These four questions keep routing from spreading too loosely. They also make route choices easier to explain.
 
-## Skill Boundary Map
+## Boundary map
 
 | Work Type | Primary Question | Boundary To Keep |
 | --- | --- | --- |
@@ -58,11 +58,11 @@ These four questions keep routing from spreading too loosely. They also make rou
 | Publishing | What is allowed to be released publicly? | Confirm scope, audience, and destination before release. |
 | Maintenance | What needs to stay consistent over time? | Do not turn a one-time cleanup into a broad refactor. |
 
-## Working Position
+## Decision rule
 
 Collecting tools is easy. The useful skill is choosing the right one, setting its stop line, and checking the result.
 
-## Public Files
+## Files
 
 | File | Purpose |
 | --- | --- |
@@ -72,9 +72,5 @@ Collecting tools is easy. The useful skill is choosing the right one, setting it
 | [Worked Routing Example](worked-routing-example.md) | A sanitized repository publishing route. |
 | [Scope](public-scope.md) | Public scope and boundary. |
 | [Concept Cards](cards/) | Short reusable concept cards. |
-
-## Status
-
-Status: `approved_for_public_v1`
 
 This is the public method layer of a larger private working environment.

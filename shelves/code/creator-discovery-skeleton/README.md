@@ -20,7 +20,7 @@ Outside this public skeleton:
 - scoring thresholds
 - workbook exports
 
-## Run Tests
+## Run tests
 
 ```powershell
 python -m pytest tests -q

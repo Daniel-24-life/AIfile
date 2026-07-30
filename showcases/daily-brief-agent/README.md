@@ -1,8 +1,12 @@
 # Daily Brief Agent
 
-I built this workflow for recurring information review. It groups sources, labels evidence, organizes topics, checks citations, and produces a brief for manual review.
+I built this workflow for recurring information review. It groups sources,
+labels evidence, and organizes topics. Each brief goes through citation checks
+before manual review.
 
-## Work Included
+The public package contains reconstructed examples and synthetic records.
+
+## Work included
 
 - organizing recurring information intake
 - separating source discovery from brief writing
@@ -13,7 +17,7 @@ I built this workflow for recurring information review. It groups sources, label
 
 News coverage, investment memos, source lists, and collection recipes stay outside this folder.
 
-## System Model
+## Brief flow
 
 ```mermaid
 flowchart LR
@@ -26,7 +30,7 @@ flowchart LR
     G --> H["Local Review Record"]
 ```
 
-## My Role
+## My role
 
 - defining brief sections and source categories
 - tracking source IDs inside the generated output
@@ -35,13 +39,13 @@ flowchart LR
 - generating reviewable brief artifacts
 - checking missing references before accepting the final brief
 
-## Working Problem
+## Review problem
 
 Daily information work can become a stream of tabs and copied notes.
 
 I wanted a brief where every claim still points back to a source class and source ID, and weak evidence remains visible during review.
 
-## Public Files
+## Files
 
 | File | Purpose |
 | --- | --- |
@@ -51,9 +55,3 @@ I wanted a brief where every claim still points back to a source class and sourc
 | [Sample Brief](public-sample.md) | Fake brief item and source examples. |
 | [Code Skeleton](../../shelves/code/daily-brief-skeleton/) | Small review skeleton with fake data only. |
 | [Redaction Policy](redaction-policy.md) | What stays out of the public folder. |
-
-## Status
-
-Status: `approved_for_public_v1`
-
-This package contains reconstructed examples and synthetic records.

@@ -4,7 +4,7 @@ I used this project to turn a short AI-generated video into a managed production
 
 In this context, "production package" means the material needed to explain, inspect, and hand off the work. It is separate from the video file itself.
 
-## Work Included
+## Work included
 
 - translating a creative brief into a production workflow
 - tracking visual generation work across shots and assets
@@ -12,7 +12,7 @@ In this context, "production package" means the material needed to explain, insp
 - packaging review materials into documents and spreadsheets
 - using quality checks before final delivery
 
-## Public Model
+## Production flow
 
 ```mermaid
 flowchart LR
@@ -24,7 +24,7 @@ flowchart LR
     F --> G["Final Check"]
 ```
 
-## My Role
+## My role
 
 I designed the production structure and kept the moving parts aligned around one question:
 
@@ -40,11 +40,11 @@ How do we keep story, visual assets, prompts, documents, and final checks aligne
 
 The full creative source material and complete operating process stay outside this folder.
 
-## Production Problem
+## Dependency problem
 
 A change to one scene can affect the prompt record, selected asset, review notes, preview, and delivery document. I tracked those dependencies in one production package.
 
-## Public Files
+## Files
 
 | File | Purpose |
 | --- | --- |
@@ -54,7 +54,3 @@ A change to one scene can affect the prompt record, selected asset, review notes
 | [Artifact Map](public-artifact-map.md) | Artifact categories used in the public version. |
 | [Scope](public-scope.md) | Public scope and boundary. |
 | [Concept Cards](cards/) | Short concepts distilled from the project. |
-
-## Status
-
-Status: `approved_for_public_v1`

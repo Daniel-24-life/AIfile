@@ -16,7 +16,7 @@ flowchart LR
     F --> G["Policy Decision Record"]
 ```
 
-## My Work
+## Operating rules
 
 I organized the workflow around a few operating rules:
 
@@ -39,7 +39,3 @@ The package stops at the action-review gate. Account health, scheduling, transpo
 | [Sample Tables](public-sample.md) | Synthetic message and action records. |
 | [Code Skeleton](../../shelves/code/mailbox-governance-skeleton/) | A small action-review skeleton with fake data. |
 | [Redaction Policy](redaction-policy.md) | Materials excluded from the public version. |
-
-## Status
-
-Status: `approved_for_public_v1`

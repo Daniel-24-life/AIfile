@@ -1,11 +1,9 @@
 # Catalog
 
-This folder contains indexes, metadata, tags, and librarian notes.
+This directory is the source of truth for public package lifecycle and release
+version.
 
-Use it to answer questions like:
-
-- What do we have?
-- Where does it live?
-- What is worth presenting?
-- What needs cleanup or follow-up?
-
+| File | Contents |
+| --- | --- |
+| [Inventory](inventory.md) | Published items, locations, lifecycle, and repository release. |
+| [Taxonomy](taxonomy.md) | Content types, lifecycle states, and subject tags. |

@@ -1,6 +1,6 @@
 # Taxonomy
 
-## Content Types
+## Content types
 
 - showcase
 - code skeleton
@@ -12,17 +12,20 @@
 
 ## Lifecycle
 
-- draft
-- review ready
-- published
-- archived
+- `draft`
+- `review_ready`
+- `published`
+- `archived`
 
-## Public Readiness
+Lifecycle records the current state of an item. It does not contain a version
+number.
 
-- `review_ready_v1`: sanitized package prepared for owner review
-- `approved_for_public_v1`: owner-approved public package
+## Repository release
 
-## Subject Tags
+The release field records the repository version that contains the item.
+Current release: `v2.0`.
+
+## Subject tags
 
 - AI agents
 - automation

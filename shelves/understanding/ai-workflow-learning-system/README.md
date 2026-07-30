@@ -2,7 +2,7 @@
 
 This is my framework for turning AI articles, engineering cases, and tool practice into reusable working capability.
 
-## Working Loop
+## Working loop
 
 ```text
 Reading -> Framing -> Workflow -> Evidence -> Review -> Reuse
@@ -10,7 +10,7 @@ Reading -> Framing -> Workflow -> Evidence -> Review -> Reuse
 
 I start with one idea, try it in a real task, check the result, and keep it only when it changes later work.
 
-## Core Ideas
+## Core ideas
 
 | Idea | Working meaning |
 | --- | --- |
@@ -21,7 +21,7 @@ I start with one idea, try it in a real task, check the result, and keep it only
 | Evidence over confidence | Use tests, artifacts, reviews, and observed behavior. |
 | Reuse after reflection | Convert stable lessons into rules, templates, checklists, or skill candidates. |
 
-## K/S/T Knowledge Split
+## K/S/T knowledge split
 
 | Layer | Meaning | Typical asset |
 | --- | --- | --- |
@@ -29,7 +29,7 @@ I start with one idea, try it in a real task, check the result, and keep it only
 | S: Standards | Roles, boundaries, delivery contracts | rules, checklists, acceptance criteria |
 | T: Tactics | Workflow order, checkpoints, review loops | procedures, task templates, handoffs |
 
-## Handbooks and Evidence
+## Handbooks and evidence
 
 | Item | Contents |
 | --- | --- |
@@ -37,7 +37,7 @@ I start with one idea, try it in a real task, check the result, and keep it only
 | [English Handbook](AI-Usage-Handbook.md) | The English version of the same working method. |
 | [Application Record](application-record.md) | A repository review and repair cycle using the handbook rules. |
 
-## Concept Cards
+## Concept cards
 
 | Card | Topic |
 | --- | --- |
