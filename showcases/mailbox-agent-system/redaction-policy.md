@@ -1,30 +1,40 @@
 # Redaction policy
 
-Real messages, accounts, transport settings, and operating records remain private.
+The public package was rebuilt from system behavior. Source files and generated
+operating records were not copied into the repository.
 
 ## Included
 
-- system layers
-- action boundaries
-- review gates
-- public action states
-- synthetic examples
-- a small governance skeleton
+- generalized system layers
+- four synthetic account states
+- approval, duplicate, and account-state gates
+- synthetic action and decision records
+- a mock-only local runner
+- public tests and a reconstructed dashboard
 
 ## Kept private
 
-- real mailbox addresses and contact records
-- message subjects, bodies, attachments, and threads
-- credentials, tokens, cookies, and account sessions
-- mailbox provider settings and protocol endpoints
-- browser profiles and local account files
-- approved writing templates and prompt chains
-- sending schedules, volume limits, and health thresholds
-- retry timing and delivery operations
-- private allowlists, blocklists, campaigns, and source lists
-- original scripts, logs, dashboards, and output archives
-- the complete agent routing and execution sequence
+- mailbox addresses, contacts, threads, subjects, bodies, and attachments
+- credentials, tokens, cookies, account sessions, and browser profiles
+- provider settings, protocol endpoints, and transport implementation
+- account-health calculations, limits, thresholds, and retry timing
+- schedules, task registration, queues, and delivery operations
+- approved templates, prompts, signatures, and writing style records
+- allowlists, blocklists, campaigns, source lists, and business relationships
+- raw logs, state stores, audit streams, HTML outputs, and output archives
+- original source paths and the complete orchestration sequence
 
 ## Public substitutions
 
-Real mailbox events become synthetic message references. Private policy rules become general approval states. Operational records become small fake examples with no address, body text, provider name, or delivery claim.
+| Private material | Public replacement |
+| --- | --- |
+| Mailbox account | Synthetic alias such as `acct_demo_green` |
+| Message or thread | Synthetic reference such as `msg_demo_401` |
+| Health calculation | Precomputed state with no threshold or metric |
+| Passed external action | `mock_queue_only`: approved, but not sent |
+| Operational audit | Small JSON record with IDs and reason codes |
+| Dashboard output | Reconstructed SVG based on the synthetic run |
+
+The substitutions preserve the control logic needed to inspect the package.
+They do not preserve production configuration or a reproducible operating
+recipe.

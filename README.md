@@ -2,7 +2,7 @@
 
 [![Public package tests](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml/badge.svg)](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml)
 
-Current release: [`v2.0`](CHANGELOG.md) (2026-07-30).
+Current release: [`v2.1`](CHANGELOG.md) (2026-08-01).
 
 AIfile is where I keep the parts of my AI work that can be shown in public.
 
@@ -33,7 +33,7 @@ python public_demo.py
 | [AIGC Video Production Pipeline](showcases/aigc-video-production-pipeline/) | Creative brief -> review-ready production package. | [Shot review](showcases/aigc-video-production-pipeline/shot-review-sample.md) · [Workflow](showcases/aigc-video-production-pipeline/workflow.md) |
 | [Creator Discovery Pipeline](showcases/creator-discovery-pipeline/) | Public signals -> reviewed handoff table. | [Review record](showcases/creator-discovery-pipeline/review-sample.fake.json) · [Runnable code](shelves/code/creator-discovery-skeleton/) |
 | [Daily Brief Agent](showcases/daily-brief-agent/) | Source pool -> citation-reviewed brief. | [Brief review](showcases/daily-brief-agent/brief-review-sample.fake.json) · [Runnable code](shelves/code/daily-brief-skeleton/) |
-| [Mailbox Governance Agent](showcases/mailbox-agent-system/) | Proposed mailbox action -> policy decision record. | [Decision record](showcases/mailbox-agent-system/decision-sample.fake.json) · [Runnable code](shelves/code/mailbox-governance-skeleton/) |
+| [Mailbox Governance Agent](showcases/mailbox-agent-system/) | Synthetic account state and action -> policy and execution record. | [Morning run](showcases/mailbox-agent-system/morning-run.fake.json) · [Runnable code](shelves/code/mailbox-governance-skeleton/) |
 | [AI Skill Routing Playbook](shelves/skills/ai-skill-routing-playbook/) | Task intent -> bounded and verified route. | [Worked example](shelves/skills/ai-skill-routing-playbook/worked-routing-example.md) |
 | [AI Workflow Learning System](shelves/understanding/ai-workflow-learning-system/) | Reading insight -> tested workflow rule. | [Application record](shelves/understanding/ai-workflow-learning-system/application-record.md) · [Handbooks](shelves/understanding/ai-workflow-learning-system/) |
 
@@ -65,14 +65,14 @@ checks synthetic JSON, relative links, release metadata, obvious credential
 patterns, and private local paths. GitHub Actions runs the same command on
 pushes and pull requests.
 
-### v2.0 verification snapshot
+### v2.1 verification snapshot
 
 | Check | Result |
 | --- | ---: |
 | Public projects and method packages | 7 |
 | Runnable code packages | 4 |
-| Automated tests | 41 passed |
-| Synthetic JSON records | 8 valid |
+| Automated tests | 53 passed |
+| Synthetic JSON records | 9 valid |
 | Markdown files | 65 link-checked |
 
 ## Repository layout

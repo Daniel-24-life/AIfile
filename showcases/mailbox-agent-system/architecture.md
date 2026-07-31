@@ -1,54 +1,64 @@
 # Architecture
 
-The diagram covers message handling and action control. Mailbox connections, provider settings, account policies, and delivery operations remain private.
+The public demo begins after mailbox intake and account-health calculation. It
+receives synthetic references, precomputed account states, and normalized action
+metadata.
+
+## Public flow
+
+```mermaid
+flowchart LR
+    T["Synthetic trigger"] --> H["Account snapshot"]
+    H --> N["Normalized proposals"]
+    N --> P["Action policy"]
+    P --> A["Approval gate"]
+    A --> D["Duplicate check"]
+    D --> S["Account-state gate"]
+    S --> L["Local artifact"]
+    S --> R["Review queue"]
+    S --> M["Approved, not sent"]
+    S --> B["Blocked"]
+    L --> E["JSON decision record"]
+    R --> E
+    M --> E
+    B --> E
+```
 
 ## Layers
 
-```text
-mailbox intake
-  -> receives normalized message references from an upstream private connector
-
-message normalization
-  -> converts incoming records into a stable internal shape
-
-classification
-  -> assigns a category, confidence state, and review flag
-
-draft queue
-  -> prepares a response candidate without sending it
-
-action policy
-  -> separates local analysis from external side effects
-
-approval gate
-  -> holds outbound or mailbox-changing actions for review
-
-policy decision record
-  -> records the decision without storing message bodies or contact details
-```
-
-## Control points
-
-| Control point | Function |
+| Layer | Public responsibility |
 | --- | --- |
-| Read boundary | Keeps message intake separate from sending and mailbox changes. |
-| Classification state | Preserves `unknown` when the available evidence is weak. |
-| Draft boundary | Treats generated text as a candidate, not an approved reply. |
-| Approval gate | Requires an approved state and reference before an external action can pass policy review. |
-| Duplicate check | Refuses an action identifier that has already been recorded. |
-| Audit minimization | Stores decision metadata without raw message content. |
+| Synthetic trigger | Starts a deterministic local run. It is not a scheduler. |
+| Account snapshot | Supplies a fake alias and one of four allowed states. |
+| Normalized proposal | Carries IDs, action type, approval state, and a raw-content flag. |
+| Action policy | Rejects missing, unknown, inconsistent, or raw-content inputs. |
+| Approval gate | Holds external actions without an approval reference. |
+| Duplicate check | Blocks an action ID that already exists in the synthetic record. |
+| Account-state gate | Restricts external actions according to the supplied account state. |
+| Decision record | Stores policy and execution states without message content. |
 
-## Public system model
+## Output states
 
-```text
-synthetic message reference
-  -> normalized record
-  -> classification result
-  -> optional draft
-  -> action review
-  -> policy decision record
-```
+| Execution state | Meaning |
+| --- | --- |
+| `local_artifact_only` | The action stays inside the local analysis boundary. |
+| `review_queue` | A person must resolve the policy reason before another system can act. |
+| `mock_queue_only` | The checks passed, but the demo does not send or change any message. |
+| `blocked` | The proposal cannot continue. |
 
-## Boundary
+## Invariants
 
-This architecture does not contain mailbox credentials, protocol endpoints, provider configurations, contact records, message bodies, writing templates, operating schedules, account limits, delivery logic, or a complete execution chain. The public gate does not establish mailbox connectivity or execute an action.
+- The demo sets `network_enabled` and `credentials_loaded` to false.
+- Real message read and send counts stay at zero.
+- A generated draft remains a local artifact.
+- External actions need an approved state and approval reference.
+- `cautious`, `read_only`, and `paused` restrict external actions.
+- A repeated action ID is blocked before release.
+- Decision records contain references and reason codes, not raw content.
+
+## Private boundary
+
+The private system owns account-health calculations, provider connections,
+scheduling, message parsing, templates, contact sources, retry behavior,
+operational thresholds, and delivery handling. None of those components are
+called by the public demo.

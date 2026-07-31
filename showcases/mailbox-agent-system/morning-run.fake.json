@@ -1,0 +1,114 @@
+{
+  "sample": true,
+  "run_id": "mailbox_morning_demo_001",
+  "controls": {
+    "network_enabled": false,
+    "credentials_loaded": false,
+    "real_messages_read": 0,
+    "real_messages_sent": 0
+  },
+  "account_snapshots": [
+    {
+      "account_alias": "acct_demo_green",
+      "state": "healthy"
+    },
+    {
+      "account_alias": "acct_demo_amber",
+      "state": "cautious"
+    },
+    {
+      "account_alias": "acct_demo_blue",
+      "state": "read_only"
+    },
+    {
+      "account_alias": "acct_demo_gray",
+      "state": "paused"
+    }
+  ],
+  "summary": {
+    "proposals": 7,
+    "allowed": 3,
+    "needs_review": 1,
+    "blocked": 3
+  },
+  "decisions": [
+    {
+      "action_id": "act_demo_401",
+      "message_ref": "msg_demo_401",
+      "account_alias": "acct_demo_blue",
+      "action_type": "classify",
+      "account_state": "read_only",
+      "policy_state": "allowed",
+      "execution_state": "local_artifact_only",
+      "reason_codes": []
+    },
+    {
+      "action_id": "act_demo_402",
+      "message_ref": "msg_demo_402",
+      "account_alias": "acct_demo_amber",
+      "action_type": "draft_reply",
+      "account_state": "cautious",
+      "policy_state": "allowed",
+      "execution_state": "local_artifact_only",
+      "reason_codes": []
+    },
+    {
+      "action_id": "act_demo_403",
+      "message_ref": "msg_demo_403",
+      "account_alias": "acct_demo_green",
+      "action_type": "send_reply",
+      "account_state": "healthy",
+      "policy_state": "allowed",
+      "execution_state": "mock_queue_only",
+      "reason_codes": []
+    },
+    {
+      "action_id": "act_demo_404",
+      "message_ref": "msg_demo_404",
+      "account_alias": "acct_demo_amber",
+      "action_type": "send_reply",
+      "account_state": "cautious",
+      "policy_state": "needs_review",
+      "execution_state": "review_queue",
+      "reason_codes": [
+        "account_cautious"
+      ]
+    },
+    {
+      "action_id": "act_demo_405",
+      "message_ref": "msg_demo_405",
+      "account_alias": "acct_demo_blue",
+      "action_type": "send_reply",
+      "account_state": "read_only",
+      "policy_state": "blocked",
+      "execution_state": "blocked",
+      "reason_codes": [
+        "account_read_only"
+      ]
+    },
+    {
+      "action_id": "act_demo_406",
+      "message_ref": "msg_demo_406",
+      "account_alias": "acct_demo_green",
+      "action_type": "move_message",
+      "account_state": "healthy",
+      "policy_state": "blocked",
+      "execution_state": "blocked",
+      "reason_codes": [
+        "duplicate_action"
+      ]
+    },
+    {
+      "action_id": "act_demo_407",
+      "message_ref": "msg_demo_407",
+      "account_alias": "acct_demo_gray",
+      "action_type": "send_reply",
+      "account_state": "paused",
+      "policy_state": "blocked",
+      "execution_state": "blocked",
+      "reason_codes": [
+        "account_paused"
+      ]
+    }
+  ]
+}

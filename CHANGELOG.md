@@ -1,5 +1,20 @@
 # Release history
 
+## v2.1 - 2026-08-01
+
+- Expanded the Mailbox Governance Agent with a deterministic morning-run demo.
+- Added account-state controls, mock-only execution states, a captured JSON run,
+  a reconstructed dashboard, and boundary tests.
+- Kept provider access, credentials, health calculations, transport, schedules,
+  message content, and operating records outside the public package.
+
+Release verification:
+
+- 53 automated tests
+- 9 synthetic JSON records
+- 65 Markdown files checked for relative links
+- 100 public text files scanned for obvious credentials and private paths
+
 ## v2.0 - 2026-07-30
 
 - Made the BTC Quant Agent System the main runnable case study.

@@ -1,41 +1,82 @@
 # Mailbox Governance Agent
 
-I built the private workflow to handle incoming messages, prepare drafts, review proposed actions, block repeated action IDs, and keep local decision records.
+I built the private workflow to review incoming messages, prepare drafts, route
+proposed actions, and preserve local decision records. This public package uses
+fake inputs to show which actions pass the checks and which ones are stopped.
 
-The original work connected mailbox operations with an agent policy layer. Reading and classification were separated from actions that change mailbox state or contact another person.
+It has no mailbox connection, credentials, provider settings, message bodies,
+contact records, or delivery code.
 
-## System shape
+## One synthetic morning run
 
-```mermaid
-flowchart LR
-    A["Mailbox Intake"] --> B["Message Normalization"]
-    B --> C["Classification"]
-    C --> D["Draft Queue"]
-    D --> E["Action Policy"]
-    E --> F["Approval Gate"]
-    F --> G["Policy Decision Record"]
+![Synthetic mailbox governance dashboard](assets/synthetic-dashboard.svg)
+
+The demo starts with four precomputed account states and seven proposed actions.
+It does not calculate account health or connect to a provider.
+
+Run it from `shelves/code/mailbox-governance-skeleton/`:
+
+```powershell
+python public_demo.py
 ```
 
-## Operating rules
+The captured run has this result:
 
-I organized the workflow around a few operating rules:
+```text
+proposals=7
+allowed=3
+needs_review=1
+blocked=3
+network_enabled=false
+credentials_loaded=false
+real_messages_read=0
+real_messages_sent=0
+```
 
-- mailbox intake stays separate from outbound action
-- uncertain classifications remain visible
-- drafts and sends use different states
-- external actions pass through an approval gate
-- duplicate actions are blocked before execution
-- audit records avoid message bodies and contact details
+An allowed local action produces a local artifact. If an external action passes
+the checks, the demo marks it as `mock_queue_only`: approved, but not sent. The
+public code never sends or changes a message.
 
-The package stops at the action-review gate. Account health, scheduling, transport behavior, message content, and provider access stay private.
+## Decision path
+
+```text
+synthetic trigger
+  -> precomputed account snapshot
+  -> normalized action metadata
+  -> approval and raw-content checks
+  -> duplicate check
+  -> account-state gate
+  -> keep it local, ask for review, approve without sending, or block
+  -> JSON decision record
+```
+
+## Account states
+
+| State | Local analysis | Approved external action |
+| --- | --- | --- |
+| `healthy` | Local artifact only | Checks pass, but nothing is sent |
+| `cautious` | Local artifact only | Needs review |
+| `read_only` | Local artifact only | Blocked |
+| `paused` | Local artifact only | Blocked |
+
+These states are supplied as synthetic input. The private thresholds and health
+calculation do not appear in this repository.
 
 ## Public package
 
 | File | Contents |
 | --- | --- |
-| [Architecture](architecture.md) | Public system layers and control points. |
-| [Evidence and Review](evidence-and-review.md) | Review gates and action states. |
-| [Synthetic Decision Record](decision-sample.fake.json) | Allowed, review-needed, and duplicate-blocked fake actions. |
-| [Sample Tables](public-sample.md) | Synthetic message and action records. |
-| [Code Skeleton](../../shelves/code/mailbox-governance-skeleton/) | A small action-review skeleton with fake data. |
-| [Redaction Policy](redaction-policy.md) | Materials excluded from the public version. |
+| [Architecture](architecture.md) | Public layers, account-state gate, and control points. |
+| [Evidence and review](evidence-and-review.md) | Decision meanings, review gates, and valid claims. |
+| [Synthetic morning run](morning-run.fake.json) | Full JSON output from the public demo. |
+| [Synthetic decision record](decision-sample.fake.json) | Three smaller action-review examples. |
+| [Sample tables](public-sample.md) | Human-readable synthetic records. |
+| [Code skeleton](../../shelves/code/mailbox-governance-skeleton/) | Local policy demo and tests. |
+| [Redaction policy](redaction-policy.md) | Materials excluded or generalized for publication. |
+
+## Public boundary
+
+This package contains synthetic account aliases, message references, actions,
+and decisions. It excludes message text, real addresses, provider access,
+business lists, operational thresholds, production prompts, transport code,
+delivery claims, and the complete private workflow.

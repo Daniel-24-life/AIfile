@@ -23,7 +23,7 @@ number.
 ## Repository release
 
 The release field records the repository version that contains the item.
-Current release: `v2.0`.
+Current release: `v2.1`.
 
 ## Subject tags
 

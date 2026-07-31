@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic mailbox governance dashboard</title>
+  <desc id="desc">A public demo dashboard showing network and credentials disabled, four synthetic account states, and seven policy decisions: three allowed, one needing review, and three blocked.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081426"/>
+      <stop offset="1" stop-color="#0f2438"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#020817" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title { font: 700 34px Inter, Segoe UI, Arial, sans-serif; fill: #f7fbff; }
+      .subtitle { font: 400 16px Inter, Segoe UI, Arial, sans-serif; fill: #9fb2c7; }
+      .section { font: 700 18px Inter, Segoe UI, Arial, sans-serif; fill: #dce8f4; letter-spacing: 0.4px; }
+      .label { font: 600 14px Inter, Segoe UI, Arial, sans-serif; fill: #9fb2c7; }
+      .value { font: 700 30px Inter, Segoe UI, Arial, sans-serif; fill: #f7fbff; }
+      .cardTitle { font: 700 18px Inter, Segoe UI, Arial, sans-serif; fill: #f7fbff; }
+      .cardMeta { font: 400 14px Inter, Segoe UI, Arial, sans-serif; fill: #a9bbcc; }
+      .tableHead { font: 700 13px Inter, Segoe UI, Arial, sans-serif; fill: #7890a8; letter-spacing: 0.6px; }
+      .tableText { font: 500 14px Inter, Segoe UI, Arial, sans-serif; fill: #dce8f4; }
+      .mono { font: 500 13px Consolas, SFMono-Regular, monospace; fill: #b8c8d8; }
+      .pill { font: 700 12px Inter, Segoe UI, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <circle cx="1450" cy="-40" r="280" fill="#1e6ba6" opacity="0.12"/>
+  <circle cx="70" cy="890" r="250" fill="#22a06b" opacity="0.08"/>
+
+  <g transform="translate(72 58)">
+    <text class="title" x="0" y="0">Mailbox Governance / Public Demo</text>
+    <text class="subtitle" x="0" y="31">Synthetic run · local policy only · no provider connection</text>
+    <g transform="translate(1035 -20)">
+      <rect width="421" height="54" rx="16" fill="#102b42" stroke="#274864"/>
+      <circle cx="28" cy="27" r="6" fill="#35c98b"/>
+      <text class="mono" x="48" y="32">run_id: mailbox_morning_demo_001</text>
+    </g>
+  </g>
+
+  <g transform="translate(72 128)" filter="url(#shadow)">
+    <rect width="1456" height="112" rx="20" fill="#102238" stroke="#243c54"/>
+    <g transform="translate(28 24)">
+      <rect width="256" height="64" rx="14" fill="#0c1b2d"/>
+      <text class="label" x="18" y="25">NETWORK</text>
+      <text class="cardTitle" x="18" y="50" fill="#70d7ff">OFF</text>
+      <circle cx="224" cy="32" r="10" fill="#70d7ff" opacity="0.18"/>
+      <circle cx="224" cy="32" r="4" fill="#70d7ff"/>
+    </g>
+    <g transform="translate(312 24)">
+      <rect width="256" height="64" rx="14" fill="#0c1b2d"/>
+      <text class="label" x="18" y="25">CREDENTIALS</text>
+      <text class="cardTitle" x="18" y="50">0 LOADED</text>
+      <circle cx="224" cy="32" r="10" fill="#70d7ff" opacity="0.18"/>
+      <circle cx="224" cy="32" r="4" fill="#70d7ff"/>
+    </g>
+    <g transform="translate(596 24)">
+      <rect width="256" height="64" rx="14" fill="#0c1b2d"/>
+      <text class="label" x="18" y="25">REAL READS</text>
+      <text class="cardTitle" x="18" y="50">0 MESSAGES</text>
+    </g>
+    <g transform="translate(880 24)">
+      <rect width="256" height="64" rx="14" fill="#0c1b2d"/>
+      <text class="label" x="18" y="25">REAL SENDS</text>
+      <text class="cardTitle" x="18" y="50">0 MESSAGES</text>
+    </g>
+    <g transform="translate(1164 24)">
+      <rect width="264" height="64" rx="14" fill="#0c1b2d"/>
+      <text class="label" x="18" y="25">PUBLIC DEMO</text>
+      <text class="cardTitle" x="18" y="50">NO MESSAGE SENT</text>
+    </g>
+  </g>
+
+  <text class="section" x="72" y="284">ACCOUNT SNAPSHOTS</text>
+  <g transform="translate(72 304)">
+    <g filter="url(#shadow)">
+      <rect width="342" height="122" rx="18" fill="#102238" stroke="#245b49"/>
+      <circle cx="32" cy="32" r="10" fill="#35c98b"/>
+      <text class="cardTitle" x="54" y="38">acct_demo_green</text>
+      <text class="cardMeta" x="24" y="75">External actions</text>
+      <text class="pill" x="24" y="101" fill="#70e0ac">APPROVED, NOT SENT</text>
+      <rect x="238" y="78" width="80" height="28" rx="14" fill="#173f35"/>
+      <text class="pill" x="252" y="97" fill="#70e0ac">HEALTHY</text>
+    </g>
+    <g transform="translate(370)" filter="url(#shadow)">
+      <rect width="342" height="122" rx="18" fill="#102238" stroke="#725c24"/>
+      <circle cx="32" cy="32" r="10" fill="#f0b84b"/>
+      <text class="cardTitle" x="54" y="38">acct_demo_amber</text>
+      <text class="cardMeta" x="24" y="75">External actions</text>
+      <text class="pill" x="24" y="101" fill="#ffd27a">REVIEW QUEUE</text>
+      <rect x="232" y="78" width="86" height="28" rx="14" fill="#493d22"/>
+      <text class="pill" x="246" y="97" fill="#ffd27a">CAUTIOUS</text>
+    </g>
+    <g transform="translate(740)" filter="url(#shadow)">
+      <rect width="342" height="122" rx="18" fill="#102238" stroke="#285b7a"/>
+      <circle cx="32" cy="32" r="10" fill="#70bce8"/>
+      <text class="cardTitle" x="54" y="38">acct_demo_blue</text>
+      <text class="cardMeta" x="24" y="75">External actions</text>
+      <text class="pill" x="24" y="101" fill="#8ed4ff">BLOCKED</text>
+      <rect x="222" y="78" width="96" height="28" rx="14" fill="#1e3c52"/>
+      <text class="pill" x="235" y="97" fill="#8ed4ff">READ ONLY</text>
+    </g>
+    <g transform="translate(1110)" filter="url(#shadow)">
+      <rect width="346" height="122" rx="18" fill="#102238" stroke="#4a5360"/>
+      <circle cx="32" cy="32" r="10" fill="#8794a3"/>
+      <text class="cardTitle" x="54" y="38">acct_demo_gray</text>
+      <text class="cardMeta" x="24" y="75">External actions</text>
+      <text class="pill" x="24" y="101" fill="#b5c0cc">BLOCKED</text>
+      <rect x="246" y="78" width="76" height="28" rx="14" fill="#303943"/>
+      <text class="pill" x="260" y="97" fill="#c5cdd6">PAUSED</text>
+    </g>
+  </g>
+
+  <g transform="translate(72 474)" filter="url(#shadow)">
+    <rect width="1000" height="350" rx="20" fill="#102238" stroke="#243c54"/>
+    <text class="section" x="28" y="38">DECISION RECORD</text>
+    <g transform="translate(28 64)">
+      <text class="tableHead" x="0" y="0">ACTION</text>
+      <text class="tableHead" x="148" y="0">ACCOUNT STATE</text>
+      <text class="tableHead" x="310" y="0">TYPE</text>
+      <text class="tableHead" x="470" y="0">POLICY</text>
+      <text class="tableHead" x="620" y="0">EXECUTION</text>
+      <text class="tableHead" x="800" y="0">REASON</text>
+      <line x1="0" y1="18" x2="944" y2="18" stroke="#294159"/>
+
+      <g transform="translate(0 47)">
+        <text class="mono" x="0" y="0">act_demo_401</text><text class="tableText" x="148" y="0">read_only</text><text class="tableText" x="310" y="0">classify</text><text class="pill" x="470" y="0" fill="#70e0ac">ALLOWED</text><text class="tableText" x="620" y="0">local artifact</text><text class="tableText" x="800" y="0">none</text>
+      </g>
+      <g transform="translate(0 87)">
+        <text class="mono" x="0" y="0">act_demo_402</text><text class="tableText" x="148" y="0">cautious</text><text class="tableText" x="310" y="0">draft_reply</text><text class="pill" x="470" y="0" fill="#70e0ac">ALLOWED</text><text class="tableText" x="620" y="0">local artifact</text><text class="tableText" x="800" y="0">none</text>
+      </g>
+      <g transform="translate(0 127)">
+        <text class="mono" x="0" y="0">act_demo_403</text><text class="tableText" x="148" y="0">healthy</text><text class="tableText" x="310" y="0">send_reply</text><text class="pill" x="470" y="0" fill="#70e0ac">ALLOWED</text><text class="tableText" x="620" y="0">not sent</text><text class="tableText" x="800" y="0">none</text>
+      </g>
+      <g transform="translate(0 167)">
+        <text class="mono" x="0" y="0">act_demo_404</text><text class="tableText" x="148" y="0">cautious</text><text class="tableText" x="310" y="0">send_reply</text><text class="pill" x="470" y="0" fill="#ffd27a">REVIEW</text><text class="tableText" x="620" y="0">review queue</text><text class="tableText" x="800" y="0">account cautious</text>
+      </g>
+      <g transform="translate(0 207)">
+        <text class="mono" x="0" y="0">act_demo_405</text><text class="tableText" x="148" y="0">read_only</text><text class="tableText" x="310" y="0">send_reply</text><text class="pill" x="470" y="0" fill="#ff8b8b">BLOCKED</text><text class="tableText" x="620" y="0">blocked</text><text class="tableText" x="800" y="0">account read only</text>
+      </g>
+      <g transform="translate(0 247)">
+        <text class="mono" x="0" y="0">act_demo_406</text><text class="tableText" x="148" y="0">healthy</text><text class="tableText" x="310" y="0">move_message</text><text class="pill" x="470" y="0" fill="#ff8b8b">BLOCKED</text><text class="tableText" x="620" y="0">blocked</text><text class="tableText" x="800" y="0">duplicate action</text>
+      </g>
+      <g transform="translate(0 287)">
+        <text class="mono" x="0" y="0">act_demo_407</text><text class="tableText" x="148" y="0">paused</text><text class="tableText" x="310" y="0">send_reply</text><text class="pill" x="470" y="0" fill="#ff8b8b">BLOCKED</text><text class="tableText" x="620" y="0">blocked</text><text class="tableText" x="800" y="0">account paused</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(1100 474)" filter="url(#shadow)">
+    <rect width="428" height="350" rx="20" fill="#102238" stroke="#243c54"/>
+    <text class="section" x="28" y="38">RUN SUMMARY</text>
+    <g transform="translate(28 72)">
+      <rect width="372" height="66" rx="14" fill="#0c1b2d"/>
+      <text class="label" x="18" y="27">PROPOSALS</text>
+      <text class="value" x="320" y="43" text-anchor="end">7</text>
+    </g>
+    <g transform="translate(28 152)">
+      <rect width="112" height="104" rx="14" fill="#12372f"/>
+      <text class="label" x="16" y="28">ALLOWED</text>
+      <text class="value" x="16" y="73" fill="#70e0ac">3</text>
+    </g>
+    <g transform="translate(158 152)">
+      <rect width="112" height="104" rx="14" fill="#41371f"/>
+      <text class="label" x="16" y="28">REVIEW</text>
+      <text class="value" x="16" y="73" fill="#ffd27a">1</text>
+    </g>
+    <g transform="translate(288 152)">
+      <rect width="112" height="104" rx="14" fill="#40272d"/>
+      <text class="label" x="16" y="28">BLOCKED</text>
+      <text class="value" x="16" y="73" fill="#ff8b8b">3</text>
+    </g>
+    <line x1="28" y1="282" x2="400" y2="282" stroke="#294159"/>
+    <text class="cardMeta" x="28" y="312">Policy result is not a delivery result.</text>
+    <text class="cardMeta" x="28" y="336">No message body or address is stored.</text>
+  </g>
+
+  <text class="subtitle" x="72" y="866">PUBLIC BOUNDARY · SYNTHETIC IDS · PRECOMPUTED STATES · NO TRANSPORT · NO DELIVERY CLAIM</text>
+</svg>

@@ -9,7 +9,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_RELEASE = "v2.0"
+CURRENT_RELEASE = "v2.1"
 PACKAGES = (
     (
         "agent-governance-skeleton",
@@ -149,7 +149,9 @@ def validate_public_text_boundary() -> bool:
             ),
         ),
     )
-    files = public_text_files((".md", ".json", ".py", ".toml"))
+    files = public_text_files(
+        (".md", ".json", ".py", ".toml", ".svg", ".yml", ".yaml")
+    )
     matches: list[str] = []
 
     for path in files:
