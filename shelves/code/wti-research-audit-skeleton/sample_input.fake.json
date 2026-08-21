@@ -1,0 +1,25 @@
+{
+  "model": {
+    "split": "test",
+    "frozen_config": true,
+    "retune_requested": false
+  },
+  "records": [
+    {
+      "name": "synthetic_market_factor",
+      "observation_date": "2030-01-04",
+      "available_on": "2030-01-04",
+      "as_of_date": "2030-01-04",
+      "target_week": "2030-01-11",
+      "mechanically_contains_target": false
+    },
+    {
+      "name": "synthetic_lagged_inventory",
+      "observation_date": "2029-12-28",
+      "available_on": "2030-01-04",
+      "as_of_date": "2030-01-04",
+      "target_week": "2030-01-11",
+      "mechanically_contains_target": false
+    }
+  ]
+}

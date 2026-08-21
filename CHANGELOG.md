@@ -1,5 +1,22 @@
 # Release history
 
+## v2.2 - 2026-08-21
+
+- Added an anonymous WTI market research case based on seven official public series.
+- Published the information-timing model, leakage rule, frozen aggregate results,
+  source register, four reviewed charts, and a sanitized five-page report.
+- Added a runnable synthetic audit skeleton for availability, mechanical leakage,
+  and frozen-test controls.
+- Kept the commissioning context, application material, raw data, database,
+  complete script chain, internal logs, and original report files private.
+
+Release verification:
+
+- 60 automated tests
+- 10 synthetic JSON records
+- 73 Markdown files checked for relative links
+- public text scanned for obvious credentials and private paths
+
 ## v2.1 - 2026-08-01
 
 - Expanded the Mailbox Governance Agent with a deterministic morning-run demo.

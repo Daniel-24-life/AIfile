@@ -9,7 +9,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_RELEASE = "v2.1"
+CURRENT_RELEASE = "v2.2"
 PACKAGES = (
     (
         "agent-governance-skeleton",
@@ -29,6 +29,11 @@ PACKAGES = (
     (
         "mailbox-governance-skeleton",
         ROOT / "shelves/code/mailbox-governance-skeleton",
+        (sys.executable, "-B", "-m", "unittest", "discover", "-s", "tests", "-v"),
+    ),
+    (
+        "wti-research-audit-skeleton",
+        ROOT / "shelves/code/wti-research-audit-skeleton",
         (sys.executable, "-B", "-m", "unittest", "discover", "-s", "tests", "-v"),
     ),
 )

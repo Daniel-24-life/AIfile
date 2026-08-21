@@ -23,7 +23,7 @@ number.
 ## Repository release
 
 The release field records the repository version that contains the item.
-Current release: `v2.1`.
+Current release: `v2.2`.
 
 ## Subject tags
 
@@ -32,6 +32,7 @@ Current release: `v2.1`.
 - governance
 - evidence
 - research
+- market research
 - production
 - information workflow
 - publishing

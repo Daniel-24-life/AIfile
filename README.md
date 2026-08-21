@@ -2,7 +2,7 @@
 
 [![Public package tests](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml/badge.svg)](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml)
 
-Current release: [`v2.1`](CHANGELOG.md) (2026-08-01).
+Current release: [`v2.2`](CHANGELOG.md) (2026-08-21).
 
 AIfile is where I keep the parts of my AI work that can be shown in public.
 
@@ -30,6 +30,7 @@ python public_demo.py
 | Project | Operating loop | Evidence and implementation |
 | --- | --- | --- |
 | [BTC Quant Agent System](showcases/quant-agent-system/) | Research task -> governed evidence decision -> bounded release. | [Demo run](showcases/quant-agent-system/demo-run.fake.json) · [Runnable code](shelves/code/agent-governance-skeleton/) |
+| [WTI Market Research Case](showcases/wti-market-research/) | Public series -> timing-aware analysis -> claim review. | [Public report](showcases/wti-market-research/report/wti-weekly-market-research-public-case.pdf) · [Runnable code](shelves/code/wti-research-audit-skeleton/) |
 | [AIGC Video Production Pipeline](showcases/aigc-video-production-pipeline/) | Creative brief -> review-ready production package. | [Shot review](showcases/aigc-video-production-pipeline/shot-review-sample.md) · [Workflow](showcases/aigc-video-production-pipeline/workflow.md) |
 | [Creator Discovery Pipeline](showcases/creator-discovery-pipeline/) | Public signals -> reviewed handoff table. | [Review record](showcases/creator-discovery-pipeline/review-sample.fake.json) · [Runnable code](shelves/code/creator-discovery-skeleton/) |
 | [Daily Brief Agent](showcases/daily-brief-agent/) | Source pool -> citation-reviewed brief. | [Brief review](showcases/daily-brief-agent/brief-review-sample.fake.json) · [Runnable code](shelves/code/daily-brief-skeleton/) |
@@ -65,15 +66,15 @@ checks synthetic JSON, relative links, release metadata, obvious credential
 patterns, and private local paths. GitHub Actions runs the same command on
 pushes and pull requests.
 
-### v2.1 verification snapshot
+### v2.2 verification snapshot
 
 | Check | Result |
 | --- | ---: |
-| Public projects and method packages | 7 |
-| Runnable code packages | 4 |
-| Automated tests | 53 passed |
-| Synthetic JSON records | 9 valid |
-| Markdown files | 65 link-checked |
+| Public projects and method packages | 8 |
+| Runnable code packages | 5 |
+| Automated tests | 60 passed |
+| Synthetic JSON records | 10 valid |
+| Markdown files | 73 link-checked |
 
 ## Repository layout
 
