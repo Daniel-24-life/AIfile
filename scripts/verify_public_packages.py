@@ -133,6 +133,21 @@ def validate_release_metadata() -> bool:
                 f"{path.relative_to(ROOT)} -> missing {CURRENT_RELEASE} release marker"
             )
 
+    inventory_path = ROOT / "catalog/inventory.md"
+    inventory_release_pattern = re.compile(
+        r"^\|.*\|\s*`(?P<release>v\d+(?:\.\d+)*)`\s*\|\s*$"
+    )
+    for line_number, line in enumerate(
+        inventory_path.read_text(encoding="utf-8").splitlines(), start=1
+    ):
+        match = inventory_release_pattern.match(line)
+        if match and match.group("release") != CURRENT_RELEASE:
+            problems.append(
+                f"{inventory_path.relative_to(ROOT)}:{line_number} -> "
+                f"inventory release {match.group('release')} does not match "
+                f"{CURRENT_RELEASE}"
+            )
+
     print(f"\n== release metadata ({CURRENT_RELEASE}) ==")
     if problems:
         for item in problems:
