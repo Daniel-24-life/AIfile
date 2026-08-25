@@ -104,12 +104,23 @@ def validate_release_metadata() -> bool:
         r"\b(?:review_ready|approved_for_public)_v\d+(?:\.\d+)*\b",
         re.IGNORECASE,
     )
+    repository_release_pattern = re.compile(
+        r"\|\s*Repository release\s*\|\s*`(?P<release>v\d+(?:\.\d+)*)`\s*\|",
+        re.IGNORECASE,
+    )
     problems: list[str] = []
 
     for path in files:
         text = path.read_text(encoding="utf-8")
         if legacy_pattern.search(text):
             problems.append(f"{path.relative_to(ROOT)} -> legacy versioned lifecycle")
+        for match in repository_release_pattern.finditer(text):
+            release = match.group("release")
+            if release != CURRENT_RELEASE:
+                problems.append(
+                    f"{path.relative_to(ROOT)} -> repository release "
+                    f"{release} does not match {CURRENT_RELEASE}"
+                )
 
     required_files = (
         ROOT / "README.md",
