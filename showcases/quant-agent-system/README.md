@@ -27,6 +27,12 @@ connection.
 
 ![Governed run flow](assets/governed-run-flow.svg)
 
+![Synthetic governed run demonstration](assets/governed-run-demo.svg)
+
+The animated view shows one synthetic dry-run from request to bounded release.
+It does not connect to an exchange or represent real orders, fills, market data,
+or strategy results.
+
 Every run records two decisions:
 
 1. whether a task may enter a bounded operating plane

@@ -20,6 +20,8 @@ program. Run it to see research, dry-run, promotion, and live requests routed to
 
 ![Governed run flow](showcases/quant-agent-system/assets/governed-run-flow.svg)
 
+![Synthetic governed run demonstration](showcases/quant-agent-system/assets/governed-run-demo.svg)
+
 ```powershell
 cd shelves/code/agent-governance-skeleton
 python public_demo.py
