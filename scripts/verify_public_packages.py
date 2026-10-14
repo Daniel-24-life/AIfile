@@ -9,22 +9,12 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_RELEASE = "v2.3"
+CURRENT_RELEASE = "v3.0"
 PACKAGES = (
     (
-        "buyer-research-demo",
-        ROOT / "shelves/code/buyer-research-demo",
+        "portfolio-contracts",
+        ROOT,
         (sys.executable, "-B", "-m", "unittest", "discover", "-s", "tests", "-v"),
-    ),
-    (
-        "logistics-workbench-demo",
-        ROOT / "shelves/code/logistics-workbench-demo",
-        ("node", "--test", "tests/policy.test.cjs"),
-    ),
-    (
-        "agent-governance-skeleton",
-        ROOT / "shelves/code/agent-governance-skeleton",
-        (sys.executable, "-B", "-m", "pytest", "-p", "no:cacheprovider", "tests", "-q"),
     ),
     (
         "creator-discovery-skeleton",
@@ -55,6 +45,11 @@ def public_text_files(suffixes: tuple[str, ...]) -> list[Path]:
         *ROOT.joinpath("showcases").rglob("*"),
         *ROOT.joinpath("shelves").rglob("*"),
         *ROOT.joinpath("catalog").rglob("*"),
+        *ROOT.joinpath("assets").rglob("*"),
+        *ROOT.joinpath("docs").rglob("*"),
+        *ROOT.joinpath("templates").rglob("*"),
+        *ROOT.joinpath("scripts").rglob("*"),
+        *ROOT.joinpath("tests").rglob("*"),
     )
     return sorted(
         path
@@ -213,6 +208,8 @@ def validate_public_text_boundary() -> bool:
 
 def main() -> int:
     results = [run_package(*package) for package in PACKAGES]
+    results.append(run_package("portfolio-generation", ROOT, (sys.executable, "scripts/render_portfolio.py", "--check")))
+    results.append(run_package("public-repository", ROOT, (sys.executable, "scripts/verify_public_repository.py", "--root", str(ROOT))))
     passed = all(results)
     try:
         passed = validate_fake_json() and passed

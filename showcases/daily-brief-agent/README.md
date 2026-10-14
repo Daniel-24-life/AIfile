@@ -1,57 +1,21 @@
-# Daily Brief Agent
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/projects/daily-brief-agent/cover-dark.svg" />
+  <img src="../../assets/projects/daily-brief-agent/cover-light.svg" alt="每日简报审核 Agent" width="1280" />
+</picture>
 
-I built this workflow for recurring information review. It groups sources,
-labels evidence, and organizes topics. Each brief goes through citation checks
-before manual review.
+# 每日简报审核 Agent
 
-The public package contains reconstructed examples and synthetic records.
+[English](README.en.md) · [完整作品目录](../../README.md)
 
-## Work included
+为重复的信息整理工作建立来源分类、证据标记和引用检查，保留弱证据与缺失引用。
 
-- organizing recurring information intake
-- separating source discovery from brief writing
-- grouping signals by theme and evidence quality
-- marking single-source or uncertain claims before publication
-- checking that cited sources are present before accepting an output
-- excluding the private source list, daily outputs, and generation scripts
+## 当前实现
 
-News coverage, investment memos, source lists, and collection recipes stay outside this folder.
+公开版为重建说明、合成记录和引用审核骨架，不包含实时新闻采集、私有来源清单、
+日报原文和生成脚本。代码验证来源与声明关系，不代表简报自动发布。
 
-## Brief flow
+## 阅读与运行
 
-```mermaid
-flowchart LR
-    A["Source Pool"] --> B["Signal Selection"]
-    B --> C["Topic Grouping"]
-    C --> D["Claim Drafting"]
-    D --> E["Evidence Review"]
-    E --> F["Brief Assembly"]
-    F --> G["Output Check"]
-    G --> H["Local Review Record"]
-```
+[代码与测试](../../shelves/code/daily-brief-skeleton/) · [合成审核记录](brief-review-sample.fake.json)
 
-## My role
-
-- defining brief sections and source categories
-- tracking source IDs inside the generated output
-- separating official sources, media sources, social signals, and market references
-- marking weak evidence clearly
-- generating reviewable brief artifacts
-- checking missing references before accepting the final brief
-
-## Review problem
-
-Daily information work can become a stream of tabs and copied notes.
-
-I wanted a brief where every claim still points back to a source class and source ID, and weak evidence remains visible during review.
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| [Architecture](architecture.md) | Information workflow layers and responsibilities. |
-| [Evidence and Review](evidence-and-review.md) | Evidence labels, review gates, and output checks. |
-| [Synthetic Review Record](brief-review-sample.fake.json) | Ready, review-needed, and blocked fake brief items. |
-| [Sample Brief](public-sample.md) | Fake brief item and source examples. |
-| [Code Skeleton](../../shelves/code/daily-brief-skeleton/) | Small review skeleton with fake data only. |
-| [Redaction Policy](redaction-policy.md) | What stays out of the public folder. |
+[架构（英文）](architecture.md) · [证据与审核（英文）](evidence-and-review.md) · [样例简报（英文）](public-sample.md) · [公开边界（英文）](redaction-policy.md)

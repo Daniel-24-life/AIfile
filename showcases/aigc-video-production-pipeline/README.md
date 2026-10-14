@@ -1,56 +1,21 @@
-# AIGC Video Production Pipeline
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/projects/aigc-video-production/cover-dark.svg" />
+  <img src="../../assets/projects/aigc-video-production/cover-light.svg" alt="AIGC 视频生产流程" width="1280" />
+</picture>
 
-I used this project to turn a short AI-generated video into a managed production job. Alongside the video, I kept shot plans, prompt records, asset reviews, delivery documents, and final checks.
+# AIGC 视频生产流程
 
-In this context, "production package" means the material needed to explain, inspect, and hand off the work. It is separate from the video file itself.
+[English](README.en.md) · [完整作品目录](../../README.md)
 
-## Work included
+将创意任务拆成镜头计划、视觉资产、检查记录和交付材料，管理一次修改对后续产物的影响。
 
-- translating a creative brief into a production workflow
-- tracking visual generation work across shots and assets
-- turning prompts and review notes into structured artifacts
-- packaging review materials into documents and spreadsheets
-- using quality checks before final delivery
+## 当前公开内容
 
-## Production flow
+公开包提供流程说明、重建镜头审核样例和产物分类；完整创作源材料、Prompt 链和
+完整生产操作流程保留私有。交付包用于解释、检查和交接工作，不等同于视频成片。
 
-```mermaid
-flowchart LR
-    A["Creative Brief"] --> B["Shot Plan"]
-    B --> C["Prompt Archive"]
-    C --> D["Visual Asset Set"]
-    D --> E["Review Package"]
-    E --> F["Submission Materials"]
-    F --> G["Final Check"]
-```
+## 深入阅读
 
-## My role
+[流程（英文）](workflow.md) · [镜头审核样例（英文）](shot-review-sample.md) · [质量检查（英文）](quality-checks.md) · [产物地图（英文）](public-artifact-map.md) · [公开边界（英文）](public-scope.md)
 
-I designed the production structure and kept the moving parts aligned around one question:
-
-```text
-How do we keep story, visual assets, prompts, documents, and final checks aligned while the project keeps changing?
-```
-
-- structuring the project into repeatable stages
-- maintaining prompt and shot documentation
-- generating review-ready documents and workbooks
-- creating QA previews for visual inspection
-- separating draft materials from release-ready materials
-
-The full creative source material and complete operating process stay outside this folder.
-
-## Dependency problem
-
-A change to one scene can affect the prompt record, selected asset, review notes, preview, and delivery document. I tracked those dependencies in one production package.
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| [Workflow](workflow.md) | High-level production workflow. |
-| [Quality Checks](quality-checks.md) | Goals and checks used before delivery. |
-| [Synthetic Shot Review](shot-review-sample.md) | A fake three-unit review and package decision. |
-| [Artifact Map](public-artifact-map.md) | Artifact categories used in the public version. |
-| [Scope](public-scope.md) | Public scope and boundary. |
-| [Concept Cards](cards/) | Short concepts distilled from the project. |
+这里没有独立运行程序；参考重点为镜头与资产依赖、审阅门禁和交付组织。

@@ -1,112 +1,125 @@
-# AIfile
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg" />
+  <img src="assets/cover-light.svg" alt="AIfile · AI 产品与 Agent 工程作品集" width="1280" />
+</picture>
 
-[![Public package tests](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml/badge.svg)](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml)
+# AIfile · 作品目录
 
-Current release: [`v2.3`](CHANGELOG.md) (2026-10-14).
+[English](README.en.md) · [个人主页](https://github.com/Daniel-24-life) · [新增项目](docs/ADD_PROJECT.md)
 
-AIfile is where I keep the parts of my AI work that can be shown in public.
+这里整理我能公开的 AI 产品、Agent 工程、研究流程和方法。每项作品说明解决的
+问题、当前实现与验证边界，并提供深入阅读入口。当前目录版本为 [v3.0](CHANGELOG.md)。
 
-I do not upload the original workspaces. Each project is rebuilt around four
-things I can disclose safely: the system shape, the rules I used, a synthetic
-evidence record, and independently runnable reference code.
+航序、买家研究与 BTC 治理已独立维护。其余代码参考保留在本仓库；所有项目都明确
+区分合成演示、研究产物与实际运行证据。
 
-## Start here
+<!-- portfolio:start -->
 
-### Two product workbenches
+## 精选作品
 
-| [Buyer Research Agent](showcases/buyer-research-agent/) | [Hangxu Logistics Workbench](showcases/logistics-workbench/) |
-| --- | --- |
-| ![Synthetic buyer UI](showcases/buyer-research-agent/assets/workbench-desktop.png) | ![Synthetic logistics UI](showcases/logistics-workbench/assets/workbench-desktop.png) |
-| Demand evidence, missing checks and a local task queue. [Run locally](shelves/code/buyer-research-demo/README.md) · [中文说明](showcases/buyer-research-agent/README.zh-CN.md) | Exception review, dispatch tasks and role views. [Run locally](shelves/code/logistics-workbench-demo/README.md) · [中文说明](showcases/logistics-workbench/README.zh-CN.md) |
+<table>
+<tbody>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/logistics-workbench">航序 · 物流协同工作台</a></h3>
+<a href="https://github.com/Daniel-24-life/logistics-workbench"><img src="assets/previews/logistics.png" width="420" alt="航序 · 物流协同工作台" /></a>
+<p>把物流异常、人工审核、角色动作和调度任务组织成可体验的闭环。</p>
+<p><strong>离线产品演示</strong></p>
+<p><a href="https://github.com/Daniel-24-life/logistics-workbench">体验与运行</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/tree/main/dist">源码</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/VERIFICATION.md">验证</a></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/buyer-research-agent">外贸买家研究 Agent</a></h3>
+<a href="https://github.com/Daniel-24-life/buyer-research-agent"><img src="assets/previews/buyer.png" width="420" alt="外贸买家研究 Agent" /></a>
+<p>用需求原文、日期和核验缺口区分明确需求、采购机会与待核验线索。</p>
+<p><strong>离线参考实现</strong></p>
+<p><a href="https://github.com/Daniel-24-life/buyer-research-agent">体验与运行</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/core.py">源码</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/VERIFICATION.md">验证</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/btc-agent-governance">BTC Agent 治理</a></h3>
+<a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.svg" width="420" alt="BTC Agent 治理" /></a>
+<p>分开判断任务路由、证据声明与状态晋级，四种合成场景始终没有执行权限。</p>
+<p><strong>研究治理骨架</strong></p>
+<p><a href="https://github.com/Daniel-24-life/btc-agent-governance">体验与运行</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">源码</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">验证</a></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/agentplatform-case-study">AgentPlatform · 工程与产品复盘</a></h3>
+<a href="https://github.com/Daniel-24-life/agentplatform-case-study"><img src="assets/previews/agentplatform.png" width="420" alt="AgentPlatform · 工程与产品复盘" /></a>
+<p>受控单 Task 执行有指定验证记录；产品目标到交付的核心体验没有实现。</p>
+<p><strong>已停止开发</strong></p>
+<p><a href="https://github.com/Daniel-24-life/agentplatform-case-study">体验与运行</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/ARCHIVE_ARCHITECTURE.md">架构</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/SOURCE_READING_GUIDE.md">源码</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/VERIFICATION_RECORD.md">验证</a></p>
+</td>
+</tr>
+</tbody>
+</table>
 
-Both workbenches use fixed synthetic data. Their code, architecture and tests
-can be inspected without credentials or private execution systems.
+## 完整作品目录
 
-### [BTC Quant Agent System](showcases/quant-agent-system/)
+### 业务产品与工作台
 
-The BTC package turns the private system's governance rules into a small public
-program. Run it to see research, dry-run, promotion, and live requests routed to
-`research_only` or `blocked`, with each decision written to JSON.
-
-![Governed run flow](showcases/quant-agent-system/assets/governed-run-flow.svg)
-
-![Synthetic governed run demonstration](showcases/quant-agent-system/assets/governed-run-demo.svg)
-
-```powershell
-cd shelves/code/agent-governance-skeleton
-python public_demo.py
-```
-
-## Primary entries
-
-| Project | Operating loop | Evidence and implementation |
+| 项目 | 解决的问题 | 当前实现 |
 | --- | --- | --- |
-| [Buyer Research Agent](showcases/buyer-research-agent/) | Demand signal -> evidence gates -> review class -> local queue. | [Architecture](showcases/buyer-research-agent/architecture.md) · [Runnable workbench](shelves/code/buyer-research-demo/) |
-| [Hangxu Logistics Workbench](showcases/logistics-workbench/) | Exception -> reviewed suggestion -> task -> simulated evidence closure. | [Architecture](showcases/logistics-workbench/architecture.md) · [Runnable workbench](shelves/code/logistics-workbench-demo/) |
-| [BTC Quant Agent System](showcases/quant-agent-system/) | Research task -> governed evidence decision -> bounded release. | [Demo run](showcases/quant-agent-system/demo-run.fake.json) · [Runnable code](shelves/code/agent-governance-skeleton/) |
-| [WTI Market Research Case](showcases/wti-market-research/) | Public series -> timing-aware analysis -> claim review. | [Public report](showcases/wti-market-research/report/wti-weekly-market-research-public-case.pdf) · [Runnable code](shelves/code/wti-research-audit-skeleton/) |
-| [AIGC Video Production Pipeline](showcases/aigc-video-production-pipeline/) | Creative brief -> review-ready production package. | [Shot review](showcases/aigc-video-production-pipeline/shot-review-sample.md) · [Workflow](showcases/aigc-video-production-pipeline/workflow.md) |
-| [Creator Discovery Pipeline](showcases/creator-discovery-pipeline/) | Public signals -> reviewed handoff table. | [Review record](showcases/creator-discovery-pipeline/review-sample.fake.json) · [Runnable code](shelves/code/creator-discovery-skeleton/) |
-| [Daily Brief Agent](showcases/daily-brief-agent/) | Source pool -> citation-reviewed brief. | [Brief review](showcases/daily-brief-agent/brief-review-sample.fake.json) · [Runnable code](shelves/code/daily-brief-skeleton/) |
-| [Mailbox Governance Agent](showcases/mailbox-agent-system/) | Synthetic account state and action -> policy and execution record. | [Morning run](showcases/mailbox-agent-system/morning-run.fake.json) · [Runnable code](shelves/code/mailbox-governance-skeleton/) |
-| [AI Skill Routing Playbook](shelves/skills/ai-skill-routing-playbook/) | Task intent -> bounded and verified route. | [Worked example](shelves/skills/ai-skill-routing-playbook/worked-routing-example.md) |
-| [AI Workflow Learning System](shelves/understanding/ai-workflow-learning-system/) | Reading insight -> tested workflow rule. | [Application record](shelves/understanding/ai-workflow-learning-system/application-record.md) · [Handbooks](shelves/understanding/ai-workflow-learning-system/) |
+| [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) | 把物流异常、人工审核、角色动作和调度任务组织成可体验的闭环。 | 离线产品演示 |
+| [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) | 用需求原文、日期和核验缺口区分明确需求、采购机会与待核验线索。 | 离线参考实现 |
+| [创作者发现与审核流程](showcases/creator-discovery-pipeline/) | 将公开信号转换为去重、核验、人工审核后的交接表。 | 合成案例与代码骨架 |
 
-## Operating pattern
+### Agent 工程与治理
 
-```text
-problem definition
-  -> system model
-  -> bounded execution
-  -> evidence artifact
-  -> human review
-  -> release decision
-  -> reusable rule
-```
+| 项目 | 解决的问题 | 当前实现 |
+| --- | --- | --- |
+| [BTC Agent 治理](https://github.com/Daniel-24-life/btc-agent-governance) | 分开判断任务路由、证据声明与状态晋级，四种合成场景始终没有执行权限。 | 研究治理骨架 |
+| [邮箱治理 Agent](showcases/mailbox-agent-system/) | 基于合成账户状态审核动作，记录允许、复核或阻断；公开版不收发邮件。 | 本地策略演示 |
+| [每日简报审核 Agent](showcases/daily-brief-agent/) | 区分来源与证据类别，检查简报引用和不确定信息。 | 合成案例与代码骨架 |
 
-The public code concentrates on boundaries and review gates. It is intentionally smaller than the private systems and uses synthetic inputs.
+### 研究与内容流程
 
-## Verification
+| 项目 | 解决的问题 | 当前实现 |
+| --- | --- | --- |
+| [WTI 市场研究案例](showcases/wti-market-research/) | 公开数据研究中的信息时点、泄漏控制、冻结测试与主张核验。 | 脱敏研究案例 |
+| [AIGC 视频生产流程](showcases/aigc-video-production-pipeline/) | 把创意拆成镜头、资产、检查和交付包，保留连续性与质量门禁。 | 公开流程与重建样例 |
 
-Use Python 3.11+ and Node.js 22+. Install the test dependency and run every public
-code package from the repository root:
+### 方法与学习系统
+
+| 项目 | 解决的问题 | 当前实现 |
+| --- | --- | --- |
+| [AI 技能路由方法](shelves/skills/ai-skill-routing-playbook/) | 按交付任务选择入口，分清生成、审阅、验证和发布的职责。 | 公开方法包 |
+| [AI 工作流学习系统](shelves/understanding/ai-workflow-learning-system/) | 将阅读、任务实践和复核沉淀为可重复使用的工作规则。 | 公开方法与手册 |
+
+### 工程与产品复盘
+
+| 项目 | 解决的问题 | 当前实现 |
+| --- | --- | --- |
+| [AgentPlatform · 工程与产品复盘](https://github.com/Daniel-24-life/agentplatform-case-study) | 受控单 Task 执行有指定验证记录；产品目标到交付的核心体验没有实现。 | 已停止开发 |
+
+## 近期更新
+
+- 2026-10-14 · [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) · v1.0 — 公开离线产品演示独立发布。
+- 2026-10-14 · [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.0 — 证据分类与队列代码独立发布。
+- 2026-10-14 · [BTC Agent 治理](https://github.com/Daniel-24-life/btc-agent-governance) · v1.0 — 四场景治理运行器独立发布。
+
+## 添加下一项作品
+
+[维护指南与项目模板](docs/ADD_PROJECT.md)
+
+<!-- portfolio:end -->
+
+## 阅读与验证
+
+先选一个业务问题，查看项目入口，再按兴趣进入架构、源码与证据。部分深度文档
+保留英文，中文入口会注明语言。AgentPlatform 已停止开发，保留工程与产品复盘。
+
+本仓库检查登记表、生成内容、本地链接、公开文本和仍在此维护的四个代码包。
+独立项目的行为检查由各自 CI 执行。
 
 ```powershell
 python -m pip install -r requirements-dev.txt
 python scripts/verify_public_packages.py
 ```
 
-The verification entry runs each package in its own working directory. It also
-checks synthetic JSON, relative links, release metadata, obvious credential
-patterns, and private local paths. GitHub Actions runs the same command on
-pushes and pull requests.
+## 目录与公开边界
 
-### v2.3 verification snapshot
+[项目登记表](catalog/projects.json) · [代码参考](shelves/code/) · [方法与学习](shelves/understanding/) · [设计说明](docs/DESIGN_NOTES.md)
 
-| Check | Result |
-| --- | ---: |
-| Public projects and method packages | 10 |
-| Runnable code packages | 7 |
-| Automated tests | 78 passed |
-| Synthetic JSON records | 11 valid |
-| Markdown files | 85 link-checked |
-
-Both workbenches were also exercised in a browser at desktop and 390px mobile
-widths. Screenshots use the public fixtures. [Repeat the browser checks](scripts/browser-qa.md).
-
-## Repository layout
-
-| Path | Contents |
-| --- | --- |
-| [CHANGELOG.md](CHANGELOG.md) | Repository release history and verification snapshot. |
-| [showcases/](showcases/) | Project narratives, architecture, boundaries, and evidence samples. |
-| [shelves/code/](shelves/code/) | Sanitized code skeletons and tests. |
-| [shelves/skills/](shelves/skills/) | AI routing and workflow playbooks. |
-| [shelves/understanding/](shelves/understanding/) | Handbooks, application records, and concept cards. |
-| [catalog/](catalog/) | Portfolio inventory and classification. |
-
-## Publication boundary
-
-Public packages may include system structure, generalized rules, synthetic records, tests, and reconstructed examples.
-
-They exclude credentials, accounts, real contacts, private source lists, strategy formulas, production prompts, raw logs, real transaction or campaign data, complete automation chains, and private business relationships.
+公开的是系统结构、重建案例、样例与可独立阅读的代码。真实联系人、凭据、订单、
+私人材料与完整生产执行链保持私有。这里不把模拟结果描述成真实业务效果。

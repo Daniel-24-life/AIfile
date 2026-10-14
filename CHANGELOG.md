@@ -1,5 +1,18 @@
 # Release history
 
+## v3.0 - 2026-10-14
+
+- Reorganized the portfolio into five categories with Chinese-first entry pages
+  and independent English versions.
+- Moved logistics, buyer research and BTC governance code to independently
+  maintained repositories; preserved old entry paths and the v2.3 source snapshot.
+- Added original light/dark covers, four featured project cards, a project registry,
+  draft scaffolding and marker-based navigation generation.
+- Added nine portfolio contract tests; retained four local code packages with
+  38 behavioral tests. Independent project CI covers their 40 migrated tests.
+- Added a profile source-pin workflow and a documented publication process.
+- Preserved AgentPlatform's discontinued state and existing MIT license.
+
 ## v2.3 - 2026-10-14
 
 - Added two anonymous, independently runnable product workbenches: buyer research

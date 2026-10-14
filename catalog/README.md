@@ -1,9 +1,7 @@
-# Catalog
+# 作品登记与分类
 
-This directory is the source of truth for public package lifecycle and release
-version.
+[项目登记表](projects.json)是项目标题、分类、入口、实现状态与精选排序的唯一来源。
 
-| File | Contents |
-| --- | --- |
-| [Inventory](inventory.md) | Published items, locations, lifecycle, and repository release. |
-| [Taxonomy](taxonomy.md) | Content types, lifecycle states, and subject tags. |
+[生成目录](inventory.md) · [内容类型说明](taxonomy.md) · [新增作品](../docs/ADD_PROJECT.md)
+
+实现状态与发布版本分开记录：离线演示、研究案例和已停止项目不因发布而变成生产系统。

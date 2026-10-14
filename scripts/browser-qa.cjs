@@ -4,9 +4,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const out = name => {
-  const folder = process.env.QA_CAPTURE_PUBLIC === '1'
-    ? path.join(root, 'showcases', name, 'assets')
-    : path.join(root, 'tmp', 'browser-checks', name);
+  const folder = path.join(root, 'tmp', 'browser-checks', name);
   fs.mkdirSync(folder, {recursive:true});
   return folder;
 };

@@ -1,54 +1,21 @@
-# AI Workflow Learning System
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../../assets/projects/ai-workflow-learning/cover-dark.svg" />
+  <img src="../../../assets/projects/ai-workflow-learning/cover-light.svg" alt="AI 工作流学习系统" width="1280" />
+</picture>
 
-This is my framework for turning AI articles, engineering cases, and tool practice into reusable working capability.
+# AI 工作流学习系统
 
-## Working loop
+[English](README.en.md) · [完整作品目录](../../../README.md)
 
-```text
-Reading -> Framing -> Workflow -> Evidence -> Review -> Reuse
-```
+将阅读、任务实践与复核沉淀为可再次使用的工作规则。读到的观点先进入任务，
+检查实际结果，再决定是否保留。
 
-I start with one idea, try it in a real task, check the result, and keep it only when it changes later work.
+## 方法与材料
 
-## Core ideas
+工作循环为阅读、问题定义、工作流、证据、复核、复用。
+知识、标准和战术分别对应事实理解、交付边界和任务顺序。
 
-| Idea | Working meaning |
-| --- | --- |
-| Harness over prompt | Design context, tools, permissions, state, and checks around the model. |
-| Human role moves upward | Keep goals, boundaries, checkpoints, and acceptance under human control. |
-| State outside chat | Persist specs, reports, decisions, and handoffs for long tasks. |
-| Loop before automation | Automate only repeated work with clear verification and acceptable cost. |
-| Evidence over confidence | Use tests, artifacts, reviews, and observed behavior. |
-| Reuse after reflection | Convert stable lessons into rules, templates, checklists, or skill candidates. |
+[中文使用手册](AI使用手册.md) · [英文使用手册](AI-Usage-Handbook.md) · [实践记录（英文）](application-record.md) · [概念卡片（英文）](cards/)
 
-## K/S/T knowledge split
-
-| Layer | Meaning | Typical asset |
-| --- | --- | --- |
-| K: Knowledge | Facts, domain concepts, source understanding | notes, summaries, concept maps |
-| S: Standards | Roles, boundaries, delivery contracts | rules, checklists, acceptance criteria |
-| T: Tactics | Workflow order, checkpoints, review loops | procedures, task templates, handoffs |
-
-## Handbooks and evidence
-
-| Item | Contents |
-| --- | --- |
-| [Chinese Handbook](AI使用手册.md) | The Chinese version of my personal AI usage handbook. |
-| [English Handbook](AI-Usage-Handbook.md) | The English version of the same working method. |
-| [Application Record](application-record.md) | A repository review and repair cycle using the handbook rules. |
-
-## Concept cards
-
-| Card | Topic |
-| --- | --- |
-| [Harness Over Prompt](cards/harness-over-prompt.md) | Working environment around the model. |
-| [Loop Engineering](cards/loop-engineering.md) | Conditions for repeatable automation. |
-| [Evidence Chain](cards/evidence-chain.md) | Acceptance based on external evidence. |
-| [K/S/T Knowledge System](cards/kst-knowledge-system.md) | Separation of knowledge, standards, and tactics. |
-| [Human Checkpoint Role](cards/human-checkpoint-role.md) | Human decisions in long or risky workflows. |
-| [Skill Candidate Rule](cards/skill-candidate-rule.md) | Conditions for turning repeated work into a skill. |
-| [Context To State](cards/context-to-state.md) | Persistent state for long tasks. |
-
-## Boundary
-
-Original articles, converted source files, long excerpts, private drafts, and raw OCR material stay outside this package.
+原始文章、长摘录、私有草稿和 OCR 原材料保留在本地。公开内容是个人方法与实践记录，
+不包含第三方原文合集或可验证的通用能力评分。

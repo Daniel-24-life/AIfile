@@ -1,50 +1,23 @@
-# Creator Discovery Pipeline
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/projects/creator-discovery-pipeline/cover-dark.svg" />
+  <img src="../../assets/projects/creator-discovery-pipeline/cover-light.svg" alt="创作者发现与审核流程" width="1280" />
+</picture>
 
-I built this workflow to turn scattered public creator signals into a reviewable handoff table. It covers discovery, profile normalization, deduplication, eligibility checks, contact status, and human review.
+# 创作者发现与审核流程
 
-## Work included
+[English](README.en.md) · [完整作品目录](../../README.md)
 
-- converting a broad growth task into a data pipeline
-- separating discovery, enrichment, scoring, review, and handoff
-- using exclusion lists before collecting new candidates
-- keeping uncertain fields visible while guesses stay out of the table
-- excluding private names, accounts, contact data, platform details, and full operating recipes
+将零散公开信号整理为可审核的交接表，重点是候选规范化、去重、排除条件和人工复核。
 
-## Pipeline
+## 当前实现
 
-```mermaid
-flowchart LR
-    A["Task Brief"] --> B["Seed Pool"]
-    B --> C["Candidate Discovery"]
-    C --> D["Normalization"]
-    D --> E["Deduplication"]
-    E --> F["Profile Review"]
-    F --> G["Quality Gate"]
-    G --> H["Handoff Table"]
-```
+公开包包含系统说明、合成审核记录和一个可运行的规则骨架。真实名单、联系信息、
+平台账号和完整操作流程保留私有；这里不声称产出了真实合作或业务转化。
 
-## My role
+## 阅读与运行
 
-- defining the intake brief and output fields
-- designing deduplication and exclusion rules
-- separating raw candidates from reviewed candidates
-- creating review gates for profile fit, activity, contactability, and risk
-- packaging results into workbook-style handoff artifacts
-- keeping sensitive inputs and original outputs out of the public version
+[代码与测试](../../shelves/code/creator-discovery-skeleton/) · [合成审核记录](review-sample.fake.json) · [样例表](public-sample.md)
 
-## Handoff problem
-
-Creator discovery can look simple from the outside: search, copy names, make a sheet.
-
-A usable lead table needs fixed definitions, exclusion rules, traceable decisions, and a human check before handoff.
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| [Architecture](architecture.md) | Pipeline layers and responsibilities. |
-| [Evidence and Review](evidence-and-review.md) | Review gates, evidence classes, and acceptance states. |
-| [Synthetic Review Record](review-sample.fake.json) | Approved, review-needed, and blocked fake records. |
-| [Sample Table](public-sample.md) | Fake rows and public field examples. |
-| [Code Skeleton](../../shelves/code/creator-discovery-skeleton/) | Small governance skeleton with fake data only. |
-| [Redaction Policy](redaction-policy.md) | What stays out of the public folder. |
+[架构（英文）](architecture.md)说明发现、规范化、去重与审核职责；
+[证据与复核（英文）](evidence-and-review.md)区分通过、待复核和阻断。
+[公开边界（英文）](redaction-policy.md)列出不公开材料。

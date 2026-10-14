@@ -1,82 +1,25 @@
-# Mailbox Governance Agent
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/projects/mailbox-governance-agent/cover-dark.svg" />
+  <img src="../../assets/projects/mailbox-governance-agent/cover-light.svg" alt="邮箱治理 Agent" width="1280" />
+</picture>
 
-I built the private workflow to review incoming messages, prepare drafts, route
-proposed actions, and preserve local decision records. This public package uses
-fake inputs to show which actions pass the checks and which ones are stopped.
+# 邮箱治理 Agent
 
-It has no mailbox connection, credentials, provider settings, message bodies,
-contact records, or delivery code.
+[English](README.en.md) · [完整作品目录](../../README.md)
 
-## One synthetic morning run
+把拟议动作、审批、重复检查和账户状态分开记录。公开版本用合成输入演示哪些
+动作可以保留在本地，哪些需要复核，以及哪些会被阻断。
 
-![Synthetic mailbox governance dashboard](assets/synthetic-dashboard.svg)
+![合成邮箱治理面板](assets/synthetic-dashboard.svg)
 
-The demo starts with four precomputed account states and seven proposed actions.
-It does not calculate account health or connect to a provider.
+## 当前实现与运行
 
-Run it from `shelves/code/mailbox-governance-skeleton/`:
+从[公开代码目录](../../shelves/code/mailbox-governance-skeleton/)运行 python public_demo.py。
+合成晨间运行包含 7 个提议：3 个允许、1 个待复核、3 个阻断。允许的对外动作只标为
+模拟待执行，不发送。网络连接和凭据均未启用，真实读取与发送均为 0。
 
-```powershell
-python public_demo.py
-```
+四种账户状态为预设输入；公开代码没有账户健康计算、服务商连接或邮件传输。
 
-The captured run has this result:
+## 深入阅读
 
-```text
-proposals=7
-allowed=3
-needs_review=1
-blocked=3
-network_enabled=false
-credentials_loaded=false
-real_messages_read=0
-real_messages_sent=0
-```
-
-An allowed local action produces a local artifact. If an external action passes
-the checks, the demo marks it as `mock_queue_only`: approved, but not sent. The
-public code never sends or changes a message.
-
-## Decision path
-
-```text
-synthetic trigger
-  -> precomputed account snapshot
-  -> normalized action metadata
-  -> approval and raw-content checks
-  -> duplicate check
-  -> account-state gate
-  -> keep it local, ask for review, approve without sending, or block
-  -> JSON decision record
-```
-
-## Account states
-
-| State | Local analysis | Approved external action |
-| --- | --- | --- |
-| `healthy` | Local artifact only | Checks pass, but nothing is sent |
-| `cautious` | Local artifact only | Needs review |
-| `read_only` | Local artifact only | Blocked |
-| `paused` | Local artifact only | Blocked |
-
-These states are supplied as synthetic input. The private thresholds and health
-calculation do not appear in this repository.
-
-## Public package
-
-| File | Contents |
-| --- | --- |
-| [Architecture](architecture.md) | Public layers, account-state gate, and control points. |
-| [Evidence and review](evidence-and-review.md) | Decision meanings, review gates, and valid claims. |
-| [Synthetic morning run](morning-run.fake.json) | Full JSON output from the public demo. |
-| [Synthetic decision record](decision-sample.fake.json) | Three smaller action-review examples. |
-| [Sample tables](public-sample.md) | Human-readable synthetic records. |
-| [Code skeleton](../../shelves/code/mailbox-governance-skeleton/) | Local policy demo and tests. |
-| [Redaction policy](redaction-policy.md) | Materials excluded or generalized for publication. |
-
-## Public boundary
-
-This package contains synthetic account aliases, message references, actions,
-and decisions. It excludes message text, real addresses, provider access,
-business lists, operational thresholds, production prompts, transport code,
-delivery claims, and the complete private workflow.
+[合成晨间记录](morning-run.fake.json) · [架构（英文）](architecture.md) · [证据与复核（英文）](evidence-and-review.md) · [公开边界（英文）](redaction-policy.md)

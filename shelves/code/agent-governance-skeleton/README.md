@@ -1,48 +1,7 @@
-# Agent Governance Skeleton
+# BTC Agent 治理 · 已迁移
 
-This is a sanitized code skeleton for a governed AI agent system.
+代码与测试的唯一维护位置为 [btc-agent-governance](https://github.com/Daniel-24-life/btc-agent-governance)。
+此路径保留为旧链接入口，不再维护第二份源码。
 
-It includes:
-
-- plane-based task routing
-- fail-closed policy checks
-- evidence classification
-- promotion-gate evaluation
-- dry-run execution lifecycle
-- a runnable four-scenario demo
-- boundary tests
-
-Outside this public skeleton:
-
-- private strategy logic
-- data access code
-- credentials
-- experiment results
-- internal run history
-
-## Run tests
-
-```powershell
-python -m pytest tests -q
-```
-
-## Run the public demo
-
-```powershell
-python public_demo.py
-```
-
-The demo executes four synthetic scenarios through the public router, evidence
-classifier, promotion gate, and dry-run lifecycle:
-
-```text
-research_candidate       -> research_only
-dry_run_lifecycle        -> research_only
-promotion_request        -> blocked
-live_request             -> blocked
-```
-
-Use `python public_demo.py --json` for the full JSON record.
-No scenario submits an order, records a real fill, or grants execution authority.
-
-From the repository root, run `python scripts/verify_public_packages.py` to verify every package.
+需要原公开版本时，查看 [AIfile v2.3](https://github.com/Daniel-24-life/AIfile/tree/v2.3/shelves/code/agent-governance-skeleton)。
+独立项目的运行、架构、源码路线和 CI 结果均在新仓库。

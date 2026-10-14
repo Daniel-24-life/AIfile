@@ -1,26 +1,21 @@
-# Inventory
+# 项目目录
 
-Lifecycle and release are separate fields. `published` describes the current
-state; `v2.3` identifies the current repository release.
+此表由 projects.json 生成。项目实现状态与仓库目录版本 v3.0 分开记录。
 
-| Item | Type | Location | Lifecycle | Release |
-| --- | --- | --- | --- | --- |
-| BTC Quant Agent System | showcase | [open](../showcases/quant-agent-system/) | `published` | `v2.3` |
-| Agent Governance Skeleton | code skeleton | [open](../shelves/code/agent-governance-skeleton/) | `published` | `v2.3` |
-| WTI Market Research Case | showcase | [open](../showcases/wti-market-research/) | `published` | `v2.3` |
-| WTI Research Audit Skeleton | code skeleton | [open](../shelves/code/wti-research-audit-skeleton/) | `published` | `v2.3` |
-| AIGC Video Production Pipeline | showcase | [open](../showcases/aigc-video-production-pipeline/) | `published` | `v2.3` |
-| Creator Discovery Pipeline | showcase | [open](../showcases/creator-discovery-pipeline/) | `published` | `v2.3` |
-| Creator Discovery Skeleton | code skeleton | [open](../shelves/code/creator-discovery-skeleton/) | `published` | `v2.3` |
-| Daily Brief Agent | showcase | [open](../showcases/daily-brief-agent/) | `published` | `v2.3` |
-| Daily Brief Skeleton | code skeleton | [open](../shelves/code/daily-brief-skeleton/) | `published` | `v2.3` |
-| Mailbox Governance Agent | showcase | [open](../showcases/mailbox-agent-system/) | `published` | `v2.3` |
-| Mailbox Governance Skeleton | code skeleton | [open](../shelves/code/mailbox-governance-skeleton/) | `published` | `v2.3` |
-| AI Workflow Learning System | understanding | [open](../shelves/understanding/ai-workflow-learning-system/) | `published` | `v2.3` |
-| AI 使用手册 | handbook | [open](../shelves/understanding/ai-workflow-learning-system/AI使用手册.md) | `published` | `v2.3` |
-| AI Usage Handbook | handbook | [open](../shelves/understanding/ai-workflow-learning-system/AI-Usage-Handbook.md) | `published` | `v2.3` |
-| AI Skill Routing Playbook | playbook | [open](../shelves/skills/ai-skill-routing-playbook/) | `published` | `v2.3` |
-| Buyer Research Agent | showcase | [open](../showcases/buyer-research-agent/) | `published` | `v2.3` |
-| Buyer Research Demo | code demo | [open](../shelves/code/buyer-research-demo/) | `published` | `v2.3` |
-| Hangxu Logistics Workbench | showcase | [open](../showcases/logistics-workbench/) | `published` | `v2.3` |
-| Logistics Workbench Demo | code demo | [open](../shelves/code/logistics-workbench-demo/) | `published` | `v2.3` |
+<!-- portfolio:start -->
+
+| 项目 | 分类 | 当前实现 | 主入口 |
+| --- | --- | --- |
+| 航序 · 物流协同工作台 | 业务产品与工作台 | 离线产品演示 | [查看](https://github.com/Daniel-24-life/logistics-workbench) |
+| 外贸买家研究 Agent | 业务产品与工作台 | 离线参考实现 | [查看](https://github.com/Daniel-24-life/buyer-research-agent) |
+| BTC Agent 治理 | Agent 工程与治理 | 研究治理骨架 | [查看](https://github.com/Daniel-24-life/btc-agent-governance) |
+| AgentPlatform · 工程与产品复盘 | 工程与产品复盘 | 已停止开发 | [查看](https://github.com/Daniel-24-life/agentplatform-case-study) |
+| 创作者发现与审核流程 | 业务产品与工作台 | 合成案例与代码骨架 | [查看](../showcases/creator-discovery-pipeline/) |
+| 邮箱治理 Agent | Agent 工程与治理 | 本地策略演示 | [查看](../showcases/mailbox-agent-system/) |
+| 每日简报审核 Agent | Agent 工程与治理 | 合成案例与代码骨架 | [查看](../showcases/daily-brief-agent/) |
+| WTI 市场研究案例 | 研究与内容流程 | 脱敏研究案例 | [查看](../showcases/wti-market-research/) |
+| AIGC 视频生产流程 | 研究与内容流程 | 公开流程与重建样例 | [查看](../showcases/aigc-video-production-pipeline/) |
+| AI 技能路由方法 | 方法与学习系统 | 公开方法包 | [查看](../shelves/skills/ai-skill-routing-playbook/) |
+| AI 工作流学习系统 | 方法与学习系统 | 公开方法与手册 | [查看](../shelves/understanding/ai-workflow-learning-system/) |
+
+<!-- portfolio:end -->

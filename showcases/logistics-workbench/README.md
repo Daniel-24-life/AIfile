@@ -1,30 +1,8 @@
-# Hangxu Logistics Workbench
+# 航序物流协同工作台 · 独立维护
 
-A public product reconstruction of an AI-assisted cross-border logistics
-operations desk: exception review, task coordination and filtered customer status.
+[打开项目](https://github.com/Daniel-24-life/logistics-workbench) · [返回作品目录](../../README.md)
 
-![Synthetic logistics workbench](assets/workbench-desktop.png)
+该项目的代码、运行说明、架构与验证现已在独立仓库维护。本路径保留迁移入口。
 
-## Start
-
-[Run the local workbench](../../shelves/code/logistics-workbench-demo/README.md).
-It uses a static server and invented business records. See the
-[Chinese case study](README.zh-CN.md), [architecture](architecture.md) and
-[publication boundary](public-scope.md). The [reference guide](reference-guide.md)
-documents role actions, task states and production adaptation requirements.
-
-## Inspect the operating loop
-
-```text
-synthetic logistics event -> exception -> facts and missing information
-  -> fixed AI suggestion -> human review -> dispatch task
-  -> simulated evidence submission -> closure -> customer status
-```
-
-Five roles expose different product views and action permissions. Stale or weak
-evidence blocks direct approval. Integration pages illustrate normalized events,
-source conflicts, terminal layouts and system adaptation using mock state.
-
-This is a product demo, not a deployed logistics system. Static role switching
-provides no secure authentication. Suggested actions, confidence, fees and health
-figures are fixtures; completion does not verify a real dispatch or document.
+这里留下的其余说明、图片和合成记录是 v2.3 的公开快照，不再跟随新代码更新。
+需要完整旧包时，查看 [v2.3 历史版本](https://github.com/Daniel-24-life/AIfile/tree/v2.3/showcases/logistics-workbench)。
