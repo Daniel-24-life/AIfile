@@ -69,24 +69,38 @@ def render(data: dict, english=False, profile=False, source_ref='main') -> str:
     title, summary, state = ('title_en', 'summary_en', 'state_en') if english else ('title', 'summary', 'state')
     owner = data['owner']
     chunks = ['## Selected work' if english else '## 精选作品', '']
-    chunks += ['<table>', '<tbody>']
-    for i in range(0, len(featured), 2):
-        chunks.append('<tr>')
-        for p in featured[i:i+2]:
+    if profile:
+        for index, p in enumerate(featured):
             url = link(p['entry'], profile, owner)
             image = link(p['cover'], profile, owner, asset=True)
-            if profile:
-                image = image.replace('/AIfile/main/', f'/AIfile/{source_ref}/')
-            chunks += ['<td width="50%" valign="top">',
-                       f'<h3><a href="{escape(url)}">{escape(p[title])}</a></h3>',
-                       f'<a href="{escape(url)}"><img src="{escape(image)}" width="420" alt="{escape(p[title])}" /></a>',
-                       f'<p>{escape(p[summary])}</p>', f'<p><strong>{escape(p[state])}</strong></p>',
-                       f'<p><a href="{escape(url)}">{"Run / overview" if english else "体验与运行"}</a> · '
+            image = image.replace('/AIfile/main/', f'/AIfile/{source_ref}/')
+            chunks += [f'### [{escape(p[title])}]({escape(url)})', '',
+                       f'<a href="{escape(url)}"><img src="{escape(image)}" width="860" alt="{escape(p[title])}" /></a>', '',
+                       escape(p[summary]), '',
+                       f'**{escape(p[state])}** · '
+                       f'<a href="{escape(url)}">{"Run / overview" if english else "体验与运行"}</a> · '
                        f'<a href="{escape(link(p["architecture"], profile, owner))}">{"Architecture" if english else "架构"}</a> · '
                        f'<a href="{escape(link(p["source"], profile, owner))}">{"Source" if english else "源码"}</a> · '
-                       f'<a href="{escape(link(p["verification"], profile, owner))}">{"Verification" if english else "验证"}</a></p>', '</td>']
-        chunks.append('</tr>')
-    chunks += ['</tbody>', '</table>', '']
+                       f'<a href="{escape(link(p["verification"], profile, owner))}">{"Verification" if english else "验证"}</a>', '']
+            if index < len(featured) - 1:
+                chunks += ['---', '']
+    else:
+        chunks += ['<table>', '<tbody>']
+        for i in range(0, len(featured), 2):
+            chunks.append('<tr>')
+            for p in featured[i:i+2]:
+                url = link(p['entry'], profile, owner)
+                image = link(p['cover'], profile, owner, asset=True)
+                chunks += ['<td width="50%" valign="top">',
+                           f'<h3><a href="{escape(url)}">{escape(p[title])}</a></h3>',
+                           f'<a href="{escape(url)}"><img src="{escape(image)}" width="420" alt="{escape(p[title])}" /></a>',
+                           f'<p>{escape(p[summary])}</p>', f'<p><strong>{escape(p[state])}</strong></p>',
+                           f'<p><a href="{escape(url)}">{"Run / overview" if english else "体验与运行"}</a> · '
+                           f'<a href="{escape(link(p["architecture"], profile, owner))}">{"Architecture" if english else "架构"}</a> · '
+                           f'<a href="{escape(link(p["source"], profile, owner))}">{"Source" if english else "源码"}</a> · '
+                           f'<a href="{escape(link(p["verification"], profile, owner))}">{"Verification" if english else "验证"}</a></p>', '</td>']
+            chunks.append('</tr>')
+        chunks += ['</tbody>', '</table>', '']
     if not profile:
         chunks += ['## Project directory' if english else '## 完整作品目录', '']
         for cat in data['categories']:

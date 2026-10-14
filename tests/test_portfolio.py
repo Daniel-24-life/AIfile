@@ -92,6 +92,14 @@ class PortfolioTests(unittest.TestCase):
         self.assertIn(f'/AIfile/{sha}/assets/previews/', rendered)
         self.assertNotIn('/AIfile/main/assets/previews/', rendered)
 
+    def test_profile_featured_work_reflows_without_table(self):
+        data = renderer.load_registry(ROOT)
+        rendered = renderer.render(data, profile=True, source_ref='a' * 40)
+        self.assertNotIn('<table>', rendered)
+        self.assertNotIn('<td', rendered)
+        self.assertIn('width="860"', rendered)
+        self.assertEqual(rendered.count('\n### ['), 4)
+
 
 if __name__ == '__main__':
     unittest.main()
