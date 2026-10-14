@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="跨境物流 AI 运营协同平台脱敏交互 Demo：异常识别、AI 建议、人工审核、任务执行与客户协同。">
+  <meta name="theme-color" content="#071426">
+  <title>航序 · 跨境物流 AI 运营协同平台</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071426'/%3E%3Cpath d='M11 38h42M16 31l10 7 8-15 14 15' fill='none' stroke='%2332d6d0' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='34' cy='23' r='4' fill='%23ffb84d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">跳到主要内容</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M4 20h24M7 16l5 4 4-9 8 9"/><circle cx="16" cy="11" r="2.4"/></svg>
+        </div>
+        <div>
+          <strong>航序</strong>
+          <span>AI Logistics Control</span>
+        </div>
+      </div>
+
+      <nav class="nav-list">
+        <span class="nav-section-label">运营工作台</span>
+        <button class="nav-item active" data-view="exceptions" aria-current="page">
+          <span class="nav-icon">⌁</span><span>异常中心</span><span class="nav-count" id="navRiskCount">4</span>
+        </button>
+        <button class="nav-item" data-view="tasks">
+          <span class="nav-icon">▤</span><span>调度任务</span><span class="nav-count neutral" id="navTaskCount">3</span>
+        </button>
+        <button class="nav-item" data-view="containers">
+          <span class="nav-icon">▦</span><span>集装箱查询</span>
+        </button>
+        <button class="nav-item" data-view="customer">
+          <span class="nav-icon">◫</span><span>客户视图</span>
+        </button>
+        <span class="nav-section-label nav-section-spaced">企业能力</span>
+        <button class="nav-item" data-view="integrations">
+          <span class="nav-icon">⌘</span><span>数据接入</span><span class="nav-count warning">2</span>
+        </button>
+        <button class="nav-item" data-view="system">
+          <span class="nav-icon">◉</span><span>系统适配</span>
+        </button>
+        <span class="nav-section-label nav-section-spaced">项目复盘</span>
+        <button class="nav-item" data-view="product">
+          <span class="nav-icon">◇</span><span>产品说明</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="system-state">
+          <span class="pulse-dot"></span>
+          <div><strong>模拟数据通道</strong><span>最近同步 2 分钟前</span></div>
+        </div>
+        <div class="demo-label">公开离线演示 · 全部记录虚构</div>
+      </div>
+    </aside>
+
+    <main id="workspace" class="workspace" tabindex="-1">
+      <header class="topbar">
+        <div class="mobile-brand"><strong>航序</strong><span>AI Logistics</span></div>
+        <div class="breadcrumb" id="breadcrumb">运营工作台 / 异常中心</div>
+        <div class="top-actions">
+          <span class="environment-badge"><i></i>DEMO · V3</span>
+          <button class="density-control" id="densityButton" type="button" aria-pressed="false">紧凑视图</button>
+          <button class="icon-button" id="refreshButton" title="刷新模拟数据" aria-label="刷新模拟数据">↻</button>
+          <label class="role-switch"><span>当前角色</span><select id="roleSelect">
+            <option value="operator">物流操作</option>
+            <option value="dispatcher">调度人员</option>
+            <option value="service">客服人员</option>
+            <option value="manager">运营经理</option>
+            <option value="customer">客户用户</option>
+          </select></label>
+          <div class="operator">
+            <span class="operator-avatar">LX</span>
+            <div><strong id="operatorName">林序</strong><span id="operatorRole">物流操作</span></div>
+          </div>
+        </div>
+      </header>
+
+      <div id="viewRoot" class="view-root" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+  <aside class="detail-sheet" id="detailSheet" aria-label="异常详情" aria-hidden="true"></aside>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden></div>
+  <section class="modal" id="editModal" role="dialog" aria-modal="true" aria-labelledby="editModalTitle" hidden>
+    <div class="modal-head">
+      <div><span class="eyebrow">人工审核</span><h2 id="editModalTitle">编辑 AI 处置建议</h2></div>
+      <button class="icon-button" id="closeModal" aria-label="关闭编辑窗口">×</button>
+    </div>
+    <label for="suggestionText">处置方案</label>
+    <textarea id="suggestionText" rows="7"></textarea>
+    <label for="ownerSelect">任务负责人</label>
+    <select id="ownerSelect">
+      <option>陈楠 · 调度</option>
+      <option>周宁 · 进口操作</option>
+      <option>李舟 · 客服</option>
+    </select>
+    <label for="reviewNote">审核备注</label>
+    <input id="reviewNote" type="text" placeholder="说明修改原因（可选）">
+    <div class="modal-actions">
+      <button class="button secondary" id="cancelEdit">取消</button>
+      <button class="button primary" id="saveSuggestion">保存并创建任务</button>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./policy.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

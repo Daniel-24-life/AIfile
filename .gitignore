@@ -9,6 +9,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 tmp/
+.runtime/
+node_modules/
 
 inbox/*
 !inbox/README.md

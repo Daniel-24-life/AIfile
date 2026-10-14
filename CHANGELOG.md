@@ -1,5 +1,26 @@
 # Release history
 
+## v2.3 - 2026-10-14
+
+- Added two anonymous, independently runnable product workbenches: buyer research
+  and cross-border logistics collaboration.
+- Rebuilt the buyer UI around synthetic evidence classes, missing checks, JSON
+  export and a local SQLite demonstration queue.
+- Retained the logistics product layout and added action-level permission checks,
+  duplicate-task blocking and safe panel closure on role changes.
+- Added English and Chinese case studies, code maps, architecture, reference
+  contracts, disclosure boundaries and six fresh public-fixture screenshots.
+- Extended sensitive-text scans to web assets and all absolute Windows paths.
+- Kept real buyers, business relationships, private reports and production
+  execution chains outside the release.
+
+Release verification:
+
+- 78 automated tests across seven packages
+- 11 synthetic JSON records
+- 85 Markdown files checked for relative links
+- browser checks for both desktop and 390px mobile layouts and key workflows
+
 ## v2.2 - 2026-08-21
 
 - Added an anonymous WTI market research case based on seven official public series.

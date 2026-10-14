@@ -9,8 +9,18 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_RELEASE = "v2.2"
+CURRENT_RELEASE = "v2.3"
 PACKAGES = (
+    (
+        "buyer-research-demo",
+        ROOT / "shelves/code/buyer-research-demo",
+        (sys.executable, "-B", "-m", "unittest", "discover", "-s", "tests", "-v"),
+    ),
+    (
+        "logistics-workbench-demo",
+        ROOT / "shelves/code/logistics-workbench-demo",
+        ("node", "--test", "tests/policy.test.cjs"),
+    ),
     (
         "agent-governance-skeleton",
         ROOT / "shelves/code/agent-governance-skeleton",
@@ -175,13 +185,13 @@ def validate_public_text_boundary() -> bool:
         (
             "private Windows path",
             re.compile(
-                r"\b[A-Za-z]:\\(?:Users|Quant|AIfile(?:-library)?|AI文件)\\",
+                r"\b[A-Za-z]:[\\/]",
                 re.IGNORECASE,
             ),
         ),
     )
     files = public_text_files(
-        (".md", ".json", ".py", ".toml", ".svg", ".yml", ".yaml")
+        (".md", ".json", ".py", ".toml", ".svg", ".yml", ".yaml", ".html", ".js", ".cjs", ".mjs", ".css")
     )
     matches: list[str] = []
 

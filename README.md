@@ -2,15 +2,25 @@
 
 [![Public package tests](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml/badge.svg)](https://github.com/Daniel-24-life/AIfile/actions/workflows/public-package-tests.yml)
 
-Current release: [`v2.2`](CHANGELOG.md) (2026-08-21).
+Current release: [`v2.3`](CHANGELOG.md) (2026-10-14).
 
 AIfile is where I keep the parts of my AI work that can be shown in public.
 
 I do not upload the original workspaces. Each project is rebuilt around four
 things I can disclose safely: the system shape, the rules I used, a synthetic
-evidence record, and a small piece of code when the code can stand on its own.
+evidence record, and independently runnable reference code.
 
 ## Start here
+
+### Two product workbenches
+
+| [Buyer Research Agent](showcases/buyer-research-agent/) | [Hangxu Logistics Workbench](showcases/logistics-workbench/) |
+| --- | --- |
+| ![Synthetic buyer UI](showcases/buyer-research-agent/assets/workbench-desktop.png) | ![Synthetic logistics UI](showcases/logistics-workbench/assets/workbench-desktop.png) |
+| Demand evidence, missing checks and a local task queue. [Run locally](shelves/code/buyer-research-demo/README.md) · [中文说明](showcases/buyer-research-agent/README.zh-CN.md) | Exception review, dispatch tasks and role views. [Run locally](shelves/code/logistics-workbench-demo/README.md) · [中文说明](showcases/logistics-workbench/README.zh-CN.md) |
+
+Both workbenches use fixed synthetic data. Their code, architecture and tests
+can be inspected without credentials or private execution systems.
 
 ### [BTC Quant Agent System](showcases/quant-agent-system/)
 
@@ -31,6 +41,8 @@ python public_demo.py
 
 | Project | Operating loop | Evidence and implementation |
 | --- | --- | --- |
+| [Buyer Research Agent](showcases/buyer-research-agent/) | Demand signal -> evidence gates -> review class -> local queue. | [Architecture](showcases/buyer-research-agent/architecture.md) · [Runnable workbench](shelves/code/buyer-research-demo/) |
+| [Hangxu Logistics Workbench](showcases/logistics-workbench/) | Exception -> reviewed suggestion -> task -> simulated evidence closure. | [Architecture](showcases/logistics-workbench/architecture.md) · [Runnable workbench](shelves/code/logistics-workbench-demo/) |
 | [BTC Quant Agent System](showcases/quant-agent-system/) | Research task -> governed evidence decision -> bounded release. | [Demo run](showcases/quant-agent-system/demo-run.fake.json) · [Runnable code](shelves/code/agent-governance-skeleton/) |
 | [WTI Market Research Case](showcases/wti-market-research/) | Public series -> timing-aware analysis -> claim review. | [Public report](showcases/wti-market-research/report/wti-weekly-market-research-public-case.pdf) · [Runnable code](shelves/code/wti-research-audit-skeleton/) |
 | [AIGC Video Production Pipeline](showcases/aigc-video-production-pipeline/) | Creative brief -> review-ready production package. | [Shot review](showcases/aigc-video-production-pipeline/shot-review-sample.md) · [Workflow](showcases/aigc-video-production-pipeline/workflow.md) |
@@ -56,7 +68,8 @@ The public code concentrates on boundaries and review gates. It is intentionally
 
 ## Verification
 
-Install the test dependency and run every public code package from the repository root:
+Use Python 3.11+ and Node.js 22+. Install the test dependency and run every public
+code package from the repository root:
 
 ```powershell
 python -m pip install -r requirements-dev.txt
@@ -68,15 +81,18 @@ checks synthetic JSON, relative links, release metadata, obvious credential
 patterns, and private local paths. GitHub Actions runs the same command on
 pushes and pull requests.
 
-### v2.2 verification snapshot
+### v2.3 verification snapshot
 
 | Check | Result |
 | --- | ---: |
-| Public projects and method packages | 8 |
-| Runnable code packages | 5 |
-| Automated tests | 60 passed |
-| Synthetic JSON records | 10 valid |
-| Markdown files | 73 link-checked |
+| Public projects and method packages | 10 |
+| Runnable code packages | 7 |
+| Automated tests | 78 passed |
+| Synthetic JSON records | 11 valid |
+| Markdown files | 85 link-checked |
+
+Both workbenches were also exercised in a browser at desktop and 390px mobile
+widths. Screenshots use the public fixtures. [Repeat the browser checks](scripts/browser-qa.md).
 
 ## Repository layout
 

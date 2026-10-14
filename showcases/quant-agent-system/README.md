@@ -21,7 +21,7 @@ connection.
 | Evidence output | Machine-readable JSON decision record |
 | Execution authority | None |
 | Real orders or fills | None |
-| Repository release | `v2.2` |
+| Repository release | `v2.3` |
 
 ## One governed run
 

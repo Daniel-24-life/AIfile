@@ -4,6 +4,8 @@ Sanitized code examples for policy checks, review states, and synthetic workflow
 
 | Code package | Focus | Tests |
 | --- | --- | --- |
+| [Buyer Research Demo](buyer-research-demo/) | Demand evidence gates, local JSON API and SQLite demonstration queue. | unittest |
+| [Logistics Workbench Demo](logistics-workbench-demo/) | Responsive static UI and shared role/action policy. | node:test |
 | [Agent Governance Skeleton](agent-governance-skeleton/) | Plane routing, evidence classes, and dry-run boundaries. | pytest |
 | [Creator Discovery Skeleton](creator-discovery-skeleton/) | Field validation, review gates, and duplicate exclusion. | pytest |
 | [Daily Brief Skeleton](daily-brief-skeleton/) | Source classes, citation coverage, and weak-signal review. | pytest |
