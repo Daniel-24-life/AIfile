@@ -8,7 +8,7 @@
 [English](README.en.md) · [个人主页](https://github.com/Daniel-24-life) · [新增项目](docs/ADD_PROJECT.md)
 
 这里整理我能公开的 AI 产品、Agent 工程、研究流程和方法。每项作品说明解决的
-问题、当前实现与验证边界，并提供深入阅读入口。当前目录版本为 [v3.0](CHANGELOG.md)。
+问题、当前实现与验证边界，并提供深入阅读入口。当前目录版本为 [v3.1](CHANGELOG.md)。
 
 航序、买家研究与 BTC 治理已独立维护。其余代码参考保留在本仓库；所有项目都明确
 区分合成演示、研究产物与实际运行证据。
@@ -38,7 +38,7 @@
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/btc-agent-governance">BTC Agent 治理</a></h3>
-<a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.svg" width="420" alt="BTC Agent 治理" /></a>
+<a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.png" width="420" alt="BTC Agent 治理" /></a>
 <p>分开判断任务路由、证据声明与状态晋级，四种合成场景始终没有执行权限。</p>
 <p><strong>研究治理骨架</strong></p>
 <p><a href="https://github.com/Daniel-24-life/btc-agent-governance">体验与运行</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">源码</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">验证</a></p>
@@ -94,9 +94,9 @@
 
 ## 近期更新
 
-- 2026-10-14 · [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) · v1.0 — 公开离线产品演示独立发布。
-- 2026-10-14 · [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.0 — 证据分类与队列代码独立发布。
-- 2026-10-14 · [BTC Agent 治理](https://github.com/Daniel-24-life/btc-agent-governance) · v1.0 — 四场景治理运行器独立发布。
+- 2026-10-15 · [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) · v1.1 — 异常队列与审核工作台重设计。
+- 2026-10-15 · [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.1 — 证据优先工作台与连接状态改进。
+- 2026-10-15 · [BTC Agent 治理](https://github.com/Daniel-24-life/btc-agent-governance) · v1.1 — 新增四场景本地记录查看器。
 
 ## 添加下一项作品
 

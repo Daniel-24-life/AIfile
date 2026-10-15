@@ -1,6 +1,6 @@
 # 项目目录
 
-此表由 projects.json 生成。项目实现状态与仓库目录版本 v3.0 分开记录。
+此表由 projects.json 生成。项目实现状态与仓库目录版本 v3.1 分开记录。
 
 <!-- portfolio:start -->
 

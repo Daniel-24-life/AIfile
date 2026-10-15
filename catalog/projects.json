@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "v3.0",
+  "release": "v3.1",
   "owner": "Daniel-24-life",
   "categories": [
     {
@@ -47,10 +47,10 @@
       "source": "https://github.com/Daniel-24-life/logistics-workbench/tree/main/dist",
       "verification": "https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/VERIFICATION.md",
       "release": {
-        "version": "v1.0",
-        "date": "2026-10-14",
-        "note": "公开离线产品演示独立发布。",
-        "note_en": "Standalone public product demo."
+        "version": "v1.1",
+        "date": "2026-10-15",
+        "note": "异常队列与审核工作台重设计。",
+        "note_en": "Queue-first review workbench redesign."
       },
       "runnable": true
     },
@@ -71,10 +71,10 @@
       "source": "https://github.com/Daniel-24-life/buyer-research-agent/blob/main/core.py",
       "verification": "https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/VERIFICATION.md",
       "release": {
-        "version": "v1.0",
-        "date": "2026-10-14",
-        "note": "证据分类与队列代码独立发布。",
-        "note_en": "Standalone evidence and queue reference."
+        "version": "v1.1",
+        "date": "2026-10-15",
+        "note": "证据优先工作台与连接状态改进。",
+        "note_en": "Evidence-first workspace and explicit connection states."
       },
       "runnable": true
     },
@@ -89,16 +89,16 @@
       "state_en": "Research governance skeleton",
       "repository": "https://github.com/Daniel-24-life/btc-agent-governance",
       "entry": "https://github.com/Daniel-24-life/btc-agent-governance",
-      "cover": "assets/previews/btc.svg",
+      "cover": "assets/previews/btc.png",
       "featured_order": 3,
       "architecture": "https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md",
       "source": "https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py",
       "verification": "https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md",
       "release": {
-        "version": "v1.0",
-        "date": "2026-10-14",
-        "note": "四场景治理运行器独立发布。",
-        "note_en": "Standalone four-scenario governance demo."
+        "version": "v1.1",
+        "date": "2026-10-15",
+        "note": "新增四场景本地记录查看器。",
+        "note_en": "Local viewer for four recorded governance scenarios."
       },
       "runnable": true
     },
@@ -120,9 +120,9 @@
       "verification": "https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/VERIFICATION_RECORD.md",
       "release": {
         "version": "归档",
-        "date": "2026-10-13",
-        "note": "保留停止原因、实现边界与源码阅读路线。",
-        "note_en": "Discontinued project with documented engineering lessons."
+        "date": "2026-10-15",
+        "note": "新增只读复盘页，保留停止结论。",
+        "note_en": "Read-only case page; discontinued conclusion preserved."
       },
       "runnable": false
     },

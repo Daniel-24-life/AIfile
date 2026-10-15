@@ -9,7 +9,7 @@
 
 Public product reconstructions, bounded agents, research workflows and reusable
 methods. Each entry separates implemented behavior, synthetic examples and
-verification limits. Directory release: [v3.0](CHANGELOG.md).
+verification limits. Directory release: [v3.1](CHANGELOG.md).
 
 The logistics, buyer research and BTC governance projects maintain their code in
 independent repositories. Four other code references remain here.
@@ -39,7 +39,7 @@ independent repositories. Four other code references remain here.
 <tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/btc-agent-governance">BTC Agent Governance</a></h3>
-<a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.svg" width="420" alt="BTC Agent Governance" /></a>
+<a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.png" width="420" alt="BTC Agent Governance" /></a>
 <p>Four synthetic scenarios with bounded evidence and no trading authority.</p>
 <p><strong>Research governance skeleton</strong></p>
 <p><a href="https://github.com/Daniel-24-life/btc-agent-governance">Run / overview</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">Source</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">Verification</a></p>
@@ -95,9 +95,9 @@ independent repositories. Four other code references remain here.
 
 ## Recent releases
 
-- 2026-10-14 · [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench) · v1.0 — Standalone public product demo.
-- 2026-10-14 · [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.0 — Standalone evidence and queue reference.
-- 2026-10-14 · [BTC Agent Governance](https://github.com/Daniel-24-life/btc-agent-governance) · v1.0 — Standalone four-scenario governance demo.
+- 2026-10-15 · [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench) · v1.1 — Queue-first review workbench redesign.
+- 2026-10-15 · [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.1 — Evidence-first workspace and explicit connection states.
+- 2026-10-15 · [BTC Agent Governance](https://github.com/Daniel-24-life/btc-agent-governance) · v1.1 — Local viewer for four recorded governance scenarios.
 
 ## Add the next project
 

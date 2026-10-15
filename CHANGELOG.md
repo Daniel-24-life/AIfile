@@ -1,5 +1,14 @@
 # Release history
 
+## v3.1 - 2026-10-15
+
+- Updated four project previews from locally runnable public-fixture interfaces.
+- Linked logistics and buyer workbench redesigns, the BTC record viewer, and the
+  read-only AgentPlatform case page. No online hosting or real integrations added.
+- Preserved the profile's mobile reading path and manual introduction; continued
+  pinning generated project sections to the reviewed catalog source commit.
+- Added a reusable local browser QA script for viewport and readability checks.
+
 ## v3.0 - 2026-10-14
 
 - Reorganized the portfolio into five categories with Chinese-first entry pages
