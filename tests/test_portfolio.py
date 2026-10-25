@@ -98,7 +98,8 @@ class PortfolioTests(unittest.TestCase):
         self.assertNotIn('<table>', rendered)
         self.assertNotIn('<td', rendered)
         self.assertIn('width="860"', rendered)
-        self.assertEqual(rendered.count('\n### ['), 4)
+        expected = sum(p.get('published', True) and p.get('featured_order') is not None for p in data['projects'])
+        self.assertEqual(rendered.count('\n### ['), expected)
 
 
 if __name__ == '__main__':

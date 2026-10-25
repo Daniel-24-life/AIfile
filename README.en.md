@@ -9,7 +9,7 @@
 
 Public product reconstructions, bounded agents, research workflows and reusable
 methods. Each entry separates implemented behavior, synthetic examples and
-verification limits. Directory release: [v3.1](CHANGELOG.md).
+verification limits. Directory release: [v3.2](CHANGELOG.md).
 
 The logistics, buyer research and BTC governance projects maintain their code in
 independent repositories. Four other code references remain here.
@@ -22,12 +22,21 @@ independent repositories. Four other code references remain here.
 <tbody>
 <tr>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/cosmopilot-v4">CosmoPilot V4.0</a></h3>
+<a href="https://github.com/Daniel-24-life/cosmopilot-v4"><img src="assets/previews/cosmopilot.png" width="420" alt="CosmoPilot V4.0" /></a>
+<p>Consumer-service evidence, protected drafts and local feedback in one workspace.</p>
+<p><strong>Offline public reference of V4.0 mechanisms</strong></p>
+<p><a href="https://github.com/Daniel-24-life/cosmopilot-v4">Run / overview</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/source-reading.md">Source</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/VERIFICATION.md">Verification</a></p>
+</td>
+<td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/logistics-workbench">Hangxu Logistics Workbench</a></h3>
 <a href="https://github.com/Daniel-24-life/logistics-workbench"><img src="assets/previews/logistics.png" width="420" alt="Hangxu Logistics Workbench" /></a>
 <p>A synthetic exception-to-task workflow with role views.</p>
 <p><strong>Offline product demo</strong></p>
 <p><a href="https://github.com/Daniel-24-life/logistics-workbench">Run / overview</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/tree/main/dist">Source</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/VERIFICATION.md">Verification</a></p>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/buyer-research-agent">Buyer Research Agent</a></h3>
 <a href="https://github.com/Daniel-24-life/buyer-research-agent"><img src="assets/previews/buyer.png" width="420" alt="Buyer Research Agent" /></a>
@@ -35,8 +44,6 @@ independent repositories. Four other code references remain here.
 <p><strong>Offline reference</strong></p>
 <p><a href="https://github.com/Daniel-24-life/buyer-research-agent">Run / overview</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/core.py">Source</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/VERIFICATION.md">Verification</a></p>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/btc-agent-governance">BTC Agent Governance</a></h3>
 <a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.png" width="420" alt="BTC Agent Governance" /></a>
@@ -44,6 +51,8 @@ independent repositories. Four other code references remain here.
 <p><strong>Research governance skeleton</strong></p>
 <p><a href="https://github.com/Daniel-24-life/btc-agent-governance">Run / overview</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">Source</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">Verification</a></p>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/agentplatform-case-study">AgentPlatform Case Study</a></h3>
 <a href="https://github.com/Daniel-24-life/agentplatform-case-study"><img src="assets/previews/agentplatform.png" width="420" alt="AgentPlatform Case Study" /></a>
@@ -61,6 +70,7 @@ independent repositories. Four other code references remain here.
 
 | Project | Focus | State |
 | --- | --- | --- |
+| [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) | Consumer-service evidence, protected drafts and local feedback in one workspace. | Offline public reference of V4.0 mechanisms |
 | [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench) | A synthetic exception-to-task workflow with role views. | Offline product demo |
 | [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent) | Demand evidence, unknowns and a durable local queue. | Offline reference |
 | [Creator Discovery Pipeline](showcases/creator-discovery-pipeline/) | Normalize public signals into a reviewed handoff table. | Synthetic case and skeleton |
@@ -95,9 +105,9 @@ independent repositories. Four other code references remain here.
 
 ## Recent releases
 
+- 2026-10-25 · [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) · V4.0 公开参考版 — Consumer-service workspace, AI Coding notes and synthetic reference demo.
 - 2026-10-15 · [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench) · v1.1 — Queue-first review workbench redesign.
 - 2026-10-15 · [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.1 — Evidence-first workspace and explicit connection states.
-- 2026-10-15 · [BTC Agent Governance](https://github.com/Daniel-24-life/btc-agent-governance) · v1.1 — Local viewer for four recorded governance scenarios.
 
 ## Add the next project
 

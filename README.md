@@ -8,7 +8,7 @@
 [English](README.en.md) · [个人主页](https://github.com/Daniel-24-life) · [新增项目](docs/ADD_PROJECT.md)
 
 这里整理我能公开的 AI 产品、Agent 工程、研究流程和方法。每项作品说明解决的
-问题、当前实现与验证边界，并提供深入阅读入口。当前目录版本为 [v3.1](CHANGELOG.md)。
+问题、当前实现与验证边界，并提供深入阅读入口。当前目录版本为 [v3.2](CHANGELOG.md)。
 
 航序、买家研究与 BTC 治理已独立维护。其余代码参考保留在本仓库；所有项目都明确
 区分合成演示、研究产物与实际运行证据。
@@ -21,12 +21,21 @@
 <tbody>
 <tr>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/cosmopilot-v4">知微 CosmoPilot · V4.0</a></h3>
+<a href="https://github.com/Daniel-24-life/cosmopilot-v4"><img src="assets/previews/cosmopilot.png" width="420" alt="知微 CosmoPilot · V4.0" /></a>
+<p>把消费者进线、时点证据、人工草稿复核和本地反馈放进同一工作台。</p>
+<p><strong>V4.0 机制的离线公开参考版</strong></p>
+<p><a href="https://github.com/Daniel-24-life/cosmopilot-v4">体验与运行</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/source-reading.md">源码</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/VERIFICATION.md">验证</a></p>
+</td>
+<td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/logistics-workbench">航序 · 物流协同工作台</a></h3>
 <a href="https://github.com/Daniel-24-life/logistics-workbench"><img src="assets/previews/logistics.png" width="420" alt="航序 · 物流协同工作台" /></a>
 <p>把物流异常、人工审核、角色动作和调度任务组织成可体验的闭环。</p>
 <p><strong>离线产品演示</strong></p>
 <p><a href="https://github.com/Daniel-24-life/logistics-workbench">体验与运行</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/tree/main/dist">源码</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/VERIFICATION.md">验证</a></p>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/buyer-research-agent">外贸买家研究 Agent</a></h3>
 <a href="https://github.com/Daniel-24-life/buyer-research-agent"><img src="assets/previews/buyer.png" width="420" alt="外贸买家研究 Agent" /></a>
@@ -34,8 +43,6 @@
 <p><strong>离线参考实现</strong></p>
 <p><a href="https://github.com/Daniel-24-life/buyer-research-agent">体验与运行</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/core.py">源码</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/VERIFICATION.md">验证</a></p>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/btc-agent-governance">BTC Agent 治理</a></h3>
 <a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.png" width="420" alt="BTC Agent 治理" /></a>
@@ -43,6 +50,8 @@
 <p><strong>研究治理骨架</strong></p>
 <p><a href="https://github.com/Daniel-24-life/btc-agent-governance">体验与运行</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">源码</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">验证</a></p>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/agentplatform-case-study">AgentPlatform · 工程与产品复盘</a></h3>
 <a href="https://github.com/Daniel-24-life/agentplatform-case-study"><img src="assets/previews/agentplatform.png" width="420" alt="AgentPlatform · 工程与产品复盘" /></a>
@@ -60,6 +69,7 @@
 
 | 项目 | 解决的问题 | 当前实现 |
 | --- | --- | --- |
+| [知微 CosmoPilot · V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) | 把消费者进线、时点证据、人工草稿复核和本地反馈放进同一工作台。 | V4.0 机制的离线公开参考版 |
 | [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) | 把物流异常、人工审核、角色动作和调度任务组织成可体验的闭环。 | 离线产品演示 |
 | [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) | 用需求原文、日期和核验缺口区分明确需求、采购机会与待核验线索。 | 离线参考实现 |
 | [创作者发现与审核流程](showcases/creator-discovery-pipeline/) | 将公开信号转换为去重、核验、人工审核后的交接表。 | 合成案例与代码骨架 |
@@ -94,9 +104,9 @@
 
 ## 近期更新
 
+- 2026-10-25 · [知微 CosmoPilot · V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) · V4.0 公开参考版 — 新增消费者服务工作台、AI Coding 说明与合成参考演示。
 - 2026-10-15 · [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) · v1.1 — 异常队列与审核工作台重设计。
 - 2026-10-15 · [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.1 — 证据优先工作台与连接状态改进。
-- 2026-10-15 · [BTC Agent 治理](https://github.com/Daniel-24-life/btc-agent-governance) · v1.1 — 新增四场景本地记录查看器。
 
 ## 添加下一项作品
 

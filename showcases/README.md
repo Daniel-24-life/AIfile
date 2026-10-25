@@ -6,6 +6,7 @@
 
 | 项目 | 分类 | 当前实现 | 主入口 |
 | --- | --- | --- |
+| 知微 CosmoPilot · V4.0 | 业务产品与工作台 | V4.0 机制的离线公开参考版 | [查看](https://github.com/Daniel-24-life/cosmopilot-v4) |
 | 航序 · 物流协同工作台 | 业务产品与工作台 | 离线产品演示 | [查看](https://github.com/Daniel-24-life/logistics-workbench) |
 | 外贸买家研究 Agent | 业务产品与工作台 | 离线参考实现 | [查看](https://github.com/Daniel-24-life/buyer-research-agent) |
 | BTC Agent 治理 | Agent 工程与治理 | 研究治理骨架 | [查看](https://github.com/Daniel-24-life/btc-agent-governance) |

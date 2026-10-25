@@ -9,7 +9,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CURRENT_RELEASE = "v3.1"
+CURRENT_RELEASE = "v3.2"
 PACKAGES = (
     (
         "portfolio-contracts",

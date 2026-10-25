@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "v3.1",
+  "release": "v3.2",
   "owner": "Daniel-24-life",
   "categories": [
     {
@@ -31,6 +31,30 @@
   ],
   "projects": [
     {
+      "id": "cosmopilot-v4",
+      "title": "知微 CosmoPilot · V4.0",
+      "title_en": "CosmoPilot V4.0",
+      "category": "business-products",
+      "summary": "把消费者进线、时点证据、人工草稿复核和本地反馈放进同一工作台。",
+      "summary_en": "Consumer-service evidence, protected drafts and local feedback in one workspace.",
+      "state": "V4.0 机制的离线公开参考版",
+      "state_en": "Offline public reference of V4.0 mechanisms",
+      "repository": "https://github.com/Daniel-24-life/cosmopilot-v4",
+      "entry": "https://github.com/Daniel-24-life/cosmopilot-v4",
+      "cover": "assets/previews/cosmopilot.png",
+      "featured_order": 1,
+      "architecture": "https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/architecture.md",
+      "source": "https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/source-reading.md",
+      "verification": "https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/VERIFICATION.md",
+      "release": {
+        "version": "V4.0 公开参考版",
+        "date": "2026-10-25",
+        "note": "新增消费者服务工作台、AI Coding 说明与合成参考演示。",
+        "note_en": "Consumer-service workspace, AI Coding notes and synthetic reference demo."
+      },
+      "runnable": true
+    },
+    {
       "id": "logistics-workbench",
       "title": "航序 · 物流协同工作台",
       "title_en": "Hangxu Logistics Workbench",
@@ -42,7 +66,7 @@
       "repository": "https://github.com/Daniel-24-life/logistics-workbench",
       "entry": "https://github.com/Daniel-24-life/logistics-workbench",
       "cover": "assets/previews/logistics.png",
-      "featured_order": 1,
+      "featured_order": 2,
       "architecture": "https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/architecture.md",
       "source": "https://github.com/Daniel-24-life/logistics-workbench/tree/main/dist",
       "verification": "https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/VERIFICATION.md",
@@ -66,7 +90,7 @@
       "repository": "https://github.com/Daniel-24-life/buyer-research-agent",
       "entry": "https://github.com/Daniel-24-life/buyer-research-agent",
       "cover": "assets/previews/buyer.png",
-      "featured_order": 2,
+      "featured_order": 3,
       "architecture": "https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/architecture.md",
       "source": "https://github.com/Daniel-24-life/buyer-research-agent/blob/main/core.py",
       "verification": "https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/VERIFICATION.md",
@@ -90,7 +114,7 @@
       "repository": "https://github.com/Daniel-24-life/btc-agent-governance",
       "entry": "https://github.com/Daniel-24-life/btc-agent-governance",
       "cover": "assets/previews/btc.png",
-      "featured_order": 3,
+      "featured_order": 4,
       "architecture": "https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md",
       "source": "https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py",
       "verification": "https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md",
@@ -114,7 +138,7 @@
       "repository": "https://github.com/Daniel-24-life/agentplatform-case-study",
       "entry": "https://github.com/Daniel-24-life/agentplatform-case-study",
       "cover": "assets/previews/agentplatform.png",
-      "featured_order": 4,
+      "featured_order": 5,
       "architecture": "https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/ARCHIVE_ARCHITECTURE.md",
       "source": "https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/SOURCE_READING_GUIDE.md",
       "verification": "https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/VERIFICATION_RECORD.md",

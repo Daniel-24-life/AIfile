@@ -1,5 +1,16 @@
 # Release history
 
+## v3.2 - 2026-10-25
+
+- Added CosmoPilot V4.0 as a featured consumer-service project, with a synthetic
+  offline reference, architecture, AI Coding notes, tests and fresh UI previews.
+- Distinguished V4.0 mechanisms and public reconstruction from the original
+  competition workspace and the later V4.1 candidate.
+- Excluded original competition datasets, team-private materials, raw logs and
+  production execution chains; retained existing licensing boundaries.
+- Preserved the project registry, future-project workflow and pinned-source
+  profile generation; existing projects remain independently maintained.
+
 ## v3.1 - 2026-10-15
 
 - Updated four project previews from locally runnable public-fixture interfaces.
