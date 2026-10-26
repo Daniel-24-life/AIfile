@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+<title id="title">AIfile - Product &amp; Agent Engineering Portfolio</title><desc id="desc">Runnable workflows, system architecture, code and verification.</desc>
+<rect width="1280" height="340" rx="20" fill="#f2f6fa"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="60" y="62" fill="#526b80" font-size="17">PRODUCT THINKING / AGENT SYSTEMS / ENGINEERING</text>
+<text x="60" y="140" fill="#152f43" font-size="54" font-weight="700">AIfile</text>
+<text x="60" y="188" fill="#152f43" font-size="31" font-weight="600">Product &amp; Agent Engineering Portfolio</text>
+<text x="60" y="230" fill="#526b80" font-size="22">From business problems to runnable workflows.</text>
+<rect x="60" y="264" width="605" height="40" rx="8" fill="#e5edf4"/>
+<text x="78" y="291" fill="#152f43" font-size="19">PRODUCT / ARCHITECTURE / CODE / VERIFICATION</text>
+<path d="M910 245L980 166L1055 201L1130 100L1210 138" fill="none" stroke="#29a89e" stroke-width="4"/>
+<g fill="#f2f6fa" stroke="#29a89e" stroke-width="4"><circle cx="980" cy="166" r="8"/><circle cx="1055" cy="201" r="8"/></g>
+<circle cx="1130" cy="100" r="11" fill="#eab56b"/>
+</g></svg>

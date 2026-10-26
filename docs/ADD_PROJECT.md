@@ -26,10 +26,16 @@ python scripts/new_project.py --id my-next-project --category business-products
 
 独立仓库是其代码的唯一维护源。AIfile 不复制完整代码，保留介绍、静态预览和链接。
 
+精选项目另填 `cover_en`（纯英文配图）和 `entry_en`（英文项目入口），如发布标签含中文则
+补充 `release.version_en`。英文图可使用实际英文界面截图，或明确标注的英文系统图；不能把
+图解称为产品截图。当前五项系统图由 `scripts/render_english_assets.py` 维护，新增精选时同步
+该脚本的项目规格，并保留独立的中文截图。中文深度文档在英文导航中标注语言。
+
 ## 生成与检查
 
 ```powershell
 python scripts/render_portfolio.py
+python scripts/render_english_assets.py
 python scripts/render_portfolio.py --check
 python scripts/verify_public_packages.py
 ```
@@ -43,6 +49,10 @@ python scripts/render_portfolio.py --profile-dir ../Daniel-24-life --source-comm
 
 来源写入个人主页的 catalog-source.json。主页 CI 获取该固定提交核对生成内容。
 两仓库分别审阅、提交和发布；新增项目工具本身不会替你上传。
+
+英文资产生成与检查可附加 `--profile-dir` 同步主页明暗封面。顶部语言切换属于手写区，
+放在封面之前；英文页回到中文个人主页，中文页链接到英文 README。GitHub 原生 README
+使用链接切换独立文档，不依赖 JavaScript 或第三方服务。
 
 ## 发布检查
 

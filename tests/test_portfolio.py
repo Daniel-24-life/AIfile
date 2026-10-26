@@ -101,6 +101,40 @@ class PortfolioTests(unittest.TestCase):
         expected = sum(p.get('published', True) and p.get('featured_order') is not None for p in data['projects'])
         self.assertEqual(rendered.count('\n### ['), expected)
 
+    def test_english_profile_uses_dedicated_english_assets_and_entries(self):
+        data = renderer.load_registry(ROOT)
+        generated = renderer.render(data, english=True, profile=True, source_ref='a' * 40)
+        self.assertNotRegex(generated, r'[\u3400-\u9fff]')
+        for project in data['projects']:
+            if project.get('featured_order') is not None:
+                self.assertIn(project['cover_en'], generated)
+                self.assertNotIn(project['cover'] + '"', generated)
+                self.assertIn(project['entry_en'], generated)
+
+    def test_missing_english_featured_asset_refused(self):
+        root = self.fixture(lambda data: data['projects'][0].update(published=True, cover_en='missing.svg'))
+        cover = root / 'assets/previews/cosmopilot.png'
+        cover.parent.mkdir(parents=True)
+        cover.write_bytes(b'fixture')
+        with self.assertRaisesRegex(ValueError, 'missing.svg'):
+            renderer.load_registry(root)
+
+    def test_english_assets_are_explanatory_and_have_no_cjk_text(self):
+        data = renderer.load_registry(ROOT)
+        for project in data['projects']:
+            if project.get('featured_order') is None:
+                continue
+            content = (ROOT / project['cover_en']).read_text(encoding='utf-8')
+            self.assertNotRegex(content, r'[\u3400-\u9fff]')
+            self.assertIn('not a product UI screenshot', content)
+            self.assertIn(project['title_en'], content)
+
+    def test_english_release_label_is_translated(self):
+        data = renderer.load_registry(ROOT)
+        rendered = renderer.render(data, english=True)
+        self.assertIn('V4.0 public reference', rendered)
+        self.assertNotIn('公开参考版', rendered)
+
 
 if __name__ == '__main__':
     unittest.main()

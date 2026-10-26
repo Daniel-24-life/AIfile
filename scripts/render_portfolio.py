@@ -39,7 +39,10 @@ def load_registry(root: Path) -> dict:
             date.fromisoformat(release['date'])
         if not item.get('published', True):
             continue
-        for field in ('entry', 'cover', 'architecture', 'source', 'verification'):
+        fields = ['entry', 'cover', 'architecture', 'source', 'verification']
+        if order is not None:
+            fields += ['cover_en', 'entry_en']
+        for field in fields:
             value = item.get(field)
             if not isinstance(value, str) or not value:
                 raise ValueError(f"{item['id']}: missing {field}")
@@ -71,17 +74,17 @@ def render(data: dict, english=False, profile=False, source_ref='main') -> str:
     chunks = ['## Selected work' if english else '## 精选作品', '']
     if profile:
         for index, p in enumerate(featured):
-            url = link(p['entry'], profile, owner)
-            image = link(p['cover'], profile, owner, asset=True)
+            url = link(p.get('entry_en', p['entry']) if english else p['entry'], profile, owner)
+            image = link(p['cover_en'] if english else p['cover'], profile, owner, asset=True)
             image = image.replace('/AIfile/main/', f'/AIfile/{source_ref}/')
             chunks += [f'### [{escape(p[title])}]({escape(url)})', '',
                        f'<a href="{escape(url)}"><img src="{escape(image)}" width="860" alt="{escape(p[title])}" /></a>', '',
                        escape(p[summary]), '',
                        f'**{escape(p[state])}** · '
                        f'<a href="{escape(url)}">{"Run / overview" if english else "体验与运行"}</a> · '
-                       f'<a href="{escape(link(p["architecture"], profile, owner))}">{"Architecture" if english else "架构"}</a> · '
-                       f'<a href="{escape(link(p["source"], profile, owner))}">{"Source" if english else "源码"}</a> · '
-                       f'<a href="{escape(link(p["verification"], profile, owner))}">{"Verification" if english else "验证"}</a>', '']
+                       f'<a href="{escape(link(p["architecture"], profile, owner))}">{"Architecture (Chinese)" if english else "架构"}</a> · '
+                       f'<a href="{escape(link(p["source"], profile, owner))}">{escape(p.get("source_label_en", "Source")) if english else "源码"}</a> · '
+                       f'<a href="{escape(link(p["verification"], profile, owner))}">{"Verification (Chinese)" if english else "验证"}</a>', '']
             if index < len(featured) - 1:
                 chunks += ['---', '']
     else:
@@ -89,16 +92,16 @@ def render(data: dict, english=False, profile=False, source_ref='main') -> str:
         for i in range(0, len(featured), 2):
             chunks.append('<tr>')
             for p in featured[i:i+2]:
-                url = link(p['entry'], profile, owner)
-                image = link(p['cover'], profile, owner, asset=True)
+                url = link(p.get('entry_en', p['entry']) if english else p['entry'], profile, owner)
+                image = link(p['cover_en'] if english else p['cover'], profile, owner, asset=True)
                 chunks += ['<td width="50%" valign="top">',
                            f'<h3><a href="{escape(url)}">{escape(p[title])}</a></h3>',
                            f'<a href="{escape(url)}"><img src="{escape(image)}" width="420" alt="{escape(p[title])}" /></a>',
                            f'<p>{escape(p[summary])}</p>', f'<p><strong>{escape(p[state])}</strong></p>',
                            f'<p><a href="{escape(url)}">{"Run / overview" if english else "体验与运行"}</a> · '
-                           f'<a href="{escape(link(p["architecture"], profile, owner))}">{"Architecture" if english else "架构"}</a> · '
-                           f'<a href="{escape(link(p["source"], profile, owner))}">{"Source" if english else "源码"}</a> · '
-                           f'<a href="{escape(link(p["verification"], profile, owner))}">{"Verification" if english else "验证"}</a></p>', '</td>']
+                           f'<a href="{escape(link(p["architecture"], profile, owner))}">{"Architecture (Chinese)" if english else "架构"}</a> · '
+                           f'<a href="{escape(link(p["source"], profile, owner))}">{escape(p.get("source_label_en", "Source")) if english else "源码"}</a> · '
+                           f'<a href="{escape(link(p["verification"], profile, owner))}">{"Verification (Chinese)" if english else "验证"}</a></p>', '</td>']
             chunks.append('</tr>')
         chunks += ['</tbody>', '</table>', '']
     if not profile:
@@ -109,20 +112,23 @@ def render(data: dict, english=False, profile=False, source_ref='main') -> str:
                        '| --- | --- | --- |']
             for p in published:
                 if p['category'] == cat['id']:
-                    chunks.append(f"| [{p[title]}]({p['entry']}) | {p[summary]} | {p[state]} |")
+                    entry = p.get('entry_en', p['entry']) if english else p['entry']
+                    chunks.append(f"| [{p[title]}]({entry}) | {p[summary]} | {p[state]} |")
             chunks.append('')
     else:
         chunks += ['## Read deeper' if english else '## 深入阅读', '',
-                   f"[{'All projects' if english else '全部项目与分类'}](https://github.com/{owner}/AIfile) · "
+                   f"[{'All projects' if english else '全部项目与分类'}](https://github.com/{owner}/AIfile{'/blob/main/README.en.md' if english else ''}) · "
                    f"[{'Code references' if english else '代码参考'}](https://github.com/{owner}/AIfile/tree/main/shelves/code) · "
                    f"[{'Learning and methods' if english else '方法与学习'}](https://github.com/{owner}/AIfile/tree/main/shelves/understanding)", '']
     chunks += ['## Recent releases' if english else '## 近期更新', '']
     releases = sorted((p for p in published if p.get('release')), key=lambda p: (p['release']['date'], -(p.get('featured_order') or 100)), reverse=True)[:3]
     for p in releases:
         r = p['release']
-        chunks.append(f"- {r['date']} · [{p[title]}]({link(p['entry'], profile, owner)}) · {r['version']} — {r['note_en'] if english else r['note']}")
+        entry = p.get('entry_en', p['entry']) if english else p['entry']
+        version = r.get('version_en', r['version']) if english else r['version']
+        chunks.append(f"- {r['date']} · [{p[title]}]({link(entry, profile, owner)}) · {version} — {r['note_en'] if english else r['note']}")
     chunks += ['', '## Add the next project' if english else '## 添加下一项作品', '',
-               f"[{'Publishing guide and templates' if english else '维护指南与项目模板'}](" +
+               f"[{'Publishing guide and templates (Chinese)' if english else '维护指南与项目模板'}](" +
                (f'https://github.com/{owner}/AIfile/blob/main/docs/ADD_PROJECT.md' if profile else 'docs/ADD_PROJECT.md') + ')', '']
     return '\n'.join(chunks).rstrip() + '\n'
 

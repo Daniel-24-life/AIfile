@@ -1,18 +1,21 @@
+<p align="right"><strong>Language / 语言:</strong> <a href="README.md">中文</a> · <strong>English</strong></p>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg" />
-  <img src="assets/cover-light.svg" alt="AIfile portfolio" width="1280" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-en-dark.svg" />
+  <img src="assets/cover-en-light.svg" alt="AIfile portfolio" width="1280" />
 </picture>
 
 # AIfile · Product and Agent Engineering Portfolio
 
-[中文](README.md) · [Profile](https://github.com/Daniel-24-life) · [Add a project](docs/ADD_PROJECT.md)
+[English profile](https://github.com/Daniel-24-life/Daniel-24-life/blob/main/README.en.md) · [Add a project (Chinese)](docs/ADD_PROJECT.md)
 
 Public product reconstructions, bounded agents, research workflows and reusable
 methods. Each entry separates implemented behavior, synthetic examples and
 verification limits. Directory release: [v3.2](CHANGELOG.md).
 
-The logistics, buyer research and BTC governance projects maintain their code in
-independent repositories. Four other code references remain here.
+Featured projects have independent repositories and English overviews. The
+English illustrations explain system structure, not translated product UIs.
+Deep documents marked “Chinese”, and some directory entries, retain their original language.
 
 <!-- portfolio:start -->
 
@@ -22,43 +25,43 @@ independent repositories. Four other code references remain here.
 <tbody>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Daniel-24-life/cosmopilot-v4">CosmoPilot V4.0</a></h3>
-<a href="https://github.com/Daniel-24-life/cosmopilot-v4"><img src="assets/previews/cosmopilot.png" width="420" alt="CosmoPilot V4.0" /></a>
+<h3><a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md">CosmoPilot V4.0</a></h3>
+<a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md"><img src="assets/previews/en/cosmopilot-v4.svg" width="420" alt="CosmoPilot V4.0" /></a>
 <p>Consumer-service evidence, protected drafts and local feedback in one workspace.</p>
 <p><strong>Offline public reference of V4.0 mechanisms</strong></p>
-<p><a href="https://github.com/Daniel-24-life/cosmopilot-v4">Run / overview</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/source-reading.md">Source</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/VERIFICATION.md">Verification</a></p>
+<p><a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/architecture.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/source-reading.md">Source guide (Chinese)</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/VERIFICATION.md">Verification (Chinese)</a></p>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Daniel-24-life/logistics-workbench">Hangxu Logistics Workbench</a></h3>
-<a href="https://github.com/Daniel-24-life/logistics-workbench"><img src="assets/previews/logistics.png" width="420" alt="Hangxu Logistics Workbench" /></a>
+<h3><a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md">Hangxu Logistics Workbench</a></h3>
+<a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md"><img src="assets/previews/en/logistics-workbench.svg" width="420" alt="Hangxu Logistics Workbench" /></a>
 <p>A synthetic exception-to-task workflow with role views.</p>
 <p><strong>Offline product demo</strong></p>
-<p><a href="https://github.com/Daniel-24-life/logistics-workbench">Run / overview</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/tree/main/dist">Source</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/VERIFICATION.md">Verification</a></p>
+<p><a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/architecture.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/tree/main/dist">Source</a> · <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/docs/VERIFICATION.md">Verification (Chinese)</a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Daniel-24-life/buyer-research-agent">Buyer Research Agent</a></h3>
-<a href="https://github.com/Daniel-24-life/buyer-research-agent"><img src="assets/previews/buyer.png" width="420" alt="Buyer Research Agent" /></a>
+<h3><a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/README.en.md">Buyer Research Agent</a></h3>
+<a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/README.en.md"><img src="assets/previews/en/buyer-research-agent.svg" width="420" alt="Buyer Research Agent" /></a>
 <p>Demand evidence, unknowns and a durable local queue.</p>
 <p><strong>Offline reference</strong></p>
-<p><a href="https://github.com/Daniel-24-life/buyer-research-agent">Run / overview</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/core.py">Source</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/VERIFICATION.md">Verification</a></p>
+<p><a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/architecture.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/core.py">Source</a> · <a href="https://github.com/Daniel-24-life/buyer-research-agent/blob/main/docs/VERIFICATION.md">Verification (Chinese)</a></p>
 </td>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Daniel-24-life/btc-agent-governance">BTC Agent Governance</a></h3>
-<a href="https://github.com/Daniel-24-life/btc-agent-governance"><img src="assets/previews/btc.png" width="420" alt="BTC Agent Governance" /></a>
+<h3><a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/README.en.md">BTC Agent Governance</a></h3>
+<a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/README.en.md"><img src="assets/previews/en/btc-agent-governance.svg" width="420" alt="BTC Agent Governance" /></a>
 <p>Four synthetic scenarios with bounded evidence and no trading authority.</p>
 <p><strong>Research governance skeleton</strong></p>
-<p><a href="https://github.com/Daniel-24-life/btc-agent-governance">Run / overview</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">Source</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">Verification</a></p>
+<p><a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">Source</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">Verification (Chinese)</a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3><a href="https://github.com/Daniel-24-life/agentplatform-case-study">AgentPlatform Case Study</a></h3>
-<a href="https://github.com/Daniel-24-life/agentplatform-case-study"><img src="assets/previews/agentplatform.png" width="420" alt="AgentPlatform Case Study" /></a>
-<p>Trusted single-task execution and an unfulfilled product experience.</p>
+<h3><a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/README.en.md">AgentPlatform Case Study</a></h3>
+<a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/README.en.md"><img src="assets/previews/en/agentplatform-case-study.svg" width="420" alt="AgentPlatform Case Study" /></a>
+<p>Controlled single-task execution and lessons from a discontinued product.</p>
 <p><strong>Discontinued</strong></p>
-<p><a href="https://github.com/Daniel-24-life/agentplatform-case-study">Run / overview</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/ARCHIVE_ARCHITECTURE.md">Architecture</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/SOURCE_READING_GUIDE.md">Source</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/VERIFICATION_RECORD.md">Verification</a></p>
+<p><a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/ARCHIVE_ARCHITECTURE.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/SOURCE_READING_GUIDE.md">Source guide (Chinese)</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/VERIFICATION_RECORD.md">Verification (Chinese)</a></p>
 </td>
 </tr>
 </tbody>
@@ -70,16 +73,16 @@ independent repositories. Four other code references remain here.
 
 | Project | Focus | State |
 | --- | --- | --- |
-| [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) | Consumer-service evidence, protected drafts and local feedback in one workspace. | Offline public reference of V4.0 mechanisms |
-| [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench) | A synthetic exception-to-task workflow with role views. | Offline product demo |
-| [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent) | Demand evidence, unknowns and a durable local queue. | Offline reference |
+| [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md) | Consumer-service evidence, protected drafts and local feedback in one workspace. | Offline public reference of V4.0 mechanisms |
+| [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md) | A synthetic exception-to-task workflow with role views. | Offline product demo |
+| [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent/blob/main/README.en.md) | Demand evidence, unknowns and a durable local queue. | Offline reference |
 | [Creator Discovery Pipeline](showcases/creator-discovery-pipeline/) | Normalize public signals into a reviewed handoff table. | Synthetic case and skeleton |
 
 ### Agent engineering
 
 | Project | Focus | State |
 | --- | --- | --- |
-| [BTC Agent Governance](https://github.com/Daniel-24-life/btc-agent-governance) | Four synthetic scenarios with bounded evidence and no trading authority. | Research governance skeleton |
+| [BTC Agent Governance](https://github.com/Daniel-24-life/btc-agent-governance/blob/main/README.en.md) | Four synthetic scenarios with bounded evidence and no trading authority. | Research governance skeleton |
 | [Mailbox Governance Agent](showcases/mailbox-agent-system/) | Synthetic action review without mailbox connectivity or delivery. | Local policy demo |
 | [Daily Brief Agent](showcases/daily-brief-agent/) | Source classes, citation checks and uncertain-claim review. | Synthetic case and skeleton |
 
@@ -101,17 +104,17 @@ independent repositories. Four other code references remain here.
 
 | Project | Focus | State |
 | --- | --- | --- |
-| [AgentPlatform Case Study](https://github.com/Daniel-24-life/agentplatform-case-study) | Trusted single-task execution and an unfulfilled product experience. | Discontinued |
+| [AgentPlatform Case Study](https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/README.en.md) | Controlled single-task execution and lessons from a discontinued product. | Discontinued |
 
 ## Recent releases
 
-- 2026-10-25 · [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) · V4.0 公开参考版 — Consumer-service workspace, AI Coding notes and synthetic reference demo.
-- 2026-10-15 · [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench) · v1.1 — Queue-first review workbench redesign.
-- 2026-10-15 · [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.1 — Evidence-first workspace and explicit connection states.
+- 2026-10-25 · [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md) · V4.0 public reference — Consumer-service workspace, AI Coding notes and synthetic reference demo.
+- 2026-10-15 · [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md) · v1.1 — Queue-first review workbench redesign.
+- 2026-10-15 · [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent/blob/main/README.en.md) · v1.1 — Evidence-first workspace and explicit connection states.
 
 ## Add the next project
 
-[Publishing guide and templates](docs/ADD_PROJECT.md)
+[Publishing guide and templates (Chinese)](docs/ADD_PROJECT.md)
 
 <!-- portfolio:end -->
 

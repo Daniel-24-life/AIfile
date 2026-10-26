@@ -1,3 +1,5 @@
+<p align="right"><strong>语言 / Language：</strong> <strong>中文</strong> · <a href="README.en.md">English →</a></p>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg" />
   <img src="assets/cover-light.svg" alt="AIfile · AI 产品与 Agent 工程作品集" width="1280" />

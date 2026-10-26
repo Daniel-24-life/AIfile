@@ -209,6 +209,7 @@ def validate_public_text_boundary() -> bool:
 def main() -> int:
     results = [run_package(*package) for package in PACKAGES]
     results.append(run_package("portfolio-generation", ROOT, (sys.executable, "scripts/render_portfolio.py", "--check")))
+    results.append(run_package("english-assets", ROOT, (sys.executable, "scripts/render_english_assets.py", "--check")))
     results.append(run_package("public-repository", ROOT, (sys.executable, "scripts/verify_public_repository.py", "--root", str(ROOT))))
     passed = all(results)
     try:

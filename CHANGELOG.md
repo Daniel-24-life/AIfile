@@ -1,5 +1,13 @@
 # Release history
 
+## English presentation update - 2026-10-26
+
+- Added English-only profile and portfolio banners and five system-overview illustrations.
+- Added top-right language navigation and English-first project overview links.
+- Registered English assets separately and added generation and language checks.
+- Kept Chinese screenshots and project runtimes unchanged; labeled illustrations
+  and untranslated technical documents explicitly. No project version was raised.
+
 ## v3.2 - 2026-10-25
 
 - Added CosmoPilot V4.0 as a featured consumer-service project, with a synthetic
