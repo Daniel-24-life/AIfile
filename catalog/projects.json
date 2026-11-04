@@ -111,6 +111,32 @@
       "runnable": true
     },
     {
+      "id": "trade-desk-copilot",
+      "title": "外贸桌面协作助手",
+      "title_en": "Trade Desk Copilot",
+      "category": "business-products",
+      "summary": "常驻桌面的 HUD 协作工作台：多买家会话隔离、交互式 DST 槽位追踪、RAG 商品目录与 1080 报价卡生成。",
+      "summary_en": "Edge-docked HUD workbench: session isolation, interactive DST slot tracking, RAG catalog grounding, and 1080x1080 quotation cards.",
+      "state": "离线产品演示",
+      "state_en": "Offline product demo",
+      "repository": "https://github.com/Daniel-24-life/trade-desk-copilot",
+      "entry": "https://github.com/Daniel-24-life/trade-desk-copilot",
+      "cover": "assets/previews/trade-desk-copilot.png",
+      "cover_en": "assets/previews/en/trade-desk-copilot.svg",
+      "entry_en": "https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.en.md",
+      "featured_order": null,
+      "architecture": "https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/assets/screenshots/architecture_overview.svg",
+      "source": "https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/core/agent.py",
+      "verification": "https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.md",
+      "release": {
+        "version": "v1.0",
+        "date": "2026-11-04",
+        "note": "全新开源发布：双模离线仿真、交互式 DST 状态机与宿主格式清洗。",
+        "note_en": "Initial open-source release: dual-mode offline simulation, interactive DST state machine, and host-aware formatting."
+      },
+      "runnable": true
+    },
+    {
       "id": "btc-agent-governance",
       "title": "BTC Agent 治理",
       "title_en": "BTC Agent Governance",

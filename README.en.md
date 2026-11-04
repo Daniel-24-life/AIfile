@@ -76,6 +76,7 @@ Deep documents marked “Chinese”, and some directory entries, retain their or
 | [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md) | Consumer-service evidence, protected drafts and local feedback in one workspace. | Offline public reference of V4.0 mechanisms |
 | [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md) | A synthetic exception-to-task workflow with role views. | Offline product demo |
 | [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent/blob/main/README.en.md) | Demand evidence, unknowns and a durable local queue. | Offline reference |
+| [Trade Desk Copilot](https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.en.md) | Edge-docked HUD workbench: session isolation, interactive DST slot tracking, RAG catalog grounding, and 1080x1080 quotation cards. | Offline product demo |
 | [Creator Discovery Pipeline](showcases/creator-discovery-pipeline/) | Normalize public signals into a reviewed handoff table. | Synthetic case and skeleton |
 
 ### Agent engineering
@@ -108,9 +109,9 @@ Deep documents marked “Chinese”, and some directory entries, retain their or
 
 ## Recent releases
 
+- 2026-11-04 · [Trade Desk Copilot](https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.en.md) · v1.0 — Initial open-source release: dual-mode offline simulation, interactive DST state machine, and host-aware formatting.
 - 2026-10-25 · [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md) · V4.0 public reference — Consumer-service workspace, AI Coding notes and synthetic reference demo.
 - 2026-10-15 · [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md) · v1.1 — Queue-first review workbench redesign.
-- 2026-10-15 · [Buyer Research Agent](https://github.com/Daniel-24-life/buyer-research-agent/blob/main/README.en.md) · v1.1 — Evidence-first workspace and explicit connection states.
 
 ## Add the next project
 

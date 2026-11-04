@@ -9,6 +9,7 @@
 | 知微 CosmoPilot · V4.0 | 业务产品与工作台 | V4.0 机制的离线公开参考版 | [查看](https://github.com/Daniel-24-life/cosmopilot-v4) |
 | 航序 · 物流协同工作台 | 业务产品与工作台 | 离线产品演示 | [查看](https://github.com/Daniel-24-life/logistics-workbench) |
 | 外贸买家研究 Agent | 业务产品与工作台 | 离线参考实现 | [查看](https://github.com/Daniel-24-life/buyer-research-agent) |
+| 外贸桌面协作助手 | 业务产品与工作台 | 离线产品演示 | [查看](https://github.com/Daniel-24-life/trade-desk-copilot) |
 | BTC Agent 治理 | Agent 工程与治理 | 研究治理骨架 | [查看](https://github.com/Daniel-24-life/btc-agent-governance) |
 | AgentPlatform · 工程与产品复盘 | 工程与产品复盘 | 已停止开发 | [查看](https://github.com/Daniel-24-life/agentplatform-case-study) |
 | 创作者发现与审核流程 | 业务产品与工作台 | 合成案例与代码骨架 | [查看](../showcases/creator-discovery-pipeline/) |

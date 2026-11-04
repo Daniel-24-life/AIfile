@@ -74,6 +74,7 @@
 | [知微 CosmoPilot · V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) | 把消费者进线、时点证据、人工草稿复核和本地反馈放进同一工作台。 | V4.0 机制的离线公开参考版 |
 | [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) | 把物流异常、人工审核、角色动作和调度任务组织成可体验的闭环。 | 离线产品演示 |
 | [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) | 用需求原文、日期和核验缺口区分明确需求、采购机会与待核验线索。 | 离线参考实现 |
+| [外贸桌面协作助手](https://github.com/Daniel-24-life/trade-desk-copilot) | 常驻桌面的 HUD 协作工作台：多买家会话隔离、交互式 DST 槽位追踪、RAG 商品目录与 1080 报价卡生成。 | 离线产品演示 |
 | [创作者发现与审核流程](showcases/creator-discovery-pipeline/) | 将公开信号转换为去重、核验、人工审核后的交接表。 | 合成案例与代码骨架 |
 
 ### Agent 工程与治理
@@ -106,9 +107,9 @@
 
 ## 近期更新
 
+- 2026-11-04 · [外贸桌面协作助手](https://github.com/Daniel-24-life/trade-desk-copilot) · v1.0 — 全新开源发布：双模离线仿真、交互式 DST 状态机与宿主格式清洗。
 - 2026-10-25 · [知微 CosmoPilot · V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) · V4.0 公开参考版 — 新增消费者服务工作台、AI Coding 说明与合成参考演示。
 - 2026-10-15 · [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) · v1.1 — 异常队列与审核工作台重设计。
-- 2026-10-15 · [外贸买家研究 Agent](https://github.com/Daniel-24-life/buyer-research-agent) · v1.1 — 证据优先工作台与连接状态改进。
 
 ## 添加下一项作品
 
