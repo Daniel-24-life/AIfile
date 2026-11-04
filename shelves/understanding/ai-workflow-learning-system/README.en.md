@@ -36,6 +36,7 @@ I start with one idea, try it in a real task, check the result, and keep it only
 | Item | Contents |
 | --- | --- |
 | [Chinese Handbook](AI使用手册.md) | The Chinese version of my personal AI usage handbook. |
+| [Agent Harness Manual v2.4 (Chinese)](agent-harness-manual-v2.4.md) | The comprehensive v2.4 engineering guide covering tool contracts, context tiers, checkpoint recovery, evaluation, multi-agent architectures, and delivery templates. |
 | [English Handbook](AI-Usage-Handbook.md) | The English version of the same working method. |
 | [Application Record](application-record.md) | A repository review and repair cycle using the handbook rules. |
 

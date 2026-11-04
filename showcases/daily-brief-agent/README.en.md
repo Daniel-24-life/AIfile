@@ -55,5 +55,6 @@ I wanted a brief where every claim still points back to a source class and sourc
 | [Evidence and Review](evidence-and-review.md) | Evidence labels, review gates, and output checks. |
 | [Synthetic Review Record](brief-review-sample.fake.json) | Ready, review-needed, and blocked fake brief items. |
 | [Sample Brief](public-sample.md) | Fake brief item and source examples. |
+| [Traceable Delivery Sample](traceable-delivery-sample.html) | Synthetic HTML delivery artifact demonstrating citation anchoring and print layout. |
 | [Code Skeleton](../../shelves/code/daily-brief-skeleton/) | Small review skeleton with fake data only. |
 | [Redaction Policy](redaction-policy.md) | What stays out of the public folder. |

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>可追溯简报交付样例 · Daily Brief Traceable Sample</title>
+  <style>
+    @page { size: A4; margin: 11mm; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e9eff6;
+      color: #172033;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft YaHei", sans-serif;
+      line-height: 1.66;
+      font-size: 13px;
+    }
+    main {
+      max-width: 980px;
+      margin: 24px auto;
+      background: #fff;
+      padding: 40px 48px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    h1 { font-size: 30px; line-height: 1.25; margin: 0 0 10px; }
+    h2 { font-size: 19px; margin: 32px 0 14px; border-left: 4px solid #2563eb; padding-left: 10px; color: #0f2d59; }
+    .cover {
+      background: linear-gradient(135deg, #091e3a 0%, #164e87 60%, #0e7490 100%);
+      color: #eef6ff;
+      padding: 32px;
+      border-radius: 12px;
+    }
+    .kicker { color: #7dd3fc; font-weight: 700; letter-spacing: 0.1em; font-size: 12px; text-transform: uppercase; margin-bottom: 6px; }
+    .meta { color: #bfdbfe; font-size: 12px; margin-bottom: 14px; }
+    .summary-text { font-size: 14px; line-height: 1.7; color: #f0f7ff; }
+    .notice { font-size: 11.5px; color: #bae6fd; margin-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 10px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 12px; }
+    .card { border: 1px solid #dce5ef; border-radius: 10px; padding: 14px 16px; background: #fbfdff; }
+    .card-title { font-weight: 700; color: #0f3b79; font-size: 14px; margin-bottom: 8px; }
+    .cite {
+      display: inline-block;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 11px;
+      border: 1px solid #bfdbfe;
+      background: #eff6ff;
+      border-radius: 10px;
+      padding: 0 6px;
+      margin: 0 2px;
+    }
+    .cite:hover { background: #dbeafe; }
+    .fact-box {
+      padding: 12px 14px;
+      margin: 10px 0;
+      border-left: 3px solid #3b82f6;
+      background: #f4f8fe;
+      border-radius: 0 8px 8px 0;
+    }
+    .table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
+    .table th, .table td { border-bottom: 1px solid #e2e8f0; padding: 9px 10px; text-align: left; vertical-align: top; }
+    .table th { background: #f1f5f9; color: #334155; font-weight: 600; }
+    .badge { display: inline-block; padding: 2px 7px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .badge-official { background: #dcfce7; color: #166534; }
+    .badge-media { background: #e0f2fe; color: #0369a1; }
+    .badge-data { background: #fef3c7; color: #92400e; }
+    .footer-note { margin-top: 36px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 11.5px; color: #64748b; }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      main { padding: 0; box-shadow: none; max-width: 100%; }
+      .cover { break-after: avoid; }
+      .card, .fact-box, tr { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="cover">
+    <div class="kicker">Daily Brief · Traceable Delivery Sample</div>
+    <h1>每日简报交付范式 · 可追溯公开样例</h1>
+    <div class="meta">合成示例窗口 · 遵循 G1-G5 证据链审查规则 · A4 自适应排版</div>
+    <div class="summary-text">
+      <strong>一句话总览：</strong> 本样本展示「来源分类 → 主张提取 → 逐段精准引用 → 事实/判断分层 → HTML/PDF 打印排版」的可追溯简报交付标准。所有事实主张均需附带来源标签与反证窗口，绝不让未经核验的社媒推断或模糊总结直接作为定论交付。
+    </div>
+    <div class="notice">
+      注：本样例为流程演示包，所有链接指向标准公开文档或规范主页；生产环境的私有来源列表、个人选题与账号凭据严格隔离在仓库外。
+    </div>
+  </section>
+
+  <h2>01 核心事件与因果推演</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-title">01｜Agent 工具协议走向标准化</div>
+      <p><strong>事实：</strong> W3C 与各开源生态正推进统一的工具调用与安全偏好元数据契约，强化对文件系统操作与外部调用的授权拦截。<a class="cite" href="https://www.w3.org">[S1]</a></p>
+      <p><strong>推演 → 影响：</strong> 随着 Agent 从单会话玩具进入业务工作流，企业对操作审计、动作沙箱与权限最小化的要求已超越纯文本生成速度。<strong>观察窗口：</strong> 厂商是否提供原生可追溯执行日志。</p>
+    </div>
+    <div class="card">
+      <div class="card-title">02｜企业级评测数据基础设施化</div>
+      <p><strong>事实：</strong> 合成工业数据与确定性断言集正成为大模型企业落地前置评测的标配，避免用敏感生产数据直接调试。<a class="cite" href="https://arxiv.org">[S2]</a></p>
+      <p><strong>推演 → 影响：</strong> 评测不再是学术打分，而是针对极端故障注入（NUL 字符、断链、超长上下文）的通过率防御。<a class="cite" href="https://www.ietf.org">[S3]</a></p>
+    </div>
+  </div>
+
+  <h2>02 来源核验与边界审查表</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width: 12%;">来源 ID</th>
+        <th style="width: 18%;">类别</th>
+        <th style="width: 40%;">材料名称与主张</th>
+        <th style="width: 30%;">审核结论与边界</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>[S1]</code></td>
+        <td><span class="badge badge-official">official</span></td>
+        <td>W3C Web Standards & Metadata Guidance</td>
+        <td><strong>通过</strong> · 官方标准委员会公开发布，具备权威效力。</td>
+      </tr>
+      <tr>
+        <td><code>[S2]</code></td>
+        <td><span class="badge badge-media">research</span></td>
+        <td>Synthetic Evaluation Benchmark Protocol</td>
+        <td><strong>通过</strong> · 经同行审阅的基准测试，保留实验合成范围。</td>
+      </tr>
+      <tr>
+        <td><code>[S3]</code></td>
+        <td><span class="badge badge-data">standards</span></td>
+        <td>IETF Protocol Specifications</td>
+        <td><strong>通过</strong> · 基础协议规范，不代表所有厂商已完成全面适配。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>03 交付验收清单（G1-G5 审查）</h2>
+  <div class="fact-box">
+    <ul>
+      <li><strong>G1 来源类别 (Source Class)</strong>：所有条目均已明确标注类别（官方/研究/规范）。</li>
+      <li><strong>G2 引用覆盖 (Citation Coverage)</strong>：每个核心主张均带有可点击的精确引用锚点。</li>
+      <li><strong>G3 弱信号标注 (Weak Signal Flag)</strong>：未取得官方协议文本的推断一律不以“已完成”定论。</li>
+      <li><strong>G4 栏目适配 (Section Fit)</strong>：事件、事实、推演与数据边界各自归位。</li>
+      <li><strong>G5 输出检查 (Output Check)</strong>：HTML 语义完备，支持 A4 打印与本地无网络离线预览。</li>
+    </ul>
+  </div>
+
+  <div class="footer-note">
+    <strong>交付标准归档：</strong> 本文件由 Daily Brief 审查工作流模板生成。真实业务交付中，相同版式支持无头浏览器自动化导出为矢量 PDF，确保时效报告在屏幕与纸质打印场景均拥有清晰可溯的阅读体验。
+  </div>
+</main>
+</body>
+</html>

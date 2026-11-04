@@ -32,3 +32,5 @@ Note: Social-only evidence needs confirmation before becoming a stable claim.
 ```
 
 The real workflow used richer source tables and daily artifacts. Those materials stay outside this repository.
+
+See [Traceable Delivery Sample](traceable-delivery-sample.html) for a standalone HTML demonstration of this format with citation anchoring and print media styles.

@@ -16,6 +16,6 @@
 
 ## 阅读与运行
 
-[代码与测试](../../shelves/code/daily-brief-skeleton/) · [合成审核记录](brief-review-sample.fake.json)
+[代码与测试](../../shelves/code/daily-brief-skeleton/) · [合成审核记录](brief-review-sample.fake.json) · [可追溯简报交付样例（HTML）](traceable-delivery-sample.html)
 
 [架构（英文）](architecture.md) · [证据与审核（英文）](evidence-and-review.md) · [样例简报（英文）](public-sample.md) · [公开边界（英文）](redaction-policy.md)
