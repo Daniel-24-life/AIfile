@@ -14,6 +14,7 @@
 | 创作者发现与审核流程 | 业务产品与工作台 | 合成案例与代码骨架 | [查看](../../shelves/code/creator-discovery-skeleton/) |
 | 邮箱治理 Agent | Agent 工程与治理 | 本地策略演示 | [查看](../../shelves/code/mailbox-governance-skeleton/) |
 | 每日简报审核 Agent | Agent 工程与治理 | 合成案例与代码骨架 | [查看](../../shelves/code/daily-brief-skeleton/) |
+| 移动机器人定位完整性研究 | 研究与内容流程 | 可复现科研基准 | [查看](https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/scripts/run_synthetic_study.py) |
 | WTI 市场研究案例 | 研究与内容流程 | 脱敏研究案例 | [查看](../../shelves/code/wti-research-audit-skeleton/) |
 
 <!-- portfolio:end -->

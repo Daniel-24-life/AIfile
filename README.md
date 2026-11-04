@@ -89,6 +89,7 @@
 
 | 项目 | 解决的问题 | 当前实现 |
 | --- | --- | --- |
+| [移动机器人定位完整性研究](https://github.com/Daniel-24-life/localization-integrity-lab) | 动力学 ODE、误差可观测性 Gramian、吸收边界 PDE 越界概率与有色噪声滤波基准。 | 可复现科研基准 |
 | [WTI 市场研究案例](showcases/wti-market-research/) | 公开数据研究中的信息时点、泄漏控制、冻结测试与主张核验。 | 脱敏研究案例 |
 | [AIGC 视频生产流程](showcases/aigc-video-production-pipeline/) | 把创意拆成镜头、资产、检查和交付包，保留连续性与质量门禁。 | 公开流程与重建样例 |
 
@@ -108,8 +109,8 @@
 ## 近期更新
 
 - 2026-11-04 · [外贸桌面协作助手](https://github.com/Daniel-24-life/trade-desk-copilot) · v1.0 — 全新开源发布：双模离线仿真、交互式 DST 状态机与宿主格式清洗。
+- 2026-11-04 · [移动机器人定位完整性研究](https://github.com/Daniel-24-life/localization-integrity-lab) · v1.0 — 独立科研开源：144 条件合成基准、吸收边界 PDE 求解器与 116 项物理单元测试。
 - 2026-10-25 · [知微 CosmoPilot · V4.0](https://github.com/Daniel-24-life/cosmopilot-v4) · V4.0 公开参考版 — 新增消费者服务工作台、AI Coding 说明与合成参考演示。
-- 2026-10-15 · [航序 · 物流协同工作台](https://github.com/Daniel-24-life/logistics-workbench) · v1.1 — 异常队列与审核工作台重设计。
 
 ## 添加下一项作品
 

@@ -91,6 +91,7 @@ Deep documents marked “Chinese”, and some directory entries, retain their or
 
 | Project | Focus | State |
 | --- | --- | --- |
+| [Localization Integrity Lab](https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/README.en.md) | Kinematic ODEs, Gramian observability, absorbing boundary PDEs, and colored-noise filtering. | Reproducible research benchmark |
 | [WTI Market Research Case](showcases/wti-market-research/) | Timing-aware public-series research and frozen-test audits. | Sanitized research case |
 | [AIGC Video Production Pipeline](showcases/aigc-video-production-pipeline/) | Shot planning, asset review and delivery checks. | Public workflow and reconstructed sample |
 
@@ -110,8 +111,8 @@ Deep documents marked “Chinese”, and some directory entries, retain their or
 ## Recent releases
 
 - 2026-11-04 · [Trade Desk Copilot](https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.en.md) · v1.0 — Initial open-source release: dual-mode offline simulation, interactive DST state machine, and host-aware formatting.
+- 2026-11-04 · [Localization Integrity Lab](https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/README.en.md) · v1.0 — Initial research release: 144-condition benchmark, absorbing boundary PDE solvers, and 116 tests.
 - 2026-10-25 · [CosmoPilot V4.0](https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md) · V4.0 public reference — Consumer-service workspace, AI Coding notes and synthetic reference demo.
-- 2026-10-15 · [Hangxu Logistics Workbench](https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md) · v1.1 — Queue-first review workbench redesign.
 
 ## Add the next project
 

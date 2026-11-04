@@ -248,6 +248,32 @@
       "runnable": true
     },
     {
+      "id": "localization-integrity-lab",
+      "title": "移动机器人定位完整性研究",
+      "title_en": "Localization Integrity Lab",
+      "category": "research-content",
+      "summary": "动力学 ODE、误差可观测性 Gramian、吸收边界 PDE 越界概率与有色噪声滤波基准。",
+      "summary_en": "Kinematic ODEs, Gramian observability, absorbing boundary PDEs, and colored-noise filtering.",
+      "state": "可复现科研基准",
+      "state_en": "Reproducible research benchmark",
+      "repository": "https://github.com/Daniel-24-life/localization-integrity-lab",
+      "entry": "https://github.com/Daniel-24-life/localization-integrity-lab",
+      "cover": "assets/previews/localization-integrity-lab.png",
+      "cover_en": "assets/previews/en/localization-integrity-lab.svg",
+      "entry_en": "https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/README.en.md",
+      "featured_order": null,
+      "architecture": "https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/assets/screenshots/research_overview.svg",
+      "source": "https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/scripts/run_synthetic_study.py",
+      "verification": "https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/docs/mathematical_formulation.md",
+      "release": {
+        "version": "v1.0",
+        "date": "2026-11-04",
+        "note": "独立科研开源：144 条件合成基准、吸收边界 PDE 求解器与 116 项物理单元测试。",
+        "note_en": "Initial research release: 144-condition benchmark, absorbing boundary PDE solvers, and 116 tests."
+      },
+      "runnable": true
+    },
+    {
       "id": "wti-market-research",
       "title": "WTI 市场研究案例",
       "title_en": "WTI Market Research Case",
