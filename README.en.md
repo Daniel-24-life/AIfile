@@ -32,6 +32,22 @@ Deep documents marked “Chinese”, and some directory entries, retain their or
 <p><a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/architecture.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/source-reading.md">Source guide (Chinese)</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/VERIFICATION.md">Verification (Chinese)</a></p>
 </td>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.en.md">Trade Desk Copilot</a></h3>
+<a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.en.md"><img src="assets/previews/en/trade-desk-copilot.svg" width="420" alt="Trade Desk Copilot" /></a>
+<p>Edge-docked HUD workbench: session isolation, interactive DST slot tracking, RAG catalog grounding, and 1080x1080 quotation cards.</p>
+<p><strong>Offline product demo</strong></p>
+<p><a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/assets/screenshots/architecture_overview.svg">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/core/agent.py">Source</a> · <a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.md">Verification (Chinese)</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/README.en.md">Localization Integrity Lab</a></h3>
+<a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/README.en.md"><img src="assets/previews/en/localization-integrity-lab.svg" width="420" alt="Localization Integrity Lab" /></a>
+<p>Kinematic ODEs, Gramian observability, absorbing boundary PDEs, and colored-noise filtering.</p>
+<p><strong>Reproducible research benchmark</strong></p>
+<p><a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/assets/screenshots/research_overview.svg">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/scripts/run_synthetic_study.py">Source</a> · <a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/docs/mathematical_formulation.md">Verification (Chinese)</a></p>
+</td>
+<td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md">Hangxu Logistics Workbench</a></h3>
 <a href="https://github.com/Daniel-24-life/logistics-workbench/blob/main/README.en.md"><img src="assets/previews/en/logistics-workbench.svg" width="420" alt="Hangxu Logistics Workbench" /></a>
 <p>A synthetic exception-to-task workflow with role views.</p>
@@ -53,15 +69,6 @@ Deep documents marked “Chinese”, and some directory entries, retain their or
 <p>Four synthetic scenarios with bounded evidence and no trading authority.</p>
 <p><strong>Research governance skeleton</strong></p>
 <p><a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">Source</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">Verification (Chinese)</a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/README.en.md">AgentPlatform Case Study</a></h3>
-<a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/README.en.md"><img src="assets/previews/en/agentplatform-case-study.svg" width="420" alt="AgentPlatform Case Study" /></a>
-<p>Controlled single-task execution and lessons from a discontinued product.</p>
-<p><strong>Discontinued</strong></p>
-<p><a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/README.en.md">Run / overview</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/ARCHIVE_ARCHITECTURE.md">Architecture (Chinese)</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/SOURCE_READING_GUIDE.md">Source guide (Chinese)</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/VERIFICATION_RECORD.md">Verification (Chinese)</a></p>
 </td>
 </tr>
 </tbody>

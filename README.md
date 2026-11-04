@@ -30,6 +30,22 @@
 <p><a href="https://github.com/Daniel-24-life/cosmopilot-v4">体验与运行</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/source-reading.md">源码</a> · <a href="https://github.com/Daniel-24-life/cosmopilot-v4/blob/main/docs/VERIFICATION.md">验证</a></p>
 </td>
 <td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/trade-desk-copilot">外贸桌面协作助手</a></h3>
+<a href="https://github.com/Daniel-24-life/trade-desk-copilot"><img src="assets/previews/trade-desk-copilot.png" width="420" alt="外贸桌面协作助手" /></a>
+<p>常驻桌面的 HUD 协作工作台：多买家会话隔离、交互式 DST 槽位追踪、RAG 商品目录与 1080 报价卡生成。</p>
+<p><strong>离线产品演示</strong></p>
+<p><a href="https://github.com/Daniel-24-life/trade-desk-copilot">体验与运行</a> · <a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/assets/screenshots/architecture_overview.svg">架构</a> · <a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/core/agent.py">源码</a> · <a href="https://github.com/Daniel-24-life/trade-desk-copilot/blob/main/README.md">验证</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/Daniel-24-life/localization-integrity-lab">移动机器人定位完整性研究</a></h3>
+<a href="https://github.com/Daniel-24-life/localization-integrity-lab"><img src="assets/previews/localization-integrity-lab.png" width="420" alt="移动机器人定位完整性研究" /></a>
+<p>动力学 ODE、误差可观测性 Gramian、吸收边界 PDE 越界概率与有色噪声滤波基准。</p>
+<p><strong>可复现科研基准</strong></p>
+<p><a href="https://github.com/Daniel-24-life/localization-integrity-lab">体验与运行</a> · <a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/assets/screenshots/research_overview.svg">架构</a> · <a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/scripts/run_synthetic_study.py">源码</a> · <a href="https://github.com/Daniel-24-life/localization-integrity-lab/blob/main/docs/mathematical_formulation.md">验证</a></p>
+</td>
+<td width="50%" valign="top">
 <h3><a href="https://github.com/Daniel-24-life/logistics-workbench">航序 · 物流协同工作台</a></h3>
 <a href="https://github.com/Daniel-24-life/logistics-workbench"><img src="assets/previews/logistics.png" width="420" alt="航序 · 物流协同工作台" /></a>
 <p>把物流异常、人工审核、角色动作和调度任务组织成可体验的闭环。</p>
@@ -51,15 +67,6 @@
 <p>分开判断任务路由、证据声明与状态晋级，四种合成场景始终没有执行权限。</p>
 <p><strong>研究治理骨架</strong></p>
 <p><a href="https://github.com/Daniel-24-life/btc-agent-governance">体验与运行</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/architecture.md">架构</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/public_demo.py">源码</a> · <a href="https://github.com/Daniel-24-life/btc-agent-governance/blob/main/docs/VERIFICATION.md">验证</a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/Daniel-24-life/agentplatform-case-study">AgentPlatform · 工程与产品复盘</a></h3>
-<a href="https://github.com/Daniel-24-life/agentplatform-case-study"><img src="assets/previews/agentplatform.png" width="420" alt="AgentPlatform · 工程与产品复盘" /></a>
-<p>受控单 Task 执行有指定验证记录；产品目标到交付的核心体验没有实现。</p>
-<p><strong>已停止开发</strong></p>
-<p><a href="https://github.com/Daniel-24-life/agentplatform-case-study">体验与运行</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/ARCHIVE_ARCHITECTURE.md">架构</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/SOURCE_READING_GUIDE.md">源码</a> · <a href="https://github.com/Daniel-24-life/agentplatform-case-study/blob/main/docs/VERIFICATION_RECORD.md">验证</a></p>
 </td>
 </tr>
 </tbody>
